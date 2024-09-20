@@ -13,3 +13,6 @@ This started as a UI themed after the PDA in Doom 3 and evolved from there into 
 * Loot window with smaller items and more columns.
 * Merchant window similar to the loot window.
 * Spell gem and buff icons based on 90s cRPGs.
+
+### Screenshot
+![d3pda-quarm](https://github.com/user-attachments/assets/e667df4a-ca32-481f-995e-b9e21f32aa9f)
