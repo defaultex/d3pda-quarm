@@ -1,0 +1,265 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+	<!-- -->
+	<StaticAnimation item="BW_IWnd0">
+		<Animation>D3PDA_IWnd_Item0_Serif</Animation>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>42</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="BW_IWnd1">
+		<Animation>D3PDA_IWnd_ItemN_Serif</Animation>
+		<Location>
+			<X>0</X>
+			<Y>30</Y>
+		</Location>
+		<Size>
+			<CX>42</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="BW_IWnd_Header">
+		<Animation>D3PDA_IWnd_Header</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>18</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>179</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="BW_IWnd_GaugeHolder1">
+		<Animation>D3PDA_IWnd_GaugeHolder</Animation>
+		<Location>
+			<X>18</X>
+			<Y>30</Y>
+		</Location>
+		<Size>
+			<CX>32</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<!-- -->
+	<Label item="BW_AirLabel">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_TL">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_T">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>1</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_TR">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_BL">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>2</LeftAnchorOffset>
+		<TopAnchorOffset>4</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_B">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>5</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_BR">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>4</LeftAnchorOffset>
+		<TopAnchorOffset>4</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_L">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>1</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<Label item="BW_AirLabel_Shadow_R">
+		<Text>Air Remaining</Text>
+		<Font>4</Font>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>5</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<TextColor>
+			<R>0</R>
+			<G>0</G>
+			<B>0</B>
+		</TextColor>
+	</Label>
+	<!-- -->
+	<Gauge item = "BREATH_Gauge">
+		<ScreenID>Gauge</ScreenID>
+		<EQType>8</EQType>
+		<Font>3</Font>
+		<TextOffsetY>-250</TextOffsetY>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<Location>
+			<X>6</X>
+			<Y>10</Y>
+		</Location>
+		<Size>
+			<CX>162</CX>
+			<CY>12</CY>
+		</Size>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<FillTint>
+				<R>0</R>
+				<G>240</G>
+				<B>240</B>
+		</FillTint>
+		<LinesFillTint>
+				<R>0</R>
+				<G>0</G>
+				<B>240</B>
+		</LinesFillTint>
+		<GaugeDrawTemplate>
+			<Background>D3PDA_Gauge_Background</Background>
+			<Fill>D3PDA_Gauge_Fill</Fill>
+			<LinesFill>D3PDA_Gauge_LinesFill</LinesFill>
+		</GaugeDrawTemplate>
+		<DrawLinesFill>false</DrawLinesFill>
+	</Gauge>
+	<!-- -->
+	<Screen item="BW_AirLabel_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>48</X>
+			<Y>-4</Y>
+		</Location>
+		<Size>
+			<CX>145</CX>
+			<CY>34</CY>
+		</Size>
+		<Pieces>BW_AirLabel_Shadow_TL</Pieces>
+		<Pieces>BW_AirLabel_Shadow_T</Pieces>
+		<Pieces>BW_AirLabel_Shadow_TR</Pieces>
+		<Pieces>BW_AirLabel_Shadow_BL</Pieces>
+		<Pieces>BW_AirLabel_Shadow_B</Pieces>
+		<Pieces>BW_AirLabel_Shadow_BR</Pieces>
+		<Pieces>BW_AirLabel_Shadow_L</Pieces>
+		<Pieces>BW_AirLabel_Shadow_R</Pieces>
+		<Pieces>BW_AirLabel</Pieces>
+	</Screen>
+	<Screen item="BW_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>28</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>168</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>BREATH_Gauge</Pieces>
+	</Screen>
+	<!-- -->
+	<Screen item = "BreathWindow">
+		<Style_Transparent>true</Style_Transparent>
+		<Size>
+			<CX>197</CX>
+			<CY>60</CY>
+		</Size>
+		<!-- -->
+		<Pieces>BW_IWnd0</Pieces>
+		<Pieces>BW_IWnd1</Pieces>
+		<Pieces>BW_IWnd_Header</Pieces>
+		<Pieces>BW_IWnd_GaugeHolder1</Pieces>
+		<!-- -->
+		<Pieces>BW_AirLabel_Layout</Pieces>
+		<Pieces>BW_Layout</Pieces>
+		<!-- -->
+	</Screen>
+	<!-- -->
+</XML>

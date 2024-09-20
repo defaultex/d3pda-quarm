@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_Glyph_Up">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>71</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_Glyph_UpDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>83</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_Glyph_Down">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>71</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_Glyph_DownDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>83</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_Glyph_Left">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>71</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_Glyph_LeftDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>83</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_Glyph_Right">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>71</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_Glyph_RightDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>83</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_Glyph_Minus">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_Glyph_MinusDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_Glyph_Plus">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>71</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_Glyph_PlusDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>83</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+</XML>

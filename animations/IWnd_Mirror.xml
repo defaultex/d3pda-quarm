@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_Item0">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>21</X>
+                <Y>109</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_Item1">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>21</X>
+                <Y>140</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_ItemI">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>21</X>
+                <Y>171</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_ItemNminus1">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>21</X>
+                <Y>202</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_ItemN">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>21</X>
+                <Y>233</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_Item0_Serif">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>43</X>
+                <Y>264</Y>
+            </Location>
+            <Size>
+                <CX>42</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_ItemN_Serif">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>43</X>
+                <Y>295</Y>
+            </Location>
+            <Size>
+                <CX>42</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_Header">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>222</X>
+                <Y>109</Y>
+            </Location>
+            <Size>
+                <CX>179</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- NOTE: EQ displays this even when nothing is memorized if the gem is unlocked -->
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_GemHolder">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>222</X>
+                <Y>140</Y>
+            </Location>
+            <Size>
+                <CX>179</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- NOTE: EQ tints this animation to match the spell's type (self, target, ae, pbae, etc) -->
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_GemBackground">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>222</X>
+                <Y>171</Y>
+            </Location>
+            <Size>
+                <CX>179</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_GaugeHolder">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>119</X>
+                <Y>264</Y>
+            </Location>
+            <Size>
+                <CX>32</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Mirror_StatHolder">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>151</X>
+                <Y>295</Y>
+            </Location>
+            <Size>
+                <CX>64</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+</XML>

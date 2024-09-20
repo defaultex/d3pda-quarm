@@ -1,0 +1,9 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Composite>
+		<Include>D3PDA.xml</Include>
+		<!-- this must be the last entry to work correctly -->
+		<Include>..\default\EQUI.xml</Include>
+	</Composite>
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+</XML>

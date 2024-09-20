@@ -1,0 +1,142 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<!-- -->
+	<Composite>
+		<Include>hotbutton_window/Button1.xml</Include>
+		<Include>hotbutton_window/Button2.xml</Include>
+		<Include>hotbutton_window/Button3.xml</Include>
+		<Include>hotbutton_window/Button4.xml</Include>
+		<Include>hotbutton_window/Button5.xml</Include>
+		<Include>hotbutton_window/Button6.xml</Include>
+		<Include>hotbutton_window/Button7.xml</Include>
+		<Include>hotbutton_window/Button8.xml</Include>
+		<Include>hotbutton_window/Button9.xml</Include>
+		<Include>hotbutton_window/Button10.xml</Include>
+	</Composite>
+	<!-- -->
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+	<!-- -->
+	<Label item ="HB_CurrentPageLabel">
+		<ScreenID>HB_CurrentPageLabel</ScreenID>
+		<Font>3</Font>
+		<Text>1</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<Style_Transparent>false</Style_Transparent>
+		<Location>
+			<X>196</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>32</CX>
+			<CY>16</CY>
+		</Size>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+	</Label>
+	<!-- -->
+	<Button item = "HB_PageLeftButton">
+		<ScreenID>HB_PageLeftButton</ScreenID>
+		<Location>
+			<X>172</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>16</CY>
+		</Size>
+		<ButtonDrawTemplate>
+			<Normal>A_HSBLeftNormal</Normal>
+			<Pressed>A_HSBLeftPressed</Pressed>
+			<Flyby>A_HSBLeftFlyby</Flyby>
+			<Disabled>A_HSBLeftDisabled</Disabled>
+			<PressedFlyby>A_HSBLeftPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+	</Button>
+	<Button item = "HB_PageRightButton">
+		<ScreenID>HB_PageRightButton</ScreenID>
+		<Location>
+			<X>232</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>25</CX>
+			<CY>16</CY>
+		</Size>
+		<ButtonDrawTemplate>
+			<Normal>A_HSBRightNormal</Normal>
+			<Pressed>A_HSBRightPressed</Pressed>
+			<Flyby>A_HSBRightFlyby</Flyby>
+			<Disabled>A_HSBRightDisabled</Disabled>
+			<PressedFlyby>A_HSBRightPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+	</Button>
+	<!-- -->
+	<Screen item = "HotButtonWnd">
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Font>2</Font>
+		<Text>Hot Buttons</Text>
+		<TooltipReference>Hot Buttons</TooltipReference>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Style_Transparent>false</Style_Transparent>
+		<!-- -->
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>230</Y>
+		</Location>
+		<Size>
+			<CX>426</CX>
+			<CY>76</CY>
+		</Size>
+		<!-- -->
+		<Pieces>HB_PageLeftButton</Pieces>
+		<Pieces>HB_PageRightButton</Pieces>
+		<Pieces>HB_CurrentPageLabel</Pieces>
+		<!-- -->
+		<Pieces>HB_Button1</Pieces>
+		<Pieces>HB_Button2</Pieces>
+		<Pieces>HB_Button3</Pieces>
+		<Pieces>HB_Button4</Pieces>
+		<Pieces>HB_Button5</Pieces>
+		<Pieces>HB_Button6</Pieces>
+		<Pieces>HB_Button7</Pieces>
+		<Pieces>HB_Button8</Pieces>
+		<Pieces>HB_Button9</Pieces>
+		<Pieces>HB_Button10</Pieces>
+		<!-- -->
+		<Pieces>HB_InvSlot1</Pieces>
+		<Pieces>HB_InvSlot2</Pieces>
+		<Pieces>HB_InvSlot3</Pieces>
+		<Pieces>HB_InvSlot4</Pieces>
+		<Pieces>HB_InvSlot5</Pieces>
+		<Pieces>HB_InvSlot6</Pieces>
+		<Pieces>HB_InvSlot7</Pieces>
+		<Pieces>HB_InvSlot8</Pieces>
+		<Pieces>HB_InvSlot9</Pieces>
+		<Pieces>HB_InvSlot10</Pieces>
+		<!-- -->
+		<Pieces>HB_SpellGem1</Pieces>
+		<Pieces>HB_SpellGem2</Pieces>
+		<Pieces>HB_SpellGem3</Pieces>
+		<Pieces>HB_SpellGem4</Pieces>
+		<Pieces>HB_SpellGem5</Pieces>
+		<Pieces>HB_SpellGem6</Pieces>
+		<Pieces>HB_SpellGem7</Pieces>
+		<Pieces>HB_SpellGem8</Pieces>
+		<Pieces>HB_SpellGem9</Pieces>
+		<Pieces>HB_SpellGem10</Pieces>
+		<!-- -->
+	</Screen>
+	<!-- -->
+</XML>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_GroupWindow_Button_Bg">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>110</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>39</CX>
+        <CY>16</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_Invite_Normal">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>151</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Invite_Hover">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>211</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Invite_Pressed">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>271</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_Disband_Normal">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>181</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Disband_Hover">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>241</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_Disband_Pressed">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>301</X>
+        <Y>82</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Decline_Normal">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>181</X>
+        <Y>94</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Decline_Hover">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>241</X>
+        <Y>94</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Decline_Pressed">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>301</X>
+        <Y>94</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_Follow_Normal">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>151</X>
+        <Y>94</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Follow_Hover">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>211</X>
+        <Y>94</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Follow_Pressed">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>271</X>
+        <Y>94</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+</XML>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Composite>
+    <!-- 'r' variant for right aligned or 'l' variant for left aligned -->
+    <Include>EQUI_BuffWindow_r.xml</Include>
+  </Composite>
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+</XML>

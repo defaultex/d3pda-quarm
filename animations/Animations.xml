@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Composite>
+        <Include>animations\Border.xml</Include>
+		<Include>animations\Empty.xml</Include>
+		<Include>animations\IWnd.xml</Include>
+		<Include>animations\Gauge.xml</Include>
+		<Include>animations\Scrollbar.xml</Include>
+		<Include>animations\Titlebar.xml</Include>
+		<Include>animations\HotButtons.xml</Include>
+		<Include>animations\Checkbox.xml</Include>
+		<Include>animations\Glyphs.xml</Include>
+    </Composite>
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+</XML>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+    <ButtonDrawTemplate item="BDT_Combo">
+        <Normal>D3PDA_DownNormal</Normal>
+        <Pressed>D3PDA_DownPressed</Pressed>
+        <Flyby>D3PDA_DownFlyby</Flyby>
+        <Disabled>D3PDA_DownDisabled</Disabled>
+        <PressedFlyby>D3PDA_DownPressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+
+</XML>

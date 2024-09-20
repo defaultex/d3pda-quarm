@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- ****************** Large Borders ****************** -->
+    <!-- Top -->
+    <Ui2DAnimation item="D3PDA_LargeBorder_TopLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>0</Y>
+            </Location>
+            <Size>
+                <CX>45</CX>
+                <CY>10</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_Top">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>45</X>
+                <Y>0</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>10</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_TopRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>63</X>
+                <Y>0</Y>
+            </Location>
+            <Size>
+                <CX>45</CX>
+                <CY>10</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Bottom -->
+    <Ui2DAnimation item="D3PDA_LargeBorder_BottomLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>98</Y>
+            </Location>
+            <Size>
+                <CX>45</CX>
+                <CY>10</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_Bottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>45</X>
+                <Y>98</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>10</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_BottomRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>63</X>
+                <Y>98</Y>
+            </Location>
+            <Size>
+                <CX>45</CX>
+                <CY>10</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Left -->
+    <Ui2DAnimation item="D3PDA_LargeBorder_LeftTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>10</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>35</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_Left">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>45</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_LeftBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>63</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>35</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Right -->
+    <Ui2DAnimation item="D3PDA_LargeBorder_RightTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>99</X>
+                <Y>10</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>35</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_Right">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>99</X>
+                <Y>45</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LargeBorder_RightBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>99</X>
+                <Y>63</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>35</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Rounded Sides (alternate left and right sections) -->
+    <Ui2DAnimation item="D3PDA_AltLargeBorder_Left">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>12</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>1</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_AltLargeBorder_Right">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>99</X>
+                <Y>12</Y>
+            </Location>
+            <Size>
+                <CX>9</CX>
+                <CY>1</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- ****************** Small Borders Blue ****************** -->
+    <!-- Top  -->
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_TopLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_Top">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>38</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_TopRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>40</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Bottom  -->
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_BottomLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>89</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_Bottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>38</X>
+                <Y>89</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_BottomRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>40</X>
+                <Y>89</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Left  -->
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_LeftTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>85</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_Left">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>86</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_LeftBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>87</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Right  -->
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_RightTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>41</X>
+                <Y>85</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_Right">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>41</X>
+                <Y>86</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallBlueBorder_RightBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>41</X>
+                <Y>87</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- ****************** Small Borders Green ****************** -->
+    <!-- Top -->
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_TopLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_Top">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>26</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_TopRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>28</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Bottom -->
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_BottomLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>89</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_Bottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>26</X>
+                <Y>89</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_BottomRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>28</X>
+                <Y>89</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Left -->
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_LeftTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>85</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_Left">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>86</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_LeftBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>87</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Right -->
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_RightTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>29</X>
+                <Y>85</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_Right">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>29</X>
+                <Y>86</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGreenBorder_RightBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>29</X>
+                <Y>87</Y>
+            </Location>
+            <Size>
+                <CX>2</CX>
+                <CY>2</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+</XML>

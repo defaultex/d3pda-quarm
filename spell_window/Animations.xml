@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+    <Ui2DAnimation item="D3PDA_SpellWindow_Bg">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>369</X>
+                <Y>110</Y>
+            </Location>
+            <Size>
+                <CX>46</CX>
+                <CY>264</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+
+</XML>

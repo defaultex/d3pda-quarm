@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_CheckboxNormal">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>71</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_CheckboxFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>71</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_CheckboxPressed">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>71</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_CheckboxPressedFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>71</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_CheckboxDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>71</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_CheckboxPressedDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>71</X>
+                <Y>71</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+</XML>

@@ -1,0 +1,209 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+    <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+    <!-- -->
+    <StaticAnimation item="CSPW_SpellBook_BG">
+        <Animation>D3PDA_IWnd_GemHolder</Animation>
+        <Location>
+            <X>18</X>
+            <Y>240</Y>
+        </Location>
+        <Size>
+            <CX>179</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <!-- -->
+    <Label item="CSPW_SpellNameLabel">
+        <ScreenID>Casting_Spell_Name</ScreenID>
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>3</LeftAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineTL">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineT">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>3</LeftAnchorOffset>
+        <TopAnchorOffset>0</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineTR">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>4</LeftAnchorOffset>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineBL">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <TopAnchorOffset>3</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineB">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>3</LeftAnchorOffset>
+        <TopAnchorOffset>4</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineBR">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>4</LeftAnchorOffset>
+        <TopAnchorOffset>3</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineL">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>1</LeftAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="CSPW_SpellNameLabel_OutlineR">
+        <EQType>134</EQType>
+        <Font>3</Font>
+        <AlignCenter>true</AlignCenter>
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>5</LeftAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <!-- -->
+    <Button item = "CSPW_SpellBook">
+        <ScreenID>CSPW_SpellBook</ScreenID>
+        <TooltipReference>Opens and closes Your Spellbook</TooltipReference>
+        <Style_Checkbox>true</Style_Checkbox>
+        <Style_Transparent>false</Style_Transparent>
+        <Location>
+            <X>23</X>
+            <Y>246</Y>
+        </Location>
+        <Size>
+            <CX>16</CX>
+            <CY>16</CY>
+        </Size>
+        <ButtonDrawTemplate>
+            <Normal>A_BookBtnNormal</Normal>
+            <Pressed>A_BookBtnPressed</Pressed>
+            <Flyby>A_BookBtnFlyby</Flyby>
+            <Disabled>A_BookBtnDisabled</Disabled>
+            <PressedFlyby>A_BookBtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Gauge item="Casting_Gauge">
+		<ScreenID>Gauge</ScreenID>
+        <EQType>7</EQType>
+        <GaugeOffsetY>0</GaugeOffsetY>
+        <DrawLinesFill>false</DrawLinesFill>
+        <Location>
+            <X>42</X>
+            <Y>240</Y>
+        </Location>
+        <Size>
+            <CX>155</CX>
+            <CY>30</CY>
+        </Size>
+        <FillTint>
+            <R>240</R>
+            <G>0</G>
+            <B>0</B>
+        </FillTint>
+        <GaugeDrawTemplate>
+            <Background>D3PDA_Gauge_CastBackground</Background>
+            <Fill>D3PDA_Gauge_CastFill</Fill>
+        </GaugeDrawTemplate>
+    </Gauge>
+    <!-- -->
+</XML>

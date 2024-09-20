@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- Vertical Scrollbar -->
+    <Ui2DAnimation item="D3PDA_VSBTop">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>4</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_VSBMiddle">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>87</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>3</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_VSBBottom">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>90</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>4</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Horizontal Scrollbar -->
+    <Ui2DAnimation item="D3PDA_HSBLeft">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>4</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_HSBMiddle">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>15</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>3</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_HSBRight">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>18</X>
+                <Y>83</Y>
+            </Location>
+            <Size>
+                <CX>4</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Up Arrow -->
+    <Ui2DAnimation item="D3PDA_UpNormal">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_UpFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_UpPressed">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_UpPressedFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_UpDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>47</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Down Arrow -->
+    <Ui2DAnimation item="D3PDA_DownNormal">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_DownFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_DownPressed">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_DownPressedFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_DownDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>59</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Left Arrow -->
+    <Ui2DAnimation item="D3PDA_LeftNormal">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LeftFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LeftPressed">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LeftPressedFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_LeftDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>23</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- Right Arrow -->
+    <Ui2DAnimation item="D3PDA_RightNormal">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_RightFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_RightPressed">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_RightPressedFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_RightDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>35</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- No Arrow -->
+    <Ui2DAnimation item="D3PDA_NoArrowNormal">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>11</X>
+                <Y>11</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_NoArrowFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>23</X>
+                <Y>11</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_NoArrowPressed">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>35</X>
+                <Y>11</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_NoArrowPressedFlyby">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>47</X>
+                <Y>11</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_NoArrowDisabled">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>59</X>
+                <Y>11</Y>
+            </Location>
+            <Size>
+                <CX>11</CX>
+                <CY>11</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+</XML>

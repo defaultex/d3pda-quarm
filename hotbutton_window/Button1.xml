@@ -1,0 +1,67 @@
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+	<!-- -->
+	<Button item = "HB_Button1">
+		<ScreenID>HB_Button1</ScreenID>
+		<Text>1</Text>
+		<Font>1</Font>
+		<Location>
+			<X>2</X>
+			<Y>20</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
+		<ButtonDrawTemplate>
+			<Normal>A_HotButton1Normal</Normal>
+			<Pressed>A_HotButton1Pressed</Pressed>
+			<Flyby>A_HotButton1Flyby</Flyby>
+			<Disabled>A_HotButton1Disabled</Disabled>
+			<PressedFlyby>A_HotButton1PressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+	</Button>
+	<!-- -->
+	<InvSlot item = "HB_InvSlot1">
+		<ScreenID>HB_InvSlot1</ScreenID>
+		<EQType>-1</EQType>
+		<Background>A_RecessedBox</Background>
+		<Location>
+			<X>2</X>
+			<Y>20</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>40</CY>
+		</Size>
+	</InvSlot>
+	<!-- -->
+	<SpellGem item = "HB_SpellGem1">
+		<ScreenID>HB_SpellGem1</ScreenID>
+		<SpellIconOffsetX>8</SpellIconOffsetX>
+		<SpellIconOffsetY>4</SpellIconOffsetY>
+		<Location>
+			<X>2</X>
+			<Y>24</Y>
+		</Location>
+		<Size>
+			<CX>40</CX>
+			<CY>32</CY>
+		</Size>
+		<SpellGemDrawTemplate>
+			<Holder>A_SpellGemHolder</Holder>
+			<Background>A_SpellGemBackground</Background>
+			<Highlight>A_SpellGemHighlight</Highlight>
+		</SpellGemDrawTemplate>
+	</SpellGem>
+	<!-- -->
+</XML>

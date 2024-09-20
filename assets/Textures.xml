@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <!-- -->
+  <TextureInfo item="assets/Empty.png">
+    <Size>
+      <CX>2</CX>
+      <CY>2</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="assets/WindowPieces.tga">
+    <Size>
+      <CX>512</CX>
+      <CY>512</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="assets/Middle.tga">
+    <Size>
+      <CX>4</CX>
+      <CY>4</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="assets/MiddleBlue.tga">
+    <Size>
+      <CX>4</CX>
+      <CY>4</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="assets/ScrollbarGutter.tga">
+    <Size>
+      <CX>15</CX>
+      <CY>15</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="window_pieces06.tga">
+    <Size>
+      <CX>256</CX>
+      <CY>256</CY>
+    </Size>
+  </TextureInfo>
+  <TextureInfo item="window_pieces07.tga">
+    <Size>
+      <CX>256</CX>
+      <CY>256</CY>
+    </Size>
+  </TextureInfo>
+  <!-- -->
+</XML>

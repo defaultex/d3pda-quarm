@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<!-- -->
+	<Editbox item="CW_ChatInput">
+		<ScreenID>CWChatInput</ScreenID>
+		<DrawTemplate>WDT_SmallBlueBorder</DrawTemplate>
+		<Style_Transparent>true</Style_Transparent>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<TopAnchorOffset>21</TopAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<BottomAnchorOffset>0</BottomAnchorOffset>
+	</Editbox>
+	<STMLbox item="CW_ChatOutput">
+		<ScreenID>CWChatOutput</ScreenID>
+		<DrawTemplate>WDT_SmallBlueBorder</DrawTemplate>
+		<Style_VScroll>true</Style_VScroll>
+		<Style_Border>true</Style_Border>
+		<Style_Transparent>true</Style_Transparent>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<TopAnchorOffset>1</TopAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<BottomAnchorOffset>22</BottomAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+	</STMLbox>
+	<Screen item="ChatWindow">
+		<DrawTemplate>WDT_SmallBlueBorder</DrawTemplate>
+		<Font>2</Font>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Escapable>false</Escapable>
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>95</X>
+			<Y>280</Y>
+		</Location>
+		<Size>
+			<CX>421</CX>
+			<CY>200</CY>
+		</Size>
+		<Pieces>CW_ChatOutput</Pieces>
+		<Pieces>CW_ChatInput</Pieces>
+	</Screen>
+	<!-- -->
+</XML>

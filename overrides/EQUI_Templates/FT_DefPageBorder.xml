@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+    <FrameTemplate item="FT_DefPageBorder">
+        <TopLeft>D3PDA_SmallGreenBorder_TopLeft</TopLeft>
+        <Top>D3PDA_SmallGreenBorder_Top</Top>
+        <TopRight>D3PDA_SmallGreenBorder_TopRight</TopRight>
+        <RightTop>D3PDA_SmallGreenBorder_RightTop</RightTop>
+        <Right>D3PDA_SmallGreenBorder_Right</Right>
+        <RightBottom>D3PDA_SmallGreenBorder_RightBottom</RightBottom>
+        <BottomRight>D3PDA_SmallGreenBorder_BottomRight</BottomRight>
+        <Bottom>D3PDA_SmallGreenBorder_Bottom</Bottom>
+        <BottomLeft>D3PDA_SmallGreenBorder_BottomLeft</BottomLeft>
+        <LeftTop>D3PDA_SmallGreenBorder_LeftTop</LeftTop>
+        <Left>D3PDA_SmallGreenBorder_Left</Left>
+        <LeftBottom>D3PDA_SmallGreenBorder_LeftBottom</LeftBottom>
+    </FrameTemplate>
+
+    <FrameTemplate item="FT_ChatPageBorder">
+        <TopLeft>D3PDA_Empty</TopLeft>
+        <Top>D3PDA_Empty</Top>
+        <TopRight>D3PDA_Empty</TopRight>
+        <RightTop>D3PDA_SmallBlueBorder_RightTop</RightTop>
+        <Right>D3PDA_SmallBlueBorder_Right</Right>
+        <RightBottom>D3PDA_SmallBlueBorder_RightBottom</RightBottom>
+        <BottomRight>D3PDA_SmallBlueBorder_BottomRight</BottomRight>
+        <Bottom>D3PDA_SmallBlueBorder_Bottom</Bottom>
+        <BottomLeft>D3PDA_SmallBlueBorder_BottomLeft</BottomLeft>
+        <LeftTop>D3PDA_SmallBlueBorder_LeftTop</LeftTop>
+        <Left>D3PDA_SmallBlueBorder_Left</Left>
+        <LeftBottom>D3PDA_SmallBlueBorder_LeftBottom</LeftBottom>
+    </FrameTemplate>
+
+</XML>

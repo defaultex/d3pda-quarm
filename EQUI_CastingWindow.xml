@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<!-- -->
+	<Screen item="CastingWindow">
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>true</Style_Transparent>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>false</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Location>
+			<X>22</X>
+			<Y>232</Y>
+		</Location>
+		<Size>
+			<CX>153</CX>
+			<CY>29</CY>
+		</Size>
+	</Screen>
+	<!-- -->
+</XML>

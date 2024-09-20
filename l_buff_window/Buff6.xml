@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Button item="BW_Buff6_Button">
+        <ScreenID>Buff6</ScreenID>
+        <Font>3</Font>
+        <ButtonDrawTemplate>
+            <Normal>BlueIconBackground</Normal>
+            <NormalDecal>BuffIcons</NormalDecal>
+        </ButtonDrawTemplate>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>35</RightAnchorOffset>
+        <BottomAnchorOffset>34</BottomAnchorOffset>
+        <DecalOffset>
+            <X>2</X>
+            <Y>2</Y>
+        </DecalOffset>
+        <DecalSize>
+            <CX>30</CX>
+            <CY>30</CY>
+        </DecalSize>
+    </Button>
+    <!-- -->
+    <Label item="BW_Buff6_Label">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_TL">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>1</LeftAnchorOffset>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_T">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <TopAnchorOffset>0</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_TR">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>3</LeftAnchorOffset>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_BL">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>1</LeftAnchorOffset>
+        <TopAnchorOffset>3</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_B">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <TopAnchorOffset>4</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_BR">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>3</LeftAnchorOffset>
+        <TopAnchorOffset>3</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_L">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>0</LeftAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff6_Label_R">
+        <Font>3</Font>
+        <EQType>51</EQType>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>4</LeftAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <!-- -->
+</XML>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <WindowDrawTemplate item="WDT_IWnd_Outer">
+        <Background>assets/Empty.png</Background>
+        <Border>
+            <TopLeft>D3PDA_IWnd_Item0</TopLeft>
+            <LeftTop>D3PDA_IWnd_Item1</LeftTop>
+            <LeftBottom>D3PDA_IWnd_ItemNminus1</LeftBottom>
+            <BottomLeft>D3PDA_IWnd_ItemN</BottomLeft>
+            <OverlapLeft>20</OverlapLeft>
+            <!-- D3PDA_IWnd_Item0.y -->
+            <OverlapTop>30</OverlapTop>
+            <!-- D3PDA_IWnd_ItemN.y -->
+            <OverlapBottom>30</OverlapBottom>
+        </Border>
+    </WindowDrawTemplate>
+    <WindowDrawTemplate item="WDT_IWnd_Outer_SerifTop">
+        <Background>assets/Empty.png</Background>
+        <Border>
+            <TopLeft>D3PDA_IWnd_Item0_Serif</TopLeft>
+            <LeftTop>D3PDA_IWnd_Item1</LeftTop>
+            <LeftBottom>D3PDA_IWnd_ItemNminus1</LeftBottom>
+            <BottomLeft>D3PDA_IWnd_ItemN</BottomLeft>
+            <OverlapLeft>20</OverlapLeft>
+            <!-- D3PDA_IWnd_Item0.y -->
+            <OverlapTop>30</OverlapTop>
+            <!-- D3PDA_IWnd_ItemN.y -->
+            <OverlapBottom>30</OverlapBottom>
+        </Border>
+    </WindowDrawTemplate>
+    <WindowDrawTemplate item="WDT_IWnd_Outer_SerifBottom">
+        <Background>assets/Empty.png</Background>
+        <Border>
+            <TopLeft>D3PDA_IWnd_Item0</TopLeft>
+            <LeftTop>D3PDA_IWnd_Item1</LeftTop>
+            <LeftBottom>D3PDA_IWnd_ItemNminus1</LeftBottom>
+            <BottomLeft>D3PDA_IWnd_ItemN_Serif</BottomLeft>
+            <OverlapLeft>20</OverlapLeft>
+            <!-- D3PDA_IWnd_Item0.y -->
+            <OverlapTop>30</OverlapTop>
+            <!-- D3PDA_IWnd_ItemN.y -->
+            <OverlapBottom>30</OverlapBottom>
+        </Border>
+    </WindowDrawTemplate>
+    <WindowDrawTemplate item="WDT_IWnd_Outer_SerifBoth">
+        <Background>assets/Empty.png</Background>
+        <Border>
+            <TopLeft>D3PDA_IWnd_Item0_Serif</TopLeft>
+            <LeftTop>D3PDA_IWnd_Item1</LeftTop>
+            <LeftBottom>D3PDA_IWnd_ItemNminus1</LeftBottom>
+            <BottomLeft>D3PDA_IWnd_ItemN_Serif</BottomLeft>
+            <OverlapLeft>20</OverlapLeft>
+            <!-- D3PDA_IWnd_Item0.y -->
+            <OverlapTop>30</OverlapTop>
+            <!-- D3PDA_IWnd_ItemN.y -->
+            <OverlapBottom>30</OverlapBottom>
+        </Border>
+    </WindowDrawTemplate>
+    <WindowDrawTemplate item="WDT_IWnd_Inner2">
+        <Background>assets/Empty.png</Background>
+        <Border>
+            <TopLeft>D3PDA_IWnd_ItemI</TopLeft>
+            <BottomLeft>D3PDA_IWnd_ItemI</BottomLeft>
+            <OverlapLeft>20</OverlapLeft>
+            <!-- D3PDA_IWnd_Item0.y -->
+            <OverlapTop>30</OverlapTop>
+            <!-- D3PDA_IWnd_ItemN.y -->
+            <OverlapBottom>30</OverlapBottom>
+        </Border>
+    </WindowDrawTemplate>
+    <WindowDrawTemplate item="WDT_IWnd_Inner4">
+        <Background>assets/Empty.png</Background>
+        <Border>
+            <TopLeft>D3PDA_IWnd_ItemI</TopLeft>
+            <LeftTop>D3PDA_IWnd_ItemI</LeftTop>
+            <LeftBottom>D3PDA_IWnd_ItemI</LeftBottom>
+            <BottomLeft>D3PDA_IWnd_ItemI</BottomLeft>
+            <OverlapLeft>20</OverlapLeft>
+            <!-- D3PDA_IWnd_Item0.y -->
+            <OverlapTop>30</OverlapTop>
+            <!-- D3PDA_IWnd_ItemN.y -->
+            <OverlapBottom>30</OverlapBottom>
+        </Border>
+    </WindowDrawTemplate>
+    <!-- -->
+    <StaticAnimation item="IWnd_Left_InstanceAnim">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Style_TransparentControl>true</Style_TransparentControl>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <!-- -->
+</XML>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_IWnd_Item0">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>109</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Item1">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>140</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_ItemI">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>171</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_ItemNminus1">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>202</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_ItemN">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>233</Y>
+            </Location>
+            <Size>
+                <CX>20</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <Ui2DAnimation item="D3PDA_IWnd_Item0_Serif">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>264</Y>
+            </Location>
+            <Size>
+                <CX>42</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_ItemN_Serif">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>0</X>
+                <Y>295</Y>
+            </Location>
+            <Size>
+                <CX>42</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_Header">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>42</X>
+                <Y>109</Y>
+            </Location>
+            <Size>
+                <CX>179</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- NOTE: EQ displays this even when nothing is memorized if the gem is unlocked -->
+    <Ui2DAnimation item="D3PDA_IWnd_GemHolder">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>42</X>
+                <Y>140</Y>
+            </Location>
+            <Size>
+                <CX>179</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- NOTE: EQ tints this animation to match the spell's type (self, target, ae, pbae, etc) -->
+    <Ui2DAnimation item="D3PDA_IWnd_GemBackground">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>42</X>
+                <Y>171</Y>
+            </Location>
+            <Size>
+                <CX>179</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_GaugeHolder">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>86</X>
+                <Y>264</Y>
+            </Location>
+            <Size>
+                <CX>32</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_IWnd_StatHolder">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>86</X>
+                <Y>295</Y>
+            </Location>
+            <Size>
+                <CX>64</CX>
+                <CY>30</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!-- -->
+    <StaticAnimation item="D3PDA_IWnd_GemHolderAnim">
+        <Animation>D3PDA_IWnd_GemHolder</Animation>
+        <Size>
+            <CX>179</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="D3PDA_IWnd_StatHolderAnim">
+        <Animation>D3PDA_IWnd_StatHolder</Animation>
+        <Size>
+            <CX>64</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="D3PDA_IWnd_GaugeHolderAnim">
+        <Animation>D3PDA_IWnd_GaugeHolder</Animation>
+        <Size>
+            <CX>32</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="D3PDA_IWnd_HeaderAnim">
+        <Animation>D3PDA_IWnd_Header</Animation>
+        <Size>
+            <CX>179</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <!-- -->
+</XML>

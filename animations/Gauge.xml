@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <Ui2DAnimation item="D3PDA_Gauge_Background">
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>109</X>
+        <Y>10</Y>
+      </Location>
+      <Size>
+        <CX>162</CX>
+        <CY>12</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Gauge_Fill">
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>109</X>
+        <Y>23</Y>
+      </Location>
+      <Size>
+        <CX>162</CX>
+        <CY>12</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Gauge_LinesFill">
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>109</X>
+        <Y>36</Y>
+      </Location>
+      <Size>
+        <CX>162</CX>
+        <CY>12</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_Gauge_CastBackground">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>42</X>
+        <Y>202</Y>
+      </Location>
+      <Size>
+        <CX>155</CX>
+        <CY>30</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Gauge_CastFill">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>42</X>
+        <Y>233</Y>
+      </Location>
+      <Size>
+        <CX>155</CX>
+        <CY>30</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+  <Ui2DAnimation item="D3PDA_Gauge_Mirror_CastBackground">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>198</X>
+        <Y>202</Y>
+      </Location>
+      <Size>
+        <CX>155</CX>
+        <CY>30</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Gauge_Mirror_CastFill">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>198</X>
+        <Y>233</Y>
+      </Location>
+      <Size>
+        <CX>155</CX>
+        <CY>30</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <!-- -->
+</XML>

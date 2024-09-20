@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <ButtonDrawTemplate item="BDT_HotButton1">
+        <Normal>A_HotButton1Normal</Normal>
+        <Pressed>A_HotButton1Pressed</Pressed>
+        <Flyby>A_HotButton1Flyby</Flyby>
+        <Disabled>A_HotButton1Disabled</Disabled>
+        <PressedFlyby>A_HotButton1PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton2">
+        <Normal>A_HotButton2Normal</Normal>
+        <Pressed>A_HotButton2Pressed</Pressed>
+        <Flyby>A_HotButton2Flyby</Flyby>
+        <Disabled>A_HotButton2Disabled</Disabled>
+        <PressedFlyby>A_HotButton2PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton3">
+        <Normal>A_HotButton3Normal</Normal>
+        <Pressed>A_HotButton3Pressed</Pressed>
+        <Flyby>A_HotButton3Flyby</Flyby>
+        <Disabled>A_HotButton3Disabled</Disabled>
+        <PressedFlyby>A_HotButton3PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton4">
+        <Normal>A_HotButton4Normal</Normal>
+        <Pressed>A_HotButton4Pressed</Pressed>
+        <Flyby>A_HotButton4Flyby</Flyby>
+        <Disabled>A_HotButton4Disabled</Disabled>
+        <PressedFlyby>A_HotButton4PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton5">
+        <Normal>A_HotButton5Normal</Normal>
+        <Pressed>A_HotButton5Pressed</Pressed>
+        <Flyby>A_HotButton5Flyby</Flyby>
+        <Disabled>A_HotButton5Disabled</Disabled>
+        <PressedFlyby>A_HotButton5PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton6">
+        <Normal>A_HotButton6Normal</Normal>
+        <Pressed>A_HotButton6Pressed</Pressed>
+        <Flyby>A_HotButton6Flyby</Flyby>
+        <Disabled>A_HotButton6Disabled</Disabled>
+        <PressedFlyby>A_HotButton6PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton7">
+        <Normal>A_HotButton7Normal</Normal>
+        <Pressed>A_HotButton7Pressed</Pressed>
+        <Flyby>A_HotButton7Flyby</Flyby>
+        <Disabled>A_HotButton7Disabled</Disabled>
+        <PressedFlyby>A_HotButton7PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton8">
+        <Normal>A_HotButton8Normal</Normal>
+        <Pressed>A_HotButton8Pressed</Pressed>
+        <Flyby>A_HotButton8Flyby</Flyby>
+        <Disabled>A_HotButton8Disabled</Disabled>
+        <PressedFlyby>A_HotButton8PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton9">
+        <Normal>A_HotButton9Normal</Normal>
+        <Pressed>A_HotButton9Pressed</Pressed>
+        <Flyby>A_HotButton9Flyby</Flyby>
+        <Disabled>A_HotButton9Disabled</Disabled>
+        <PressedFlyby>A_HotButton9PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton10">
+        <Normal>A_HotButton10Normal</Normal>
+        <Pressed>A_HotButton10Pressed</Pressed>
+        <Flyby>A_HotButton10Flyby</Flyby>
+        <Disabled>A_HotButton10Disabled</Disabled>
+        <PressedFlyby>A_HotButton10PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton11">
+        <Normal>A_HotButton11Normal</Normal>
+        <Pressed>A_HotButton11Pressed</Pressed>
+        <Flyby>A_HotButton11Flyby</Flyby>
+        <Disabled>A_HotButton11Disabled</Disabled>
+        <PressedFlyby>A_HotButton11PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <ButtonDrawTemplate item="BDT_HotButton12">
+        <Normal>A_HotButton12Normal</Normal>
+        <Pressed>A_HotButton12Pressed</Pressed>
+        <Flyby>A_HotButton12Flyby</Flyby>
+        <Disabled>A_HotButton12Disabled</Disabled>
+        <PressedFlyby>A_HotButton12PressedFlyby</PressedFlyby>
+    </ButtonDrawTemplate>
+    <!-- -->
+</XML>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Button item="BW_Buff8_Button">
+        <ScreenID>Buff8</ScreenID>
+        <Font>3</Font>
+        <ButtonDrawTemplate>
+            <Normal>BlueIconBackground</Normal>
+            <NormalDecal>BuffIcons</NormalDecal>
+        </ButtonDrawTemplate>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>38</LeftAnchorOffset>
+        <BottomAnchorOffset>34</BottomAnchorOffset>
+        <DecalOffset>
+            <X>2</X>
+            <Y>2</Y>
+        </DecalOffset>
+        <DecalSize>
+            <CX>30</CX>
+            <CY>30</CY>
+        </DecalSize>
+    </Button>
+    <!-- -->
+    <Label item="BW_Buff8_Label">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_TL">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>1</RightAnchorOffset>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_T">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>0</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_TR">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>3</RightAnchorOffset>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_BL">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>1</RightAnchorOffset>
+        <TopAnchorOffset>3</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_B">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>4</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_BR">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>3</RightAnchorOffset>
+        <TopAnchorOffset>3</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_L">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>0</RightAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <Label item="BW_Buff8_Label_R">
+        <Font>3</Font>
+        <EQType>53</EQType>
+        <AlignRight>true</AlignRight>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <RightAnchorOffset>4</RightAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <TextColor>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+        </TextColor>
+    </Label>
+    <!-- -->
+</XML>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <!-- -->
+    <Composite>
+        <Include>overrides\EQUI_Templates\WDT_Def.xml</Include>
+        <Include>overrides\EQUI_Templates\WDT_Def2.xml</Include>
+        <Include>overrides\EQUI_Templates\WDT_Inner.xml</Include>
+        <Include>overrides\EQUI_Templates\WDT_Rounded.xml</Include>
+        <Include>overrides\EQUI_Templates\WDT_RoundedNoTitle.xml</Include>
+        <Include>overrides\EQUI_Templates\BDT_Combo.xml</Include>
+        <Include>overrides\EQUI_Templates\FT_DefPageBorder.xml</Include>
+        <Include>overrides\EQUI_Templates\FT_DefTabBorder.xml</Include>
+    </Composite>
+    <!-- -->
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- This file only contains unmodified elements -->
+    <SliderDrawTemplate item="SDT_DefSlider">
+        <Thumb>
+            <Normal>A_SliderThumbNormal</Normal>
+            <Pressed>A_SliderThumbPressed</Pressed>
+            <Flyby>A_SliderThumbFlyby</Flyby>
+            <Disabled>A_SliderThumbDisabled</Disabled>
+            <PressedFlyby>A_SliderThumbPressedFlyby</PressedFlyby>
+        </Thumb>
+        <Background>A_SliderBackground</Background>
+        <EndCapRight>A_SliderEndCapRight</EndCapRight>
+        <EndCapLeft>A_SliderEndCapLeft</EndCapLeft>
+    </SliderDrawTemplate>
+    <FrameTemplate item="Header_Listbox">
+        <Right>A_ListHeaderRight</Right>
+        <Left>A_ListHeaderLeft</Left>
+        <Middle>A_ListHeaderMiddle</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+    </FrameTemplate>
+    <FrameTemplate item="Header_PlatCoin">
+        <Middle>A_PlatinumCoin</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+    </FrameTemplate>
+    <FrameTemplate item="Header_GoldCoin">
+        <Middle>A_GoldCoin</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+    </FrameTemplate>
+    <FrameTemplate item="Header_SilvCoin">
+        <Middle>A_SilverCoin</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+    </FrameTemplate>
+    <FrameTemplate item="Header_CoppCoin">
+        <Middle>A_CopperCoin</Middle>
+        <OverlapLeft>0</OverlapLeft>
+        <OverlapTop>0</OverlapTop>
+        <OverlapRight>0</OverlapRight>
+        <OverlapBottom>0</OverlapBottom>
+    </FrameTemplate>
+    <!-- -->
+</XML>

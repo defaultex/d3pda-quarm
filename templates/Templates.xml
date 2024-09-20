@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Composite>
+        <Include>templates\IWnd.xml</Include>
+		<Include>templates\WDT_Blank.xml</Include>
+		<Include>templates\WDT_LargeBorder.xml</Include>
+		<Include>templates\WDT_SmallBlueBorder.xml</Include>
+		<Include>templates\WDT_SmallGreenBorder.xml</Include>
+		<Include>templates\BDT_HotButton.xml</Include>
+    </Composite>
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+</XML>
