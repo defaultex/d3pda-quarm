@@ -3,25 +3,24 @@
 	<!-- -->
 	<Button item = "HB_Button1">
 		<ScreenID>HB_Button1</ScreenID>
-		<Text>1</Text>
 		<Font>1</Font>
 		<Location>
-			<X>2</X>
-			<Y>20</Y>
+			<X>0</X>
+			<Y>10</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
 		<TextColor>
 			<R>255</R>
 			<G>255</G>
 			<B>255</B>
 		</TextColor>
-		<DecalSize>
-			<CX>40</CX>
-			<CY>40</CY>
-		</DecalSize>
 		<ButtonDrawTemplate>
 			<Normal>A_HotButton1Normal</Normal>
 			<Pressed>A_HotButton1Pressed</Pressed>
@@ -32,12 +31,12 @@
 	</Button>
 	<!-- -->
 	<InvSlot item = "HB_InvSlot1">
+		<Background>A_RecessedBox</Background>
 		<ScreenID>HB_InvSlot1</ScreenID>
 		<EQType>-1</EQType>
-		<Background>A_RecessedBox</Background>
 		<Location>
-			<X>2</X>
-			<Y>20</Y>
+			<X>0</X>
+			<Y>10</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
@@ -50,8 +49,8 @@
 		<SpellIconOffsetX>8</SpellIconOffsetX>
 		<SpellIconOffsetY>4</SpellIconOffsetY>
 		<Location>
-			<X>2</X>
-			<Y>24</Y>
+			<X>0</X>
+			<Y>15</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>

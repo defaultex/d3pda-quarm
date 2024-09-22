@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Button item="AMP_WhoButton">
+        <ScreenID>AMP_WhoButton</ScreenID>
+        <Text>Who</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>2</TopAnchorOffset>
+        <BottomAnchorOffset>22</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Button item="AMP_InviteButton">
+        <ScreenID>AMP_InviteButton</ScreenID>
+        <Text>Invite</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>24</TopAnchorOffset>
+        <BottomAnchorOffset>44</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <Button item="AMP_FollowButton">
+        <ScreenID>AMP_FollowButton</ScreenID>
+        <Text>Follow</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>24</TopAnchorOffset>
+        <BottomAnchorOffset>44</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Button item="AMP_DisbandButton">
+        <ScreenID>AMP_DisbandButton</ScreenID>
+        <Text>Disband</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>46</TopAnchorOffset>
+        <BottomAnchorOffset>66</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Button item="AMP_CampButton">
+        <ScreenID>AMP_CampButton</ScreenID>
+        <Text>Camp</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>68</TopAnchorOffset>
+        <BottomAnchorOffset>88</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Button item="AMP_SitButton">
+        <ScreenID>AMP_SitButton</ScreenID>
+        <Text>Sit</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>90</TopAnchorOffset>
+        <BottomAnchorOffset>110</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <Button item="AMP_StandButton">
+        <ScreenID>AMP_StandButton</ScreenID>
+        <Text>Stand</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>90</TopAnchorOffset>
+        <BottomAnchorOffset>110</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Button item="AMP_RunButton">
+        <ScreenID>AMP_RunButton</ScreenID>
+        <Text>Run</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>112</TopAnchorOffset>
+        <BottomAnchorOffset>132</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <Button item="AMP_WalkButton">
+        <ScreenID>AMP_WalkButton</ScreenID>
+        <Text>Walk</Text>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>2</LeftAnchorOffset>
+        <RightAnchorOffset>2</RightAnchorOffset>
+        <TopAnchorOffset>112</TopAnchorOffset>
+        <BottomAnchorOffset>132</BottomAnchorOffset>
+        <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+        </TextColor>
+        <ButtonDrawTemplate>
+            <Normal>A_BtnNormal</Normal>
+            <Pressed>A_BtnPressed</Pressed>
+            <Flyby>A_BtnFlyby</Flyby>
+            <Disabled>A_BtnDisabled</Disabled>
+            <PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+        </ButtonDrawTemplate>
+    </Button>
+    <!-- -->
+    <Page item="ActionsMainPage">
+        <TooltipReference>Main Page</TooltipReference>
+        <ScreenID>ActionsMainPage</ScreenID>
+        <DrawTemplate>WDT_Def</DrawTemplate>
+        <TabIcon>A_MainTabIcon</TabIcon>
+        <TabIconActive>A_MainTabActiveIcon</TabIconActive>
+        <Pieces>AMP_WhoButton</Pieces>
+        <Pieces>AMP_InviteButton</Pieces>
+        <Pieces>AMP_FollowButton</Pieces>
+        <Pieces>AMP_DisbandButton</Pieces>
+        <Pieces>AMP_CampButton</Pieces>
+        <Pieces>AMP_SitButton</Pieces>
+        <Pieces>AMP_StandButton</Pieces>
+        <Pieces>AMP_RunButton</Pieces>
+        <Pieces>AMP_WalkButton</Pieces>
+    </Page>
+    <!-- -->
+</XML>

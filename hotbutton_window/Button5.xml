@@ -4,25 +4,23 @@
 	<Button item = "HB_Button5">
 		<ScreenID>HB_Button5</ScreenID>
 		<Font>1</Font>
-		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>170</X>
-			<Y>20</Y>
+			<X>160</X>
+			<Y>10</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Text>5</Text>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
 		<TextColor>
 			<R>255</R>
 			<G>255</G>
 			<B>255</B>
 		</TextColor>
-		<DecalSize>
-			<CX>40</CX>
-			<CY>40</CY>
-		</DecalSize>
 		<ButtonDrawTemplate>
 			<Normal>A_HotButton5Normal</Normal>
 			<Pressed>A_HotButton5Pressed</Pressed>
@@ -33,29 +31,26 @@
 	</Button>
 	<!-- -->
 	<InvSlot item = "HB_InvSlot5">
+		<Background>A_RecessedBox</Background>
 		<ScreenID>HB_InvSlot5</ScreenID>
-		<RelativePosition>true</RelativePosition>
+		<EQType>-1</EQType>
 		<Location>
-			<X>170</X>
-			<Y>20</Y>
+			<X>160</X>
+			<Y>10</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
 			<CY>40</CY>
 		</Size>
-		<Background>A_RecessedBox</Background>
-		<EQType>-1</EQType>
-		<Style_VScroll>false</Style_VScroll>
-		<Style_HScroll>false</Style_HScroll>
-		<Style_Transparent>false</Style_Transparent>
 	</InvSlot>
 	<!-- -->
 	<SpellGem item = "HB_SpellGem5">
 		<ScreenID>HB_SpellGem5</ScreenID>
-		<RelativePosition>true</RelativePosition>
+		<SpellIconOffsetX>8</SpellIconOffsetX>
+		<SpellIconOffsetY>4</SpellIconOffsetY>
 		<Location>
-			<X>170</X>
-			<Y>24</Y>
+			<X>160</X>
+			<Y>15</Y>
 		</Location>
 		<Size>
 			<CX>40</CX>
@@ -66,8 +61,6 @@
 			<Background>A_SpellGemBackground</Background>
 			<Highlight>A_SpellGemHighlight</Highlight>
 		</SpellGemDrawTemplate>
-		<SpellIconOffsetX>8</SpellIconOffsetX>
-		<SpellIconOffsetY>4</SpellIconOffsetY>
 	</SpellGem>
 	<!-- -->
 </XML>

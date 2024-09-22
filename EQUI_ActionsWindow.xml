@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<!-- -->
+	<Composite>
+		<Include>actions_window\MainPage.xml</Include>
+		<Include>actions_window\AbilitiesPage.xml</Include>
+		<Include>actions_window\CombatPage.xml</Include>
+		<Include>actions_window\SocialsPage.xml</Include>
+	</Composite>
+	<!-- -->
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<!-- -->
+    <TabBox item="ACTW_ActionsSubwindows">
+        <ScreenID>ACTW_ActionsSubwindows</ScreenID>
+        <TabBorderTemplate>FT_DefTabBorder</TabBorderTemplate>
+        <PageBorderTemplate>FT_DefPageBorder</PageBorderTemplate>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>true</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <TopAnchorToTop>true</TopAnchorToTop>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <TopAnchorOffset>1</TopAnchorOffset>
+        <Pages>ActionsMainPage</Pages>
+        <Pages>ActionsAbilitiesPage</Pages>
+        <Pages>ActionsCombatPage</Pages>
+        <Pages>ActionsSocialsPage</Pages>
+    </TabBox>
+    <Screen item="ActionsWindow">
+        <Text>Actions</Text>
+        <DrawTemplate>WDT_Rounded</DrawTemplate>
+        <Style_Titlebar>true</Style_Titlebar>
+        <Style_Closebox>true</Style_Closebox>
+        <Style_Minimizebox>true</Style_Minimizebox>
+        <Style_Border>true</Style_Border>
+        <Escapable>false</Escapable>
+        <RelativePosition>false</RelativePosition>
+        <Location>
+            <X>516</X>
+            <Y>292</Y>
+        </Location>
+        <Size>
+            <CX>118</CX>
+            <CY>187</CY>
+        </Size>
+        <Pieces>ACTW_ActionsSubwindows</Pieces>
+    </Screen>
+    <!-- -->
+</XML>

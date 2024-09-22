@@ -210,8 +210,12 @@
             <BottomLeft>D3PDA_LargeBorder_BottomLeft</BottomLeft>
             <Bottom>D3PDA_LargeBorder_Bottom</Bottom>
             <BottomRight>D3PDA_LargeBorder_BottomRight</BottomRight>
+            <LeftTop>D3PDA_AltLargeBorder_Left</LeftTop>
             <Left>D3PDA_AltLargeBorder_Left</Left>
+            <LeftBottom>D3PDA_AltLargeBorder_Left</LeftBottom>
+            <RightTop>D3PDA_AltLargeBorder_Right</RightTop>
             <Right>D3PDA_AltLargeBorder_Right</Right>
+            <RightBottom>D3PDA_AltLargeBorder_Right</RightBottom>
             <OverlapTop>10</OverlapTop>
         </Border>
         <Titlebar>
