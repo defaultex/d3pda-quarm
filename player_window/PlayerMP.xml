@@ -467,7 +467,7 @@
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>24</LeftAnchorOffset>
-        <RightAnchorOffset>68</RightAnchorOffset>
+        <RightAnchorOffset>24</RightAnchorOffset>
         <TextColor>
             <R>180</R>
             <G>180</G>

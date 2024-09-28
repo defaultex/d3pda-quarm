@@ -466,7 +466,12 @@
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>24</LeftAnchorOffset>
-        <RightAnchorOffset>68</RightAnchorOffset>
+        <RightAnchorOffset>24</RightAnchorOffset>
+        <TextColor>
+            <R>180</R>
+            <G>180</G>
+            <B>180</B>
+        </TextColor>
     </Label>
     <Gauge item="Player_HP">
         <ScreenID>PlayerHP</ScreenID>

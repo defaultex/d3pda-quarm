@@ -191,6 +191,357 @@
 			<PressedFlyby>A_HelpBtnPressedFlyby</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
+	<!-- Armor Slots -->
+	<InvSlot item = "SW_EarSlotL">
+		<Background>A_InvEar</Background>
+		<EQType>1</EQType>
+		<Location>
+			<X>0</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_EarSlotR">
+		<Background>A_InvEar</Background>
+		<EQType>4</EQType>
+		<Location>
+			<X>20</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_HeadSlot">
+		<Background>A_InvHead</Background>
+		<EQType>2</EQType>
+		<Location>
+			<X>40</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_FaceSlot">
+		<Background>A_InvFace</Background>
+		<EQType>3</EQType>
+		<Location>
+			<X>60</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_NeckSlot">
+		<Background>A_InvNeck</Background>
+		<EQType>5</EQType>
+		<Location>
+			<X>80</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_ShouldersSlot">
+		<Background>A_InvShoulders</Background>
+		<EQType>6</EQType>
+		<Location>
+			<X>100</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_ArmsSlot">
+		<Background>A_InvArms</Background>
+		<EQType>7</EQType>
+		<Location>
+			<X>120</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_BackSlot">
+		<Background>A_InvAboutBody</Background>
+		<EQType>8</EQType>
+		<Location>
+			<X>140</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_RingSlotL">
+		<Background>A_InvRing</Background>
+		<EQType>15</EQType>
+		<Location>
+			<X>0</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_RingSlotR">
+		<Background>A_InvRing</Background>
+		<EQType>16</EQType>
+		<Location>
+			<X>20</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_ChestSlot">
+		<Background>A_InvChest</Background>
+		<EQType>17</EQType>
+		<Location>
+			<X>40</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_LegsSlot">
+		<Background>A_InvLegs</Background>
+		<EQType>18</EQType>
+		<Location>
+			<X>60</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_FeetSlot">
+		<Background>A_InvFeet</Background>
+		<EQType>19</EQType>
+		<Location>
+			<X>80</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_WaistSlot">
+		<Background>A_InvWaist</Background>
+		<EQType>20</EQType>
+		<Location>
+			<X>100</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_WristSlotL">
+		<Background>A_InvWrist</Background>
+		<EQType>9</EQType>
+		<Location>
+			<X>120</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_WristSlotR">
+		<Background>A_InvWrist</Background>
+		<EQType>10</EQType>
+		<Location>
+			<X>140</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_HandsSlot">
+		<Background>A_InvHands</Background>
+		<EQType>12</EQType>
+		<Location>
+			<X>160</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<!-- Weapon Slots -->
+	<InvSlot item = "SW_PrimarySlot">
+		<Background>A_InvPrimary</Background>
+		<EQType>13</EQType>
+		<Location>
+			<X>192</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_SecondarySlot">
+		<Background>A_InvSecondary</Background>
+		<EQType>14</EQType>
+		<Location>
+			<X>212</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_RangeSlot">
+		<Background>A_InvRange</Background>
+		<EQType>11</EQType>
+		<Location>
+			<X>192</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_AmmoSlot">
+		<Background>A_InvAmmo</Background>
+		<EQType>21</EQType>
+		<Location>
+			<X>212</X>
+			<Y>48</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>20</CY>
+		</Size>
+	</InvSlot>
+	<!-- Inventory Slots -->
+	<InvSlot item = "SW_InvSlot0">
+		<Background>A_RecessedBox</Background>
+		<EQType>22</EQType>
+		<Location>
+			<X>0</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot1">
+		<Background>A_RecessedBox</Background>
+		<EQType>23</EQType>
+		<Location>
+			<X>26</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot2">
+		<Background>A_RecessedBox</Background>
+		<EQType>24</EQType>
+		<Location>
+			<X>52</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot3">
+		<Background>A_RecessedBox</Background>
+		<EQType>25</EQType>
+		<Location>
+			<X>78</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot4">
+		<Background>A_RecessedBox</Background>
+		<EQType>26</EQType>
+		<Location>
+			<X>105</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot5">
+		<Background>A_RecessedBox</Background>
+		<EQType>27</EQType>
+		<Location>
+			<X>131</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot6">
+		<Background>A_RecessedBox</Background>
+		<EQType>28</EQType>
+		<Location>
+			<X>157</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
+	<InvSlot item = "SW_InvSlot7">
+		<Background>A_RecessedBox</Background>
+		<EQType>29</EQType>
+		<Location>
+			<X>185</X>
+			<Y>68</Y>
+		</Location>
+		<Size>
+			<CX>26</CX>
+			<CY>26</CY>
+		</Size>
+	</InvSlot>
 	<!-- -->
 	<Screen item = "SelectorWindow">
 		<DrawTemplate>WDT_Rounded</DrawTemplate>
@@ -199,8 +550,9 @@
 		<Style_Border>true</Style_Border>
 		<Size>
 			<CX>236</CX>
-			<CY>38</CY>
+			<CY>108</CY>
 		</Size>
+		<!-- -->
 		<Pieces>SELW_ActionsToggleButton</Pieces>
 		<Pieces>SELW_InventoryToggleButton</Pieces>
 		<Pieces>SELW_OptionsToggleButton</Pieces>
@@ -210,6 +562,38 @@
 		<Pieces>SELW_PetInfoToggleButton</Pieces>
 		<Pieces>SELW_BuffToggleButton</Pieces>
 		<Pieces>SELW_HelpToggleButton</Pieces>
+		<!-- -->
+		<Pieces>SW_EarSlotL</Pieces>
+		<Pieces>SW_HeadSlot</Pieces>
+		<Pieces>SW_FaceSlot</Pieces>
+		<Pieces>SW_EarSlotR</Pieces>
+		<Pieces>SW_NeckSlot</Pieces>
+		<Pieces>SW_ShouldersSlot</Pieces>
+		<Pieces>SW_ArmsSlot</Pieces>
+		<Pieces>SW_BackSlot</Pieces>
+		<Pieces>SW_WristSlotL</Pieces>
+		<Pieces>SW_WristSlotR</Pieces>
+		<Pieces>SW_HandsSlot</Pieces>
+		<Pieces>SW_RingSlotL</Pieces>
+		<Pieces>SW_RingSlotR</Pieces>
+		<Pieces>SW_ChestSlot</Pieces>
+		<Pieces>SW_LegsSlot</Pieces>
+		<Pieces>SW_FeetSlot</Pieces>
+		<Pieces>SW_WaistSlot</Pieces>
+		<Pieces>SW_PrimarySlot</Pieces>
+		<Pieces>SW_SecondarySlot</Pieces>
+		<Pieces>SW_RangeSlot</Pieces>
+		<Pieces>SW_AmmoSlot</Pieces>
+		<!-- -->
+		<Pieces>SW_InvSlot0</Pieces>
+		<Pieces>SW_InvSlot1</Pieces>
+		<Pieces>SW_InvSlot2</Pieces>
+		<Pieces>SW_InvSlot3</Pieces>
+		<Pieces>SW_InvSlot4</Pieces>
+		<Pieces>SW_InvSlot5</Pieces>
+		<Pieces>SW_InvSlot6</Pieces>
+		<Pieces>SW_InvSlot7</Pieces>
+		<!-- -->
 	</Screen>
 	<!-- -->
 </XML>

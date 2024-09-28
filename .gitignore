@@ -1,4 +1,3 @@
-D3PDA.sln
-.generator/bin/*
-.generator/obj/*
-.generator/.editorconfig
+*.editorconfig
+.generator/bin/
+.generator/obj/

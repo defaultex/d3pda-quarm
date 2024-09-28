@@ -1,4 +1,4 @@
-    <InvSlot item = "MW_MerchantSlot[i]">
+    <InvSlot item="MW_MerchantSlot[i]">
         <ScreenID>MW_MerchantSlot[i]</ScreenID>
         <EQType>[i+6000]</EQType>
         <Background>A_RecessedBox</Background>
