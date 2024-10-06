@@ -3,6 +3,7 @@
 	<Composite>
 		<Include>D3PDA.xml</Include>
 		<!-- this must be the last entry to work correctly -->
+		<Include>..\zeal\EQUI_ZealOptions.xml</Include>
 		<Include>..\default\EQUI.xml</Include>
 	</Composite>
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
