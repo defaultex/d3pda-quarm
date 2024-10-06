@@ -1,3 +1,6 @@
+# Special Instruction
+You will need to go into uifiles/zeal and rename EQUI.xml to EQUI.xml.old. As of Zeal 4.9 this file will take precedence over the one provided by any custom UI if it is present.
+
 This is an adaptation of my 'D3PDA' interface for EverQuest compatible with Project Quarm w/ Zeal.
 
 # D3PDA
