@@ -179,8 +179,8 @@ output.ToString() +
     static void Main(string[] args) {
         const string uiroot = @"..";
 
-        //GenerateBuffs($"{uiroot}/l_buff_window/Buff.xml");
-        //GenerateBuffs($"{uiroot}/r_buff_window/Buff.xml");
+        GenerateBuffs($"{uiroot}/l_buff_window/Buff.xml");
+        GenerateBuffs($"{uiroot}/r_buff_window/Buff.xml");
         //GenerateGroup($"{uiroot}/group_window/Group.xml");
         //GenerateSpells($"{uiroot}/spell_window/Spell.xml");
         //GenerateStats($"{uiroot}/status_window/StatL.xml", StatListL);
