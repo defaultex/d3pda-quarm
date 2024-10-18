@@ -273,15 +273,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff0Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff0Number_OutlineT</Pieces>
-        <Pieces>BW_Buff0Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff0Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff0Number_OutlineB</Pieces>
-        <Pieces>BW_Buff0Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff0Number_OutlineL</Pieces>
-        <Pieces>BW_Buff0Number_OutlineR</Pieces>
-        <Pieces>BW_Buff0Number</Pieces>
         <Pieces>BW_Buff0_Button</Pieces>
         <Pieces>BW_Buff0_Label_Layout</Pieces>
     </Screen>
@@ -295,15 +286,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff1Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff1Number_OutlineT</Pieces>
-        <Pieces>BW_Buff1Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff1Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff1Number_OutlineB</Pieces>
-        <Pieces>BW_Buff1Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff1Number_OutlineL</Pieces>
-        <Pieces>BW_Buff1Number_OutlineR</Pieces>
-        <Pieces>BW_Buff1Number</Pieces>
         <Pieces>BW_Buff1_Button</Pieces>
         <Pieces>BW_Buff1_Label_Layout</Pieces>
     </Screen>
@@ -317,15 +299,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff2Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff2Number_OutlineT</Pieces>
-        <Pieces>BW_Buff2Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff2Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff2Number_OutlineB</Pieces>
-        <Pieces>BW_Buff2Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff2Number_OutlineL</Pieces>
-        <Pieces>BW_Buff2Number_OutlineR</Pieces>
-        <Pieces>BW_Buff2Number</Pieces>
         <Pieces>BW_Buff2_Button</Pieces>
         <Pieces>BW_Buff2_Label_Layout</Pieces>
     </Screen>
@@ -339,15 +312,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff3Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff3Number_OutlineT</Pieces>
-        <Pieces>BW_Buff3Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff3Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff3Number_OutlineB</Pieces>
-        <Pieces>BW_Buff3Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff3Number_OutlineL</Pieces>
-        <Pieces>BW_Buff3Number_OutlineR</Pieces>
-        <Pieces>BW_Buff3Number</Pieces>
         <Pieces>BW_Buff3_Button</Pieces>
         <Pieces>BW_Buff3_Label_Layout</Pieces>
     </Screen>
@@ -361,15 +325,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff4Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff4Number_OutlineT</Pieces>
-        <Pieces>BW_Buff4Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff4Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff4Number_OutlineB</Pieces>
-        <Pieces>BW_Buff4Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff4Number_OutlineL</Pieces>
-        <Pieces>BW_Buff4Number_OutlineR</Pieces>
-        <Pieces>BW_Buff4Number</Pieces>
         <Pieces>BW_Buff4_Button</Pieces>
         <Pieces>BW_Buff4_Label_Layout</Pieces>
     </Screen>
@@ -383,15 +338,6 @@
             <CX>175</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff5Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff5Number_OutlineT</Pieces>
-        <Pieces>BW_Buff5Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff5Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff5Number_OutlineB</Pieces>
-        <Pieces>BW_Buff5Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff5Number_OutlineL</Pieces>
-        <Pieces>BW_Buff5Number_OutlineR</Pieces>
-        <Pieces>BW_Buff5Number</Pieces>
         <Pieces>BW_Buff5_Button</Pieces>
         <Pieces>BW_Buff5_Label_Layout</Pieces>
     </Screen>
@@ -405,15 +351,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff6Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff6Number_OutlineT</Pieces>
-        <Pieces>BW_Buff6Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff6Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff6Number_OutlineB</Pieces>
-        <Pieces>BW_Buff6Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff6Number_OutlineL</Pieces>
-        <Pieces>BW_Buff6Number_OutlineR</Pieces>
-        <Pieces>BW_Buff6Number</Pieces>
         <Pieces>BW_Buff6_Button</Pieces>
         <Pieces>BW_Buff6_Label_Layout</Pieces>
     </Screen>
@@ -427,15 +364,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff7Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff7Number_OutlineT</Pieces>
-        <Pieces>BW_Buff7Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff7Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff7Number_OutlineB</Pieces>
-        <Pieces>BW_Buff7Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff7Number_OutlineL</Pieces>
-        <Pieces>BW_Buff7Number_OutlineR</Pieces>
-        <Pieces>BW_Buff7Number</Pieces>
         <Pieces>BW_Buff7_Button</Pieces>
         <Pieces>BW_Buff7_Label_Layout</Pieces>
     </Screen>
@@ -449,15 +377,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff8Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff8Number_OutlineT</Pieces>
-        <Pieces>BW_Buff8Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff8Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff8Number_OutlineB</Pieces>
-        <Pieces>BW_Buff8Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff8Number_OutlineL</Pieces>
-        <Pieces>BW_Buff8Number_OutlineR</Pieces>
-        <Pieces>BW_Buff8Number</Pieces>
         <Pieces>BW_Buff8_Button</Pieces>
         <Pieces>BW_Buff8_Label_Layout</Pieces>
     </Screen>
@@ -471,15 +390,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff9Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff9Number_OutlineT</Pieces>
-        <Pieces>BW_Buff9Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff9Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff9Number_OutlineB</Pieces>
-        <Pieces>BW_Buff9Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff9Number_OutlineL</Pieces>
-        <Pieces>BW_Buff9Number_OutlineR</Pieces>
-        <Pieces>BW_Buff9Number</Pieces>
         <Pieces>BW_Buff9_Button</Pieces>
         <Pieces>BW_Buff9_Label_Layout</Pieces>
     </Screen>
@@ -493,15 +403,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff10Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff10Number_OutlineT</Pieces>
-        <Pieces>BW_Buff10Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff10Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff10Number_OutlineB</Pieces>
-        <Pieces>BW_Buff10Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff10Number_OutlineL</Pieces>
-        <Pieces>BW_Buff10Number_OutlineR</Pieces>
-        <Pieces>BW_Buff10Number</Pieces>
         <Pieces>BW_Buff10_Button</Pieces>
         <Pieces>BW_Buff10_Label_Layout</Pieces>
     </Screen>
@@ -515,15 +416,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff11Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff11Number_OutlineT</Pieces>
-        <Pieces>BW_Buff11Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff11Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff11Number_OutlineB</Pieces>
-        <Pieces>BW_Buff11Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff11Number_OutlineL</Pieces>
-        <Pieces>BW_Buff11Number_OutlineR</Pieces>
-        <Pieces>BW_Buff11Number</Pieces>
         <Pieces>BW_Buff11_Button</Pieces>
         <Pieces>BW_Buff11_Label_Layout</Pieces>
     </Screen>
@@ -537,15 +429,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff12Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff12Number_OutlineT</Pieces>
-        <Pieces>BW_Buff12Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff12Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff12Number_OutlineB</Pieces>
-        <Pieces>BW_Buff12Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff12Number_OutlineL</Pieces>
-        <Pieces>BW_Buff12Number_OutlineR</Pieces>
-        <Pieces>BW_Buff12Number</Pieces>
         <Pieces>BW_Buff12_Button</Pieces>
         <Pieces>BW_Buff12_Label_Layout</Pieces>
     </Screen>
@@ -559,15 +442,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff13Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff13Number_OutlineT</Pieces>
-        <Pieces>BW_Buff13Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff13Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff13Number_OutlineB</Pieces>
-        <Pieces>BW_Buff13Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff13Number_OutlineL</Pieces>
-        <Pieces>BW_Buff13Number_OutlineR</Pieces>
-        <Pieces>BW_Buff13Number</Pieces>
         <Pieces>BW_Buff13_Button</Pieces>
         <Pieces>BW_Buff13_Label_Layout</Pieces>
     </Screen>
@@ -581,15 +455,6 @@
             <CX>182</CX>
             <CY>34</CY>
         </Size>
-        <Pieces>BW_Buff14Number_OutlineTL</Pieces>
-        <Pieces>BW_Buff14Number_OutlineT</Pieces>
-        <Pieces>BW_Buff14Number_OutlineTR</Pieces>
-        <Pieces>BW_Buff14Number_OutlineBL</Pieces>
-        <Pieces>BW_Buff14Number_OutlineB</Pieces>
-        <Pieces>BW_Buff14Number_OutlineBR</Pieces>
-        <Pieces>BW_Buff14Number_OutlineL</Pieces>
-        <Pieces>BW_Buff14Number_OutlineR</Pieces>
-        <Pieces>BW_Buff14Number</Pieces>
         <Pieces>BW_Buff14_Button</Pieces>
         <Pieces>BW_Buff14_Label_Layout</Pieces>
     </Screen>

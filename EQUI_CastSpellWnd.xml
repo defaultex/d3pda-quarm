@@ -450,11 +450,11 @@
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>54</X>
-			<Y>240</Y>
+			<Y>238</Y>
 		</Location>
 		<Size>
 			<CX>137</CX>
-			<CY>30</CY>
+			<CY>34</CY>
 		</Size>
 		<Pieces>CSPW_SpellNameLabel_OutlineTL</Pieces>
 		<Pieces>CSPW_SpellNameLabel_OutlineT</Pieces>
