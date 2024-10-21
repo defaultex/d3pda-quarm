@@ -5,7 +5,7 @@ This started as a UI themed after the PDA in Doom 3 and evolved from there into 
 
 ### What's included in the UI
 * An re-skin of the default templates.
-* Player window with an integrate stat sub-window.
+* Player window with an integrate stat sub-window and server tick indicator.
 * Group window.
 * Spell Casting window with tinted spell slots, spell names, and integrated casting gauge.
 * Target window.
@@ -13,6 +13,9 @@ This started as a UI themed after the PDA in Doom 3 and evolved from there into 
 * Loot window with smaller items and more columns.
 * Merchant window similar to the loot window.
 * Spell gem and buff icons based on 90s cRPGs.
+
+### How to use the server tick indicator
+The server tick indicator is an animation that spans 6 seconds. To set the indicator's position watch your HP/MP value for when the server regen tick happens, click the notch that is lit when that occurs. It does not seem possible to save which notch you clicked so you will need to remember to set it after zoning.
 
 ### Screenshot
 ![d3pda-quarm](https://github.com/user-attachments/assets/e667df4a-ca32-481f-995e-b9e21f32aa9f)
