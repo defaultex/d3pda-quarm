@@ -7,8 +7,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>110</X>
-        <Y>82</Y>
+        <X>225</X>
+        <Y>76</Y>
       </Location>
       <Size>
         <CX>39</CX>
@@ -22,8 +22,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>151</X>
-        <Y>82</Y>
+        <X>109</X>
+        <Y>76</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -36,8 +36,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>211</X>
-        <Y>82</Y>
+        <X>109</X>
+        <Y>87</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -50,8 +50,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>271</X>
-        <Y>82</Y>
+        <X>109</X>
+        <Y>98</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -65,8 +65,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>181</X>
-        <Y>82</Y>
+        <X>138</X>
+        <Y>76</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -79,8 +79,22 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>241</X>
-        <Y>82</Y>
+        <X>138</X>
+        <Y>87</Y>
+      </Location>
+      <Size>
+        <CX>28</CX>
+        <CY>10</CY>
+      </Size>
+    </Frames>
+  </Ui2DAnimation>
+  <Ui2DAnimation item="D3PDA_Disband_Pressed">
+    <Cycle>false</Cycle>
+    <Frames>
+      <Texture>assets/WindowPieces.tga</Texture>
+      <Location>
+        <X>138</X>
+        <Y>98</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -89,27 +103,13 @@
     </Frames>
   </Ui2DAnimation>
   <!-- -->
-  <Ui2DAnimation item="D3PDA_Disband_Pressed">
-    <Cycle>false</Cycle>
-    <Frames>
-      <Texture>assets/WindowPieces.tga</Texture>
-      <Location>
-        <X>301</X>
-        <Y>82</Y>
-      </Location>
-      <Size>
-        <CX>28</CX>
-        <CY>10</CY>
-      </Size>
-    </Frames>
-  </Ui2DAnimation>
   <Ui2DAnimation item="D3PDA_Decline_Normal">
     <Cycle>false</Cycle>
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>181</X>
-        <Y>94</Y>
+        <X>196</X>
+        <Y>76</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -122,8 +122,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>241</X>
-        <Y>94</Y>
+        <X>196</X>
+        <Y>87</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -136,8 +136,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>301</X>
-        <Y>94</Y>
+        <X>196</X>
+        <Y>98</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -151,8 +151,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>151</X>
-        <Y>94</Y>
+        <X>167</X>
+        <Y>76</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -165,8 +165,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>211</X>
-        <Y>94</Y>
+        <X>167</X>
+        <Y>87</Y>
       </Location>
       <Size>
         <CX>28</CX>
@@ -179,8 +179,8 @@
     <Frames>
       <Texture>assets/WindowPieces.tga</Texture>
       <Location>
-        <X>271</X>
-        <Y>94</Y>
+        <X>167</X>
+        <Y>98</Y>
       </Location>
       <Size>
         <CX>28</CX>
