@@ -103,6 +103,7 @@
     <Ui2DAnimation item="D3PDA_Gauge_Tick">
         <Cycle>true</Cycle>
         <Frames>
+            <Duration>1000</Duration>
             <Texture>assets/WindowPieces.tga</Texture>
             <Location>
                 <X>272</X>
@@ -114,6 +115,7 @@
             </Size>
         </Frames>
         <Frames>
+            <Duration>1000</Duration>
             <Texture>assets/WindowPieces.tga</Texture>
             <Location>
                 <X>272</X>
@@ -125,6 +127,7 @@
             </Size>
         </Frames>
         <Frames>
+            <Duration>1000</Duration>
             <Texture>assets/WindowPieces.tga</Texture>
             <Location>
                 <X>272</X>
@@ -136,6 +139,7 @@
             </Size>
         </Frames>
         <Frames>
+            <Duration>1000</Duration>
             <Texture>assets/WindowPieces.tga</Texture>
             <Location>
                 <X>272</X>
@@ -147,6 +151,7 @@
             </Size>
         </Frames>
         <Frames>
+            <Duration>1000</Duration>
             <Texture>assets/WindowPieces.tga</Texture>
             <Location>
                 <X>272</X>
@@ -158,6 +163,7 @@
             </Size>
         </Frames>
         <Frames>
+            <Duration>1000</Duration>
             <Texture>assets/WindowPieces.tga</Texture>
             <Location>
                 <X>272</X>

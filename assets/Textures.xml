@@ -44,5 +44,11 @@
       <CY>256</CY>
     </Size>
   </TextureInfo>
+  <TextureInfo item="assets/Cursor.tga">
+    <Size>
+      <CX>512</CX>
+      <CY>512</CY>
+    </Size>
+  </TextureInfo>
   <!-- -->
 </XML>
