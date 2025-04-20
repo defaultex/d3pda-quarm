@@ -502,154 +502,31 @@
         <GaugeDrawTemplate>
             <Background>D3PDA_Gauge_Background</Background>
             <Fill>D3PDA_Gauge_Fill</Fill>
-            <Lines>D3PDA_Gauge_Tick</Lines>
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!--  -->
-    <Button item="Player_Tick0">
-        <RadioGroup>Player_TickOffset</RadioGroup>
+    <Gauge item="Player_ManaTick">
+        <ScreenID>PlayerManaTick</ScreenID>
+        <EQType>24</EQType>
+        <TextOffsetY>-250</TextOffsetY>
+        <GaugeOffsetY>-8</GaugeOffsetY>
         <Location>
             <X>6</X>
-            <Y>10</Y>
+            <Y>18</Y>
         </Location>
         <Size>
-            <CX>30</CX>
-            <CY>12</CY>
+            <CX>162</CX>
+            <CY>4</CY>
         </Size>
-        <DecalOffset>
-            <X>2</X>
-            <Y>0</Y>
-        </DecalOffset>
-        <DecalSize>
-            <CX>25</CX>
-            <CY>12</CY>
-        </DecalSize>
-        <ButtonDrawTemplate>
-            <Normal>D3PDA_Gauge_Tick_BG</Normal>
-            <PressedDecal>D3PDA_Gauge_Tick_Frame0</PressedDecal>
-            <PressedFlybyDecal>D3PDA_Gauge_Tick_Frame0</PressedFlybyDecal>
-        </ButtonDrawTemplate>
-    </Button>
-    <Button item="Player_Tick1">
-        <RadioGroup>Player_TickOffset</RadioGroup>
-        <Location>
-            <X>31</X>
-            <Y>10</Y>
-        </Location>
-        <Size>
-            <CX>30</CX>
-            <CY>12</CY>
-        </Size>
-        <DecalOffset>
-            <X>3</X>
-            <Y>0</Y>
-        </DecalOffset>
-        <DecalSize>
-            <CX>25</CX>
-            <CY>12</CY>
-        </DecalSize>
-        <ButtonDrawTemplate>
-            <Normal>D3PDA_Gauge_Tick_BG</Normal>
-            <PressedDecal>D3PDA_Gauge_Tick_Frame1</PressedDecal>
-            <PressedFlybyDecal>D3PDA_Gauge_Tick_Frame1</PressedFlybyDecal>
-        </ButtonDrawTemplate>
-    </Button>
-    <Button item="Player_Tick2">
-        <RadioGroup>Player_TickOffset</RadioGroup>
-        <Location>
-            <X>56</X>
-            <Y>10</Y>
-        </Location>
-        <Size>
-            <CX>30</CX>
-            <CY>12</CY>
-        </Size>
-        <DecalOffset>
-            <X>2</X>
-            <Y>0</Y>
-        </DecalOffset>
-        <DecalSize>
-            <CX>25</CX>
-            <CY>12</CY>
-        </DecalSize>
-        <ButtonDrawTemplate>
-            <Normal>D3PDA_Gauge_Tick_BG</Normal>
-            <PressedDecal>D3PDA_Gauge_Tick_Frame2</PressedDecal>
-            <PressedFlybyDecal>D3PDA_Gauge_Tick_Frame2</PressedFlybyDecal>
-        </ButtonDrawTemplate>
-    </Button>
-    <Button item="Player_Tick3">
-        <RadioGroup>Player_TickOffset</RadioGroup>
-        <Location>
-            <X>81</X>
-            <Y>10</Y>
-        </Location>
-        <Size>
-            <CX>30</CX>
-            <CY>12</CY>
-        </Size>
-        <DecalOffset>
-            <X>2</X>
-            <Y>0</Y>
-        </DecalOffset>
-        <DecalSize>
-            <CX>25</CX>
-            <CY>12</CY>
-        </DecalSize>
-        <ButtonDrawTemplate>
-            <Normal>D3PDA_Gauge_Tick_BG</Normal>
-            <PressedDecal>D3PDA_Gauge_Tick_Frame3</PressedDecal>
-            <PressedFlybyDecal>D3PDA_Gauge_Tick_Frame3</PressedFlybyDecal>
-        </ButtonDrawTemplate>
-    </Button>
-    <Button item="Player_Tick4">
-        <RadioGroup>Player_TickOffset</RadioGroup>
-        <Location>
-            <X>106</X>
-            <Y>10</Y>
-        </Location>
-        <Size>
-            <CX>30</CX>
-            <CY>12</CY>
-        </Size>
-        <DecalOffset>
-            <X>2</X>
-            <Y>0</Y>
-        </DecalOffset>
-        <DecalSize>
-            <CX>25</CX>
-            <CY>12</CY>
-        </DecalSize>
-        <ButtonDrawTemplate>
-            <Normal>D3PDA_Gauge_Tick_BG</Normal>
-            <PressedDecal>D3PDA_Gauge_Tick_Frame4</PressedDecal>
-            <PressedFlybyDecal>D3PDA_Gauge_Tick_Frame4</PressedFlybyDecal>
-        </ButtonDrawTemplate>
-    </Button>
-    <Button item="Player_Tick5">
-        <RadioGroup>Player_TickOffset</RadioGroup>
-        <Location>
-            <X>131</X>
-            <Y>10</Y>
-        </Location>
-        <Size>
-            <CX>30</CX>
-            <CY>12</CY>
-        </Size>
-        <DecalOffset>
-            <X>2</X>
-            <Y>0</Y>
-        </DecalOffset>
-        <DecalSize>
-            <CX>25</CX>
-            <CY>12</CY>
-        </DecalSize>
-        <ButtonDrawTemplate>
-            <Normal>D3PDA_Gauge_Tick_BG</Normal>
-            <PressedDecal>D3PDA_Gauge_Tick_Frame5</PressedDecal>
-            <PressedFlybyDecal>D3PDA_Gauge_Tick_Frame5</PressedFlybyDecal>
-        </ButtonDrawTemplate>
-    </Button>
+        <FillTint>
+            <R>220</R>
+            <G>220</G>
+            <B>220</B>
+        </FillTint>
+        <GaugeDrawTemplate>
+            <Fill>D3PDA_Gauge_LinesFill</Fill>
+        </GaugeDrawTemplate>
+        <DrawLinesFill>false</DrawLinesFill>
+    </Gauge>
     <!--  -->
 </XML>

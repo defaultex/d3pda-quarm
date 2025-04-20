@@ -506,5 +506,28 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!-- -->
+    <Gauge item="Player_MeleeTick">
+        <ScreenID>PlayerMeleeTick</ScreenID>
+        <EQType>34</EQType>
+        <TextOffsetY>-250</TextOffsetY>
+        <GaugeOffsetY>-8</GaugeOffsetY>
+        <Location>
+            <X>6</X>
+            <Y>18</Y>
+        </Location>
+        <Size>
+            <CX>162</CX>
+            <CY>4</CY>
+        </Size>
+        <FillTint>
+            <R>220</R>
+            <G>220</G>
+            <B>220</B>
+        </FillTint>
+        <GaugeDrawTemplate>
+            <Fill>D3PDA_Gauge_LinesFill</Fill>
+        </GaugeDrawTemplate>
+        <DrawLinesFill>false</DrawLinesFill>
+    </Gauge>
+    <!--  -->
 </XML>

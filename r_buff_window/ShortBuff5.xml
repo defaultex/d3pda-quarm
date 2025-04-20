@@ -1,25 +1,33 @@
-<?xml version = "1.0"?>
-<XML ID = "EQInterfaceDefinitionLanguage">
-    <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
-    <!-- -->
-    <StaticAnimation item="CSPW_SpellBook_BG">
-        <Animation>D3PDA_IWnd_GemHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>240</Y>
-        </Location>
-        <Size>
-            <CX>179</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <!-- -->
-    <Label item="CSPW_SpellNameLabel">
-        <ScreenID>Casting_Spell_Name</ScreenID>
-        <EQType>134</EQType>
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!--  -->
+    <Button item="SDBW_Buff5_Button">
+        <ScreenID>Buff5</ScreenID>
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <ButtonDrawTemplate>
+            <Normal>BlueIconBackground</Normal>
+            <NormalDecal>BuffIcons</NormalDecal>
+        </ButtonDrawTemplate>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <LeftAnchorOffset>38</LeftAnchorOffset>
+        <BottomAnchorOffset>34</BottomAnchorOffset>
+        <DecalOffset>
+            <X>2</X>
+            <Y>2</Y>
+        </DecalOffset>
+        <DecalSize>
+            <CX>30</CX>
+            <CY>30</CY>
+        </DecalSize>
+    </Button>
+    <!--  -->
+    <Label item="SDBW_Buff5_Label">
+        <Font>3</Font>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -33,11 +41,10 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineTL">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_TL">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -51,11 +58,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineT">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_T">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -69,11 +75,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineTR">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_TR">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -87,11 +92,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineBL">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_BL">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -105,11 +109,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineB">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_B">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -123,11 +126,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineBR">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_BR">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -141,11 +143,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineL">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_L">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -159,11 +160,10 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="CSPW_SpellNameLabel_OutlineR">
-        <EQType>134</EQType>
+    <Label item="SDBW_Buff5_Label_R">
         <Font>3</Font>
-        <AlignCenter>true</AlignCenter>
-        <Style_Transparent>true</Style_Transparent>
+        <EQType>135</EQType>
+        <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
@@ -177,75 +177,5 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!-- -->
-    <Button item = "CSPW_SpellBook">
-        <ScreenID>CSPW_SpellBook</ScreenID>
-        <TooltipReference>Opens and closes Your Spellbook</TooltipReference>
-        <Style_Checkbox>true</Style_Checkbox>
-        <Style_Transparent>false</Style_Transparent>
-        <Location>
-            <X>23</X>
-            <Y>246</Y>
-        </Location>
-        <Size>
-            <CX>16</CX>
-            <CY>16</CY>
-        </Size>
-        <ButtonDrawTemplate>
-            <Normal>A_BookBtnNormal</Normal>
-            <Pressed>A_BookBtnPressed</Pressed>
-            <Flyby>A_BookBtnFlyby</Flyby>
-            <Disabled>A_BookBtnDisabled</Disabled>
-            <PressedFlyby>A_BookBtnPressedFlyby</PressedFlyby>
-        </ButtonDrawTemplate>
-    </Button>
-    <!-- -->
-    <Gauge item="Casting_Gauge">
-		<ScreenID>Gauge</ScreenID>
-        <EQType>7</EQType>
-        <GaugeOffsetY>0</GaugeOffsetY>
-        <DrawLinesFill>false</DrawLinesFill>
-        <Location>
-            <X>42</X>
-            <Y>240</Y>
-        </Location>
-        <Size>
-            <CX>155</CX>
-            <CY>30</CY>
-        </Size>
-        <FillTint>
-            <R>240</R>
-            <G>0</G>
-            <B>0</B>
-        </FillTint>
-        <GaugeDrawTemplate>
-            <Background>D3PDA_Gauge_CastBackground</Background>
-            <Fill>D3PDA_Gauge_CastFill</Fill>
-        </GaugeDrawTemplate>
-    </Gauge>
-    <Gauge item="Recast_Gauge">
-		<ScreenID>RecastGauge</ScreenID>
-        <EQType>25</EQType>
-        <TextOffsetY>-250</TextOffsetY>
-        <GaugeOffsetY>0</GaugeOffsetY>
-        <Location>
-            <X>42</X>
-            <Y>240</Y>
-        </Location>
-        <Size>
-            <CX>155</CX>
-            <CY>30</CY>
-        </Size>
-        <FillTint>
-            <R>240</R>
-            <G>240</G>
-            <B>0</B>
-        </FillTint>
-        <GaugeDrawTemplate>
-            <LinesFill>D3PDA_Gauge_CastBackground</LinesFill>
-            <Fill>D3PDA_Gauge_CastFill</Fill>
-        </GaugeDrawTemplate>
-        <DrawLinesFill>true</DrawLinesFill>
-    </Gauge>
-    <!-- -->
+    <!--  -->
 </XML>

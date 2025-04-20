@@ -636,14 +636,9 @@
             <CY>30</CY>
         </Size>
         <Pieces>Player_Mana</Pieces>
+        <Pieces>Player_ManaTick</Pieces>
         <Pieces>Player_ManaNumber</Pieces>
         <Pieces>Player_ManaLabel_Layout</Pieces>
-        <Pieces>Player_Tick0</Pieces>
-        <Pieces>Player_Tick1</Pieces>
-        <Pieces>Player_Tick2</Pieces>
-        <Pieces>Player_Tick3</Pieces>
-        <Pieces>Player_Tick4</Pieces>
-        <Pieces>Player_Tick5</Pieces>
     </Screen>
     <Screen item="Player_ENKey_Layout">
         <Style_Transparent>true</Style_Transparent>
@@ -703,6 +698,7 @@
             <CY>30</CY>
         </Size>
         <Pieces>Player_EN</Pieces>
+        <Pieces>Player_MeleeTick</Pieces>
         <!-- <Pieces>Player_EnNumber</Pieces> -->
         <Pieces>Player_FatigueLabel_Layout</Pieces>
     </Screen>

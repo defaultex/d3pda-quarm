@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Composite>
+        <Include>r_buff_window/ShortBuff0.xml</Include>
+        <Include>r_buff_window/ShortBuff1.xml</Include>
+        <Include>r_buff_window/ShortBuff2.xml</Include>
+        <Include>r_buff_window/ShortBuff3.xml</Include>
+        <Include>r_buff_window/ShortBuff4.xml</Include>
+        <Include>r_buff_window/ShortBuff5.xml</Include>
+    </Composite>
+    <!--  -->
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!--  -->
+    <Screen item="SDBW_Buff0_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff0_Label_TL</Pieces>
+        <Pieces>SDBW_Buff0_Label_T</Pieces>
+        <Pieces>SDBW_Buff0_Label_TR</Pieces>
+        <Pieces>SDBW_Buff0_Label_BL</Pieces>
+        <Pieces>SDBW_Buff0_Label_B</Pieces>
+        <Pieces>SDBW_Buff0_Label_BR</Pieces>
+        <Pieces>SDBW_Buff0_Label_L</Pieces>
+        <Pieces>SDBW_Buff0_Label_R</Pieces>
+        <Pieces>SDBW_Buff0_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff1_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff1_Label_TL</Pieces>
+        <Pieces>SDBW_Buff1_Label_T</Pieces>
+        <Pieces>SDBW_Buff1_Label_TR</Pieces>
+        <Pieces>SDBW_Buff1_Label_BL</Pieces>
+        <Pieces>SDBW_Buff1_Label_B</Pieces>
+        <Pieces>SDBW_Buff1_Label_BR</Pieces>
+        <Pieces>SDBW_Buff1_Label_L</Pieces>
+        <Pieces>SDBW_Buff1_Label_R</Pieces>
+        <Pieces>SDBW_Buff1_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff2_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff2_Label_TL</Pieces>
+        <Pieces>SDBW_Buff2_Label_T</Pieces>
+        <Pieces>SDBW_Buff2_Label_TR</Pieces>
+        <Pieces>SDBW_Buff2_Label_BL</Pieces>
+        <Pieces>SDBW_Buff2_Label_B</Pieces>
+        <Pieces>SDBW_Buff2_Label_BR</Pieces>
+        <Pieces>SDBW_Buff2_Label_L</Pieces>
+        <Pieces>SDBW_Buff2_Label_R</Pieces>
+        <Pieces>SDBW_Buff2_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff3_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff3_Label_TL</Pieces>
+        <Pieces>SDBW_Buff3_Label_T</Pieces>
+        <Pieces>SDBW_Buff3_Label_TR</Pieces>
+        <Pieces>SDBW_Buff3_Label_BL</Pieces>
+        <Pieces>SDBW_Buff3_Label_B</Pieces>
+        <Pieces>SDBW_Buff3_Label_BR</Pieces>
+        <Pieces>SDBW_Buff3_Label_L</Pieces>
+        <Pieces>SDBW_Buff3_Label_R</Pieces>
+        <Pieces>SDBW_Buff3_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff4_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff4_Label_TL</Pieces>
+        <Pieces>SDBW_Buff4_Label_T</Pieces>
+        <Pieces>SDBW_Buff4_Label_TR</Pieces>
+        <Pieces>SDBW_Buff4_Label_BL</Pieces>
+        <Pieces>SDBW_Buff4_Label_B</Pieces>
+        <Pieces>SDBW_Buff4_Label_BR</Pieces>
+        <Pieces>SDBW_Buff4_Label_L</Pieces>
+        <Pieces>SDBW_Buff4_Label_R</Pieces>
+        <Pieces>SDBW_Buff4_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff5_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff5_Label_TL</Pieces>
+        <Pieces>SDBW_Buff5_Label_T</Pieces>
+        <Pieces>SDBW_Buff5_Label_TR</Pieces>
+        <Pieces>SDBW_Buff5_Label_BL</Pieces>
+        <Pieces>SDBW_Buff5_Label_B</Pieces>
+        <Pieces>SDBW_Buff5_Label_BR</Pieces>
+        <Pieces>SDBW_Buff5_Label_L</Pieces>
+        <Pieces>SDBW_Buff5_Label_R</Pieces>
+        <Pieces>SDBW_Buff5_Label</Pieces>
+    </Screen>
+    <!--  -->
+    <Screen item="SDBW_Buff0_Display">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff0_Button</Pieces>
+        <Pieces>SDBW_Buff0_Label_Layout</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff1_Display">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>34</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff1_Button</Pieces>
+        <Pieces>SDBW_Buff1_Label_Layout</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff2_Display">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>68</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff2_Button</Pieces>
+        <Pieces>SDBW_Buff2_Label_Layout</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff3_Display">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>102</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff3_Button</Pieces>
+        <Pieces>SDBW_Buff3_Label_Layout</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff4_Display">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>136</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff4_Button</Pieces>
+        <Pieces>SDBW_Buff4_Label_Layout</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff5_Display">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>170</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff5_Button</Pieces>
+        <Pieces>SDBW_Buff5_Label_Layout</Pieces>
+    </Screen>
+    <!--  -->
+    <Screen item="ShortDurationBuffWindow">
+        <Text>Songs</Text>
+        <DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+        <Style_Border>true</Style_Border>
+        <Style_Transparent>true</Style_Transparent>
+        <Size>
+            <CX>182</CX>
+            <CY>208</CY>
+        </Size>
+        <!--  -->
+        <Pieces>SDBW_Buff0_Display</Pieces>
+        <Pieces>SDBW_Buff1_Display</Pieces>
+        <Pieces>SDBW_Buff2_Display</Pieces>
+        <Pieces>SDBW_Buff3_Display</Pieces>
+        <Pieces>SDBW_Buff4_Display</Pieces>
+        <Pieces>SDBW_Buff5_Display</Pieces>
+        <!--  -->
+    </Screen>
+    <!--  -->
+</XML>

@@ -29,13 +29,25 @@ enum EQGaugeType {
 
     CurrentMP3SongProgress = 22,
 
+    // added by zeal
+    ExperiencePerHour = 23,
+    ServerTickTimer = 24,
+    GlobalRecoveryTimer = 25,
+    Spell0Recast = 26, // 
+    Spell1Recast = 27, // 
+    Spell2Recast = 28, // 
+    Spell3Recast = 29, // 
+    Spell4Recast = 30, // 
+    Spell5Recast = 31, // 
+    Spell6Recast = 32, // 
+    Spell7Recast = 33, // 
+    MeleeRecoveryTimer = 34,
+    // 
+
     CombatAbilityWindowTimeRemaining = 26,
-
     TargetofTargetHP = 27,
-
     ReSpawnTimer = 28,
     InCombatTimer = 29,
-
     WebBrowserLoading = 30,
 
     Group1Mana = 31,
