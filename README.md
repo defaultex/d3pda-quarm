@@ -15,4 +15,4 @@ This started as a UI themed after the PDA in Doom 3 and evolved from there into 
 * Spell gem and buff icons based on 90s cRPGs.
 
 ### Screenshot
-![d3pda-quarm](https://github.com/user-attachments/assets/e667df4a-ca32-481f-995e-b9e21f32aa9f)
+![EQ000004](https://github.com/user-attachments/assets/e4542f8e-5eee-4d82-8f90-a09b149af699)
