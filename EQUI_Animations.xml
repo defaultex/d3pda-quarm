@@ -1,6 +1,8 @@
 <?xml version = "1.0"?>
 <XML ID = "EQInterfaceDefinitionLanguage">
 	<Composite>
+        <Include>assets\Textures.xml</Include>
+		<Include>animations/Animations.xml</Include>
 		<Include>animations/Cursors.xml</Include>
 	</Composite>
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>

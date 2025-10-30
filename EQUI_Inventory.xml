@@ -4,7 +4,7 @@
             xmlns:dt="EverQuestDataTypes" />
     <!-- -->
     <InvSlot item="IW_L_Ear">
-        <ScreenID>IW_L_Ear</ScreenID>
+        <ScreenID>InvSlot1</ScreenID>
         <Background>A_InvEar</Background>
         <EQType>1</EQType>
         <Location>
@@ -16,21 +16,8 @@
             <CY>32</CY>
         </Size>
     </InvSlot>
-    <InvSlot item="IW_Neck">
-        <ScreenID>IW_Neck</ScreenID>
-        <Background>A_InvNeck</Background>
-        <EQType>5</EQType>
-        <Location>
-            <X>152</X>
-            <Y>0</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
     <InvSlot item="IW_Head">
-        <ScreenID>IW_Head</ScreenID>
+        <ScreenID>InvSlot2</ScreenID>
         <Background>A_InvHead</Background>
         <EQType>2</EQType>
         <Location>
@@ -43,7 +30,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_Face">
-        <ScreenID>IW_Face</ScreenID>
+        <ScreenID>InvSlot3</ScreenID>
         <Background>A_InvFace</Background>
         <EQType>3</EQType>
         <Location>
@@ -56,7 +43,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_R_Ear">
-        <ScreenID>IW_R_Ear</ScreenID>
+        <ScreenID>InvSlot4</ScreenID>
         <Background>A_InvEar</Background>
         <EQType>4</EQType>
         <Location>
@@ -68,41 +55,13 @@
             <CY>32</CY>
         </Size>
     </InvSlot>
-    <!-- -->
-    <InvSlot item="IW_Chest">
-        <ScreenID>IW_Chest</ScreenID>
-        <Background>A_InvChest</Background>
-        <EQType>17</EQType>
+    <InvSlot item="IW_Neck">
+        <ScreenID>InvSlot5</ScreenID>
+        <Background>A_InvNeck</Background>
+        <EQType>5</EQType>
         <Location>
-            <X>120</X>
-            <Y>32</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
-    <InvSlot item="IW_Back">
-        <ScreenID>IW_Back</ScreenID>
-        <Background>A_InvAboutBody</Background>
-        <EQType>8</EQType>
-        <Location>
-            <X>248</X>
-            <Y>32</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
-    <!-- -->
-    <InvSlot item="IW_Arms">
-        <ScreenID>IW_Arms</ScreenID>
-        <Background>A_InvArms</Background>
-        <EQType>7</EQType>
-        <Location>
-            <X>120</X>
-            <Y>64</Y>
+            <X>152</X>
+            <Y>0</Y>
         </Location>
         <Size>
             <CX>32</CX>
@@ -110,7 +69,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_Shoulders">
-        <ScreenID>IW_Shoulders</ScreenID>
+        <ScreenID>InvSlot6</ScreenID>
         <Background>A_InvShoulders</Background>
         <EQType>6</EQType>
         <Location>
@@ -122,9 +81,34 @@
             <CY>32</CY>
         </Size>
     </InvSlot>
-    <!-- -->
+    <InvSlot item="IW_Arms">
+        <ScreenID>InvSlot7</ScreenID>
+        <Background>A_InvArms</Background>
+        <EQType>7</EQType>
+        <Location>
+            <X>120</X>
+            <Y>64</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
+    <InvSlot item="IW_Back">
+        <ScreenID>InvSlot8</ScreenID>
+        <Background>A_InvAboutBody</Background>
+        <EQType>8</EQType>
+        <Location>
+            <X>248</X>
+            <Y>32</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
     <InvSlot item="IW_L_Wrist">
-        <ScreenID>IW_L_Wrist</ScreenID>
+        <ScreenID>InvSlot9</ScreenID>
         <Background>A_InvWrist</Background>
         <EQType>9</EQType>
         <Location>
@@ -137,7 +121,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_R_Wrist">
-        <ScreenID>IW_R_Wrist</ScreenID>
+        <ScreenID>InvSlot10</ScreenID>
         <Background>A_InvWrist</Background>
         <EQType>10</EQType>
         <Location>
@@ -149,22 +133,21 @@
             <CY>32</CY>
         </Size>
     </InvSlot>
-    <!-- -->
-    <InvSlot item="IW_Waist">
-        <ScreenID>IW_Waist</ScreenID>
-        <Background>A_InvWaist</Background>
-        <EQType>20</EQType>
+    <InvSlot item="IW_Range">
+        <ScreenID>InvSlot11</ScreenID>
+        <Background>A_InvRange</Background>
+        <EQType>11</EQType>
         <Location>
-            <X>120</X>
-            <Y>128</Y>
+            <X>200</X>
+            <Y>192</Y>
         </Location>
         <Size>
-            <CX>32</CX>
-            <CY>32</CY>
+            <CX>40</CX>
+            <CY>40</CY>
         </Size>
     </InvSlot>
     <InvSlot item="IW_Hands">
-        <ScreenID>IW_Hands</ScreenID>
+        <ScreenID>InvSlot12</ScreenID>
         <Background>A_InvHands</Background>
         <EQType>12</EQType>
         <Location>
@@ -176,62 +159,8 @@
             <CY>32</CY>
         </Size>
     </InvSlot>
-    <!-- -->
-    <InvSlot item="IW_L_Fingers">
-        <ScreenID>IW_L_Fingers</ScreenID>
-        <Background>A_InvRing</Background>
-        <EQType>15</EQType>
-        <Location>
-            <X>120</X>
-            <Y>160</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
-    <InvSlot item="IW_Legs">
-        <ScreenID>IW_Legs</ScreenID>
-        <Background>A_InvLegs</Background>
-        <EQType>18</EQType>
-        <Location>
-            <X>152</X>
-            <Y>160</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
-    <InvSlot item="IW_Feet">
-        <ScreenID>IW_Feet</ScreenID>
-        <Background>A_InvFeet</Background>
-        <EQType>19</EQType>
-        <Location>
-            <X>216</X>
-            <Y>160</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
-    <InvSlot item="IW_R_Fingers">
-        <ScreenID>IW_R_Fingers</ScreenID>
-        <Background>A_InvRing</Background>
-        <EQType>16</EQType>
-        <Location>
-            <X>248</X>
-            <Y>160</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>32</CY>
-        </Size>
-    </InvSlot>
-    <!-- -->
     <InvSlot item="IW_Primary">
-        <ScreenID>IW_Primary</ScreenID>
+        <ScreenID>InvSlot13</ScreenID>
         <Background>A_InvPrimary</Background>
         <EQType>13</EQType>
         <Location>
@@ -244,7 +173,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_Secondary">
-        <ScreenID>IW_Secondary</ScreenID>
+        <ScreenID>InvSlot14</ScreenID>
         <Background>A_InvSecondary</Background>
         <EQType>14</EQType>
         <Location>
@@ -256,21 +185,86 @@
             <CY>40</CY>
         </Size>
     </InvSlot>
-    <InvSlot item="IW_Range">
-        <ScreenID>IW_Range</ScreenID>
-        <Background>A_InvRange</Background>
-        <EQType>11</EQType>
+    <InvSlot item="IW_L_Fingers">
+        <ScreenID>InvSlot15</ScreenID>
+        <Background>A_InvRing</Background>
+        <EQType>15</EQType>
         <Location>
-            <X>200</X>
-            <Y>192</Y>
+            <X>120</X>
+            <Y>160</Y>
         </Location>
         <Size>
-            <CX>40</CX>
-            <CY>40</CY>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
+    <InvSlot item="IW_R_Fingers">
+        <ScreenID>InvSlot16</ScreenID>
+        <Background>A_InvRing</Background>
+        <EQType>16</EQType>
+        <Location>
+            <X>248</X>
+            <Y>160</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
+    <InvSlot item="IW_Chest">
+        <ScreenID>InvSlot17</ScreenID>
+        <Background>A_InvChest</Background>
+        <EQType>17</EQType>
+        <Location>
+            <X>120</X>
+            <Y>32</Y>IW_Chest
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
+    <InvSlot item="IW_Legs">
+        <ScreenID>InvSlot18</ScreenID>
+        <Background>A_InvLegs</Background>
+        <EQType>18</EQType>
+        <Location>
+            <X>152</X>
+            <Y>160</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
+    <InvSlot item="IW_Feet">
+        <ScreenID>InvSlot19</ScreenID>
+        <Background>A_InvFeet</Background>
+        <EQType>19</EQType>
+        <Location>
+            <X>216</X>
+            <Y>160</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
+        </Size>
+    </InvSlot>
+    <InvSlot item="IW_Waist">
+        <ScreenID>InvSlot20</ScreenID>
+        <Background>A_InvWaist</Background>
+        <EQType>20</EQType>
+        <Location>
+            <X>120</X>
+            <Y>128</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>32</CY>
         </Size>
     </InvSlot>
     <InvSlot item="IW_Ammo">
-        <ScreenID>IW_Ammo</ScreenID>
+        <ScreenID>InvSlot21</ScreenID>
         <Background>A_InvAmmo</Background>
         <EQType>21</EQType>
         <Location>
@@ -284,7 +278,7 @@
     </InvSlot>
     <!-- -->
     <InvSlot item="IW_InvSlot0">
-        <ScreenID>IW_InvSlot0</ScreenID>
+        <ScreenID>InvSlot22</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>22</EQType>
         <Location>
@@ -297,7 +291,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot1">
-        <ScreenID>IW_InvSlot1</ScreenID>
+        <ScreenID>InvSlot23</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>26</EQType>
         <Location>
@@ -310,7 +304,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot2">
-        <ScreenID>IW_InvSlot2</ScreenID>
+        <ScreenID>InvSlot24</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>23</EQType>
         <Location>
@@ -323,7 +317,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot3">
-        <ScreenID>IW_InvSlot3</ScreenID>
+        <ScreenID>InvSlot25</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>27</EQType>
         <Location>
@@ -336,7 +330,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot4">
-        <ScreenID>IW_InvSlot4</ScreenID>
+        <ScreenID>InvSlot26</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>24</EQType>
         <Location>
@@ -349,7 +343,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot5">
-        <ScreenID>IW_InvSlot5</ScreenID>
+        <ScreenID>InvSlot27</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>28</EQType>
         <Location>
@@ -362,7 +356,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot6">
-        <ScreenID>IW_InvSlot6</ScreenID>
+        <ScreenID>InvSlot28</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>25</EQType>
         <Location>
@@ -375,7 +369,7 @@
         </Size>
     </InvSlot>
     <InvSlot item="IW_InvSlot7">
-        <ScreenID>IW_InvSlot7</ScreenID>
+        <ScreenID>InvSlot29</ScreenID>
         <Background>A_RecessedBox</Background>
         <EQType>29</EQType>
         <Location>
