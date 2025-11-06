@@ -1,163 +1,9 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-    <!-- -->
-    <Label item="Player_HPKey">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>3</LeftAnchorOffset>
-        <TopAnchorOffset>2</TopAnchorOffset>
-        <TextColor>
-            <R>156</R>
-            <G>182</G>
-            <B>182</B>
-            <Alpha>192</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineTL">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>2</LeftAnchorOffset>
-        <TopAnchorOffset>1</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineT">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>3</LeftAnchorOffset>
-        <TopAnchorOffset>0</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineTR">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>4</LeftAnchorOffset>
-        <TopAnchorOffset>1</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineBL">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>2</LeftAnchorOffset>
-        <TopAnchorOffset>3</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineB">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>3</LeftAnchorOffset>
-        <TopAnchorOffset>4</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineBR">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>4</LeftAnchorOffset>
-        <TopAnchorOffset>3</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineL">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>1</LeftAnchorOffset>
-        <TopAnchorOffset>2</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <Label item="Player_HPKey_OutlineR">
-        <Font>4</Font>
-        <Text>HP</Text>
-        <NoWrap>true</NoWrap>
-        <AlignCenter>true</AlignCenter>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>5</LeftAnchorOffset>
-        <TopAnchorOffset>2</TopAnchorOffset>
-        <TextColor>
-            <R>75</R>
-            <G>101</G>
-            <B>100</B>
-            <Alpha>64</Alpha>
-        </TextColor>
-    </Label>
-    <!-- -->
-    <Label item="Player_HPLabel">
-        <ScreenID>HPLabel</ScreenID>
-        <EQType>19</EQType>
+    <!-- Percentage Value -->
+    <Label item="SW_AAValue">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -171,10 +17,10 @@
             <R>255</R>
             <G>255</G>
             <B>255</B>
-        </TextColor>HPNumberLabel
+        </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineTL">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineTL">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -191,8 +37,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineT">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineT">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -209,8 +55,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineTR">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineTR">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -227,8 +73,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineBL">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineBL">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -245,8 +91,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineB">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineB">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -263,8 +109,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineBR">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineBR">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -281,8 +127,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineL">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineL">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -298,8 +144,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineR">
-        <EQType>19</EQType>
+    <Label item="SW_AAValue_OutlineR">
+        <EQType>27</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -315,8 +161,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!-- -->
-    <Label item="Player_HPPercent">
+    <!-- Percent Symbol -->
+    <Label item="SW_AAPercent">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -331,7 +177,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineTL">
+    <Label item="SW_AAPercent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -347,7 +193,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineT">
+    <Label item="SW_AAPercent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -363,7 +209,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineTR">
+    <Label item="SW_AAPercent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -379,7 +225,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineBL">
+    <Label item="SW_AAPercent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -395,7 +241,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineB">
+    <Label item="SW_AAPercent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -411,7 +257,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineBR">
+    <Label item="SW_AAPercent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -427,7 +273,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineL">
+    <Label item="SW_AAPercent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -442,7 +288,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineR">
+    <Label item="SW_AAPercent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -458,28 +304,13 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_HPNumber">
-        <EQType>70</EQType>
-        <Font>5</Font>
-        <NoWrap>true</NoWrap>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>24</LeftAnchorOffset>
-        <RightAnchorOffset>24</RightAnchorOffset>
-        <TextColor>
-            <R>180</R>
-            <G>180</G>
-            <B>180</B>
-        </TextColor>
-    </Label>
-    <Gauge item="Player_HP">
-        <ScreenID>PlayerHP</ScreenID>
-        <EQType>1</EQType>
+    <Gauge item="SW_AAGauge">
+        <ScreenID>SW_AAGauge</ScreenID>
+        <EQType>5</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
-            <X>6</X>
+            <X>28</X>
             <Y>10</Y>
         </Location>
         <Size>
@@ -487,38 +318,16 @@
             <CY>12</CY>
         </Size>
         <FillTint>
-            <R>240</R>
-            <G>0</G>
+            <R>255</R>
+            <G>180</G>
             <B>0</B>
         </FillTint>
         <GaugeDrawTemplate>
             <Background>D3PDA_Gauge_Background</Background>
             <Fill>D3PDA_Gauge_Fill</Fill>
+            <LinesFill>D3PDA_Gauge_LinesFill</LinesFill>
         </GaugeDrawTemplate>
-        <DrawLinesFill>false</DrawLinesFill>
+        <DrawLinesFill>true</DrawLinesFill>
     </Gauge>
-    <Gauge item="Pet_HP">
-        <ScreenID>PetHP</ScreenID>
-        <EQType>16</EQType>
-        <TextOffsetY>-250</TextOffsetY>
-        <GaugeOffsetY>-8</GaugeOffsetY>
-        <Location>
-            <X>6</X>
-            <Y>18</Y>
-        </Location>
-        <Size>
-            <CX>162</CX>
-            <CY>4</CY>
-        </Size>
-        <FillTint>
-            <R>51</R>
-            <G>192</G>
-            <B>51</B>
-        </FillTint>
-        <GaugeDrawTemplate>
-            <Fill>D3PDA_Gauge_LinesFill</Fill>
-        </GaugeDrawTemplate>
-        <DrawLinesFill>false</DrawLinesFill>
-    </Gauge>
-    <!-- -->
+    <!--  -->
 </XML>

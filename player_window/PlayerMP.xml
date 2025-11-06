@@ -20,7 +20,7 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_TL">
+    <Label item="Player_ManaKey_OutlineTL">
         <Font>4</Font>
         <Text>MP</Text>
         <AlignCenter>true</AlignCenter>
@@ -36,7 +36,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_T">
+    <Label item="Player_ManaKey_OutlineT">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -53,7 +53,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_TR">
+    <Label item="Player_ManaKey_OutlineTR">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -70,7 +70,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_BL">
+    <Label item="Player_ManaKey_OutlineBL">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -87,7 +87,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_B">
+    <Label item="Player_ManaKey_OutlineB">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -104,7 +104,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_BR">
+    <Label item="Player_ManaKey_OutlineBR">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -121,7 +121,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_L">
+    <Label item="Player_ManaKey_OutlineL">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -138,7 +138,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_Shadow_R">
+    <Label item="Player_ManaKey_OutlineR">
         <Font>4</Font>
         <Text>MP</Text>
         <NoWrap>true</NoWrap>
@@ -174,7 +174,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_TL">
+    <Label item="Player_ManaLabel_OutlineTL">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -192,7 +192,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_T">
+    <Label item="Player_ManaLabel_OutlineT">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -210,7 +210,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_TR">
+    <Label item="Player_ManaLabel_OutlineTR">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -228,7 +228,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_BL">
+    <Label item="Player_ManaLabel_OutlineBL">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -246,7 +246,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_B">
+    <Label item="Player_ManaLabel_OutlineB">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -264,7 +264,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_BR">
+    <Label item="Player_ManaLabel_OutlineBR">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -282,7 +282,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_L">
+    <Label item="Player_ManaLabel_OutlineL">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -299,7 +299,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_Shadow_R">
+    <Label item="Player_ManaLabel_OutlineR">
         <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -332,7 +332,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_TL">
+    <Label item="Player_ManaPercent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -348,7 +348,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_T">
+    <Label item="Player_ManaPercent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -364,7 +364,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_TR">
+    <Label item="Player_ManaPercent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -380,7 +380,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_BL">
+    <Label item="Player_ManaPercent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -396,7 +396,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_B">
+    <Label item="Player_ManaPercent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -412,7 +412,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_BR">
+    <Label item="Player_ManaPercent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -428,7 +428,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_L">
+    <Label item="Player_ManaPercent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -443,7 +443,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_Shadow_R">
+    <Label item="Player_ManaPercent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>

@@ -1,0 +1,4 @@
+TemplateFilename = "Group.xmltemplate"
+OutputFormat = "Group{0}.xml"
+StartIndex = 1
+Count = 6

@@ -1,39 +1,16 @@
 ﻿using System.Text;
 
 partial class Program {
-    static readonly string[,] StatListL = new string[,] {
-        // Name, EQType
-        { "STR", "5" },
-        { "STA", "6" },
-        { "AGI", "8" },
-        { "DEX", "7" },
-        { "WIS", "9" },
-        { "INT", "10" },
-        { "CHA", "11" }
-    };
-
-    static readonly string[,] StatListR = new string[,] {
-        // Name, EQType
-        { "AC", "22" },
-        { "AT", "23" },
-        { "MR", "16" },
-        { "FR", "14" },
-        { "CR", "15" },
-        { "PR", "12" },
-        { "DR", "13" }
-    };
-
+    
     [GeneratedRegex(@"\[EQLabelType.(?<name>[a-zA-Z0-9]+)\]")]
     private static partial Regex EQLabelRegex();
 
     [GeneratedRegex(@"\[EQGaugeType.(?<name>[a-zA-Z0-9]+)\]")]
     private static partial Regex EQGaugeRegex();
 
-    [GeneratedRegex(@"CX\>(?<value>-*[0-9]+)")]
-    private static partial Regex CXRegex();
-
-    [GeneratedRegex(@"CY\>(?<value>-*[0-9]+)")]
-    private static partial Regex CYRegex();
+    // parses i, i+value, i-value, i*value, i/value, and i%value
+    [GeneratedRegex(@"\[i((?<op>[\/\+\-\*\%]{1})(?<value>\d+))*\]")]
+    private static partial Regex IndexRegex();
 
     static string ReplaceLabelTypes(string source) {
         Match m;
@@ -57,7 +34,135 @@ partial class Program {
         return source;
     }
 
-    static string ProcessEQTypes(string source) => ReplaceGaugeTypes(ReplaceLabelTypes(source));
+    static string ProcessIndices(string source, int i) {
+        Match m;
+        while ((m = IndexRegex().Match(source)).Success) {
+            string strValue = null, strOp = null;
+            if (m.Groups.TryGetValue("value", out Group g0)) {
+                strValue = g0.Value;
+            }
+            if (m.Groups.TryGetValue("op", out Group g1)) {
+                strOp = g1.Value;
+            } 
+            int value = string.IsNullOrWhiteSpace(strValue) ? 0 : int.Parse(strValue);
+            string newValue = strOp switch {
+                "+" => $"{i + value}",
+                "-" => $"{i - value}",
+                "*" => $"{i * value}",
+                "/" => $"{i / value}",
+                "%" => $"{i % value}",
+                _ => $"{i}"
+            }; 
+            source = source.Replace(m.Value, newValue);
+            Console.WriteLine($"   {m.Value} => {newValue}");
+        }
+        return source;
+    }
+
+    static string ProcessFile(string source, Func<string, string> proc = null) {
+        string output = (proc != null) ? proc(source) : source;
+        output = ReplaceLabelTypes(output);
+        output = ReplaceGaugeTypes(output);
+        return output;
+    }
+
+    static bool ShouldGen(string templatePath, string outputFile) =>
+        !File.Exists(outputFile) || File.GetLastWriteTime(templatePath) > File.GetLastWriteTime(outputFile);
+
+    // process an xmltemplate to produce a file from it
+    static bool GenerateFile(string templatePath, string outFilename, Func<string, string> proc = null) {
+        if (ShouldGen(templatePath, outFilename)) {
+            string original = File.ReadAllText(templatePath);
+            Console.WriteLine($"   Generating {outFilename}");
+            string output = ProcessFile(original, proc);
+            File.WriteAllText(outFilename, output);
+            return true;
+        } else {
+            Console.WriteLine($"   Skipping {outFilename}, file is newer than the template.");
+            return false;
+        }
+    }
+
+    // processes an xmltemplate to produce 'count - offset' amount of files from it
+    static bool GenerateFiles(UIGenCfg gencfg) {
+        bool result = false;
+        string original = File.ReadAllText(gencfg.TemplateFilename);
+        for (int i = gencfg.StartIndex; i < gencfg.Count; i++) {
+            string outFilename = string.Format(gencfg.OutputFormat, i);
+            if (ShouldGen(gencfg.TemplateFilename, outFilename)) {
+                Console.WriteLine($"   Generating {outFilename}");
+                string output = ProcessIndices(original, i);
+                output = ProcessFile(output);
+                File.WriteAllText(outFilename, output);
+                result = true;
+            } else {
+                Console.WriteLine($"   Skipping {outFilename}, file is newer than the template.");
+            }
+        }
+        return result;
+    }
+
+    // ----------------------------------------------------------
+    //  special cases
+    // ----------------------------------------------------------
+
+    static void GenStatWindow() {
+        foreach (string stat in new[] {
+            "STR",
+            "STA",
+            "AGI",
+            "DEX",
+            "WIS",
+            "INT",
+            "CHA",
+            "XP",
+            "AA" }) {
+            GenerateFile("./status_window/StatL.xmltemplate", $"./status_window/{stat}.xml",
+                (source) => source.Replace("[Name]", stat));
+        }
+        foreach (string stat in new[] {
+            "AC",
+            "AT",
+            "MR",
+            "FR",
+            "CR",
+            "PR",
+            "DR"}) {
+            GenerateFile("./status_window/StatR.xmltemplate", $"./status_window/{stat}.xml",
+                (source) => source.Replace("[Name]", stat));
+        }
+    }
+
+    // ----------------------------------------------------------
+    //  main
+    // ----------------------------------------------------------
+
+    static void Main(string[] args) {
+        // step into the ui folder
+        Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "../");
+        
+        // scan through directories to find generator config files and process them accordingly
+        string[] dirs = Directory.GetDirectories("./");
+        foreach (string dir in dirs) {
+            string[] files = Directory.GetFiles(dir, "*.uigencfg");
+            if (files == null || files.Length < 1) { continue; }
+            UIGenCfg gencfg = new(files[0]);
+            gencfg.WriteConsole();
+            GenerateFiles(gencfg);
+        }
+
+        // specialized output
+        GenStatWindow();
+
+        Console.WriteLine("Done!");
+
+        //const string uiroot = @"..";
+        //GenerateMerchant($"{uiroot}/D3PDA_MerchantWnd.xml");
+    }
+
+    // ----------------------------------------------------------
+    //  old
+    // ----------------------------------------------------------
 
     static string ProcessIndexer(string source, int i, char indexer) {
         string IndexPattern = @"\[" + indexer + @"(\+(?<value>-*[0-9]+))*\]";
@@ -75,62 +180,11 @@ partial class Program {
         return source;
     }
 
-    static void GenerateBuffs(string filename, int h = 34) {
-        const int BuffCount = 15;
+    [GeneratedRegex(@"CX\>(?<value>-*[0-9]+)")]
+    private static partial Regex CXRegex();
 
-        string original = File.ReadAllText(filename);
-        for (int i = 0; i < BuffCount; i++) {
-            string outFilename = filename.Replace(".xml", $"{i}.xml");
-            Console.WriteLine($"Generating {outFilename}");
-
-            string output = ProcessIndexer(original, i, 'i');
-            output = ProcessIndexer(output, 0, 'x');
-            output = ProcessIndexer(output, i * h, 'y');
-            output = ProcessEQTypes(output);
-            File.WriteAllText(outFilename, output);
-        }
-    }
-
-    static void GenerateSpells(string filename, int h = 30) {
-        const int SpellCount = 8;
-
-        string original = File.ReadAllText(filename);
-        for (int i = 0; i < SpellCount; i++) {
-            string outFilename = filename.Replace(".xml", $"{i}.xml");
-            Console.WriteLine($"Generating {outFilename}");
-            string output = ProcessIndexer(original, i, 'i');
-            output = ProcessIndexer(output, 0, 'x');
-            output = ProcessIndexer(output, i * h, 'y');
-            output = ProcessEQTypes(output);
-            File.WriteAllText(outFilename, output);
-        }
-    }
-
-    static void GenerateGroup(string filename, int h = 29) {
-        const int GroupCount = 5;
-
-        string original = File.ReadAllText(filename);
-        for (int i = 0; i < GroupCount; i++) {
-            string outFilename = filename.Replace(".xml", $"{i + 1}.xml");
-            Console.WriteLine($"Generating {outFilename}");
-            string output = ProcessIndexer(original, i, 'i');
-            output = ProcessIndexer(output, i * h, 'y');
-            output = ProcessEQTypes(output);
-            File.WriteAllText(outFilename, output);
-        }
-    }
-
-    static void GenerateStats(string filename, string[,] statList) {
-        string original = File.ReadAllText(filename);
-        for (int i = 0; i < statList.Length; i++) {
-            string outFilename = filename.Replace(".xml", $"{i + 1}.xml");
-            Console.WriteLine($"Generating {outFilename}");
-            string output = original
-                .Replace("[name]", statList[i, 0])
-                .Replace("[eqtype]", statList[i, 1]);
-            File.WriteAllText(outFilename, output);
-        }
-    }
+    [GeneratedRegex(@"CY\>(?<value>-*[0-9]+)")]
+    private static partial Regex CYRegex();
 
     static void GenerateMerchant(string filename) {
         const int SlotCount = 80;
@@ -165,7 +219,7 @@ partial class Program {
             output.AppendLine(entry);
         }
 
-        string result = 
+        string result =
 "<?xml version=\"1.0\"?>\n" +
 "<XML ID=\"EQInterfaceDefinitionLanguage\">\n" +
 "    <Schema xmlns=\"EverQuestData\" xmlns:dt=\"EverQuestDataTypes\"/>\n" +
@@ -174,17 +228,5 @@ output.ToString() +
 "    <!-- -->\n" +
 "</XML>";
         File.WriteAllText(filename, result);
-    }
-
-    static void Main(string[] args) {
-        const string uiroot = @"..";
-
-        //GenerateBuffs($"{uiroot}/l_buff_window/Buff.xml");
-        //GenerateBuffs($"{uiroot}/r_buff_window/Buff.xml");
-        //GenerateGroup($"{uiroot}/group_window/Group.xml");
-        GenerateSpells($"{uiroot}/spell_window/Spell.xml");
-        //GenerateStats($"{uiroot}/status_window/StatL.xml", StatListL);
-        //GenerateStats($"{uiroot}/status_window/StatR.xml", StatListR);
-        //GenerateMerchant($"{uiroot}/D3PDA_MerchantWnd.xml");
     }
 }

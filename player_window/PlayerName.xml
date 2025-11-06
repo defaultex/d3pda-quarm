@@ -17,7 +17,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_TL">
+    <Label item="Player_NameLabel_OutlineTL">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -31,7 +31,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_T">
+    <Label item="Player_NameLabel_OutlineT">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -45,7 +45,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_TR">
+    <Label item="Player_NameLabel_OutlineTR">
         <EQType>1</EQType>
         <Font>5</Font>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -58,7 +58,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_BL">
+    <Label item="Player_NameLabel_OutlineBL">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -72,7 +72,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_B">
+    <Label item="Player_NameLabel_OutlineB">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -86,7 +86,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_BR">
+    <Label item="Player_NameLabel_OutlineBR">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -100,7 +100,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_L">
+    <Label item="Player_NameLabel_OutlineL">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -114,7 +114,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_NameLabel_Shadow_R">
+    <Label item="Player_NameLabel_OutlineR">
         <EQType>1</EQType>
         <Font>5</Font>
         <AutoStretch>true</AutoStretch>
@@ -145,7 +145,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_TL">
+    <Label item="Player_Level_OutlineTL">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -160,7 +160,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_T">
+    <Label item="Player_Level_OutlineT">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -175,7 +175,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_TR">
+    <Label item="Player_Level_OutlineTR">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -189,7 +189,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_BL">
+    <Label item="Player_Level_OutlineBL">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -204,7 +204,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_B">
+    <Label item="Player_Level_OutlineB">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -219,7 +219,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_BR">
+    <Label item="Player_Level_OutlineBR">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -234,7 +234,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_L">
+    <Label item="Player_Level_OutlineL">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>
@@ -249,7 +249,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_Level_Shadow_R">
+    <Label item="Player_Level_OutlineR">
         <EQType>2</EQType>
         <Font>5</Font>
         <AlignRight>true</AlignRight>

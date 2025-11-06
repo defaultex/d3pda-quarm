@@ -1,11 +1,11 @@
 <XML ID = "EQInterfaceDefinitionLanguage">
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
 	<!-- -->
-	<Button item = "HB_Button5">
-		<ScreenID>HB_Button5</ScreenID>
+	<Button item = "HB_Button6">
+		<ScreenID>HB_Button6</ScreenID>
 		<Font>1</Font>
 		<Location>
-			<X>160</X>
+			<X>200</X>
 			<Y>10</Y>
 		</Location>
 		<Size>
@@ -22,20 +22,20 @@
 			<B>255</B>
 		</TextColor>
 		<ButtonDrawTemplate>
-			<Normal>A_HotButton5Normal</Normal>
-			<Pressed>A_HotButton5Pressed</Pressed>
-			<Flyby>A_HotButton5Flyby</Flyby>
-			<Disabled>A_HotButton5Disabled</Disabled>
-			<PressedFlyby>A_HotButton5PressedFlyby</PressedFlyby>
+			<Normal>A_HotButton6Normal</Normal>
+			<Pressed>A_HotButton6Pressed</Pressed>
+			<Flyby>A_HotButton6Flyby</Flyby>
+			<Disabled>A_HotButton6Disabled</Disabled>
+			<PressedFlyby>A_HotButton6PressedFlyby</PressedFlyby>
 		</ButtonDrawTemplate>
 	</Button>
 	<!-- -->
-	<InvSlot item = "HB_InvSlot5">
+	<InvSlot item = "HB_InvSlot6">
 		<Background>A_RecessedBox</Background>
-		<ScreenID>HB_InvSlot5</ScreenID>
+		<ScreenID>HB_InvSlot6</ScreenID>
 		<EQType>-1</EQType>
 		<Location>
-			<X>160</X>
+			<X>200</X>
 			<Y>10</Y>
 		</Location>
 		<Size>
@@ -44,12 +44,12 @@
 		</Size>
 	</InvSlot>
 	<!-- -->
-	<SpellGem item = "HB_SpellGem5">
-		<ScreenID>HB_SpellGem5</ScreenID>
+	<SpellGem item = "HB_SpellGem6">
+		<ScreenID>HB_SpellGem6</ScreenID>
 		<SpellIconOffsetX>8</SpellIconOffsetX>
 		<SpellIconOffsetY>4</SpellIconOffsetY>
 		<Location>
-			<X>160</X>
+			<X>200</X>
 			<Y>15</Y>
 		</Location>
 		<Size>

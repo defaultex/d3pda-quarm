@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- Stat Label -->
     <Label item="SW_PRLabel">
         <Font>4</Font>
         <Text>PR</Text>
@@ -19,7 +20,7 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_TL">
+    <Label item="SW_PRLabel_OutlineTL">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -37,7 +38,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_T">
+    <Label item="SW_PRLabel_OutlineT">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -55,7 +56,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_TR">
+    <Label item="SW_PRLabel_OutlineTR">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -73,7 +74,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_BL">
+    <Label item="SW_PRLabel_OutlineBL">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -91,7 +92,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_B">
+    <Label item="SW_PRLabel_OutlineB">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -109,7 +110,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_BR">
+    <Label item="SW_PRLabel_OutlineBR">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -127,7 +128,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_L">
+    <Label item="SW_PRLabel_OutlineL">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -145,7 +146,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_PRLabel_Shadow_R">
+    <Label item="SW_PRLabel_OutlineR">
         <Font>4</Font>
         <Text>PR</Text>
         <NoWrap>true</NoWrap>
@@ -163,7 +164,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <!-- -->
+    <!-- Number Label -->
     <Label item="SW_PRNumber">
         <EQType>12</EQType>
         <Font>3</Font>
@@ -183,4 +184,5 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
+    <!--  -->
 </XML>

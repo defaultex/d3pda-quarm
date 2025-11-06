@@ -19,7 +19,7 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_TL">
+    <Label item="Player_ENKey_OutlineTL">
         <Font>4</Font>
         <Text>EN</Text>
         <AlignCenter>true</AlignCenter>
@@ -35,7 +35,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_T">
+    <Label item="Player_ENKey_OutlineT">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -52,7 +52,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_TR">
+    <Label item="Player_ENKey_OutlineTR">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -69,7 +69,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_BL">
+    <Label item="Player_ENKey_OutlineBL">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -86,7 +86,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_B">
+    <Label item="Player_ENKey_OutlineB">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -103,7 +103,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_BR">
+    <Label item="Player_ENKey_OutlineBR">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -120,7 +120,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_L">
+    <Label item="Player_ENKey_OutlineL">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -137,7 +137,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_Shadow_R">
+    <Label item="Player_ENKey_OutlineR">
         <Font>4</Font>
         <Text>EN</Text>
         <NoWrap>true</NoWrap>
@@ -173,7 +173,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_TL">
+    <Label item="Player_FatigueLabel_OutlineTL">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -191,7 +191,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_T">
+    <Label item="Player_FatigueLabel_OutlineT">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -209,7 +209,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_TR">
+    <Label item="Player_FatigueLabel_OutlineTR">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -227,7 +227,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_BL">
+    <Label item="Player_FatigueLabel_OutlineBL">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -245,7 +245,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_B">
+    <Label item="Player_FatigueLabel_OutlineB">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -263,7 +263,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_BR">
+    <Label item="Player_FatigueLabel_OutlineBR">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -281,7 +281,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_L">
+    <Label item="Player_FatigueLabel_OutlineL">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -298,7 +298,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_Shadow_R">
+    <Label item="Player_FatigueLabel_OutlineR">
         <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -330,7 +330,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_TL">
+    <Label item="Player_FatiguePercent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -346,7 +346,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_T">
+    <Label item="Player_FatiguePercent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -362,7 +362,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_TR">
+    <Label item="Player_FatiguePercent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -378,7 +378,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_BL">
+    <Label item="Player_FatiguePercent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -394,7 +394,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_B">
+    <Label item="Player_FatiguePercent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -410,7 +410,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_BR">
+    <Label item="Player_FatiguePercent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -426,7 +426,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_L">
+    <Label item="Player_FatiguePercent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -441,7 +441,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_Shadow_R">
+    <Label item="Player_FatiguePercent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>

@@ -1,0 +1,4 @@
+TemplateFilename = "Button.xmltemplate"
+OutputFormat = "Button{0}.xml"
+StartIndex = 0
+Count = 10

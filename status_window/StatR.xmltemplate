@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-    <Label item="SW_ATKLabel">
+    <!-- Stat Label -->
+    <Label item="SW_[Name]Label">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -19,9 +20,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_TL">
+    <Label item="SW_[Name]Label_OutlineTL">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -37,9 +38,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_T">
+    <Label item="SW_[Name]Label_OutlineT">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -55,9 +56,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_TR">
+    <Label item="SW_[Name]Label_OutlineTR">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -73,9 +74,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_BL">
+    <Label item="SW_[Name]Label_OutlineBL">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -91,9 +92,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_B">
+    <Label item="SW_[Name]Label_OutlineB">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -109,9 +110,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_BR">
+    <Label item="SW_[Name]Label_OutlineBR">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -127,9 +128,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_L">
+    <Label item="SW_[Name]Label_OutlineL">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -145,9 +146,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_ATKLabel_Shadow_R">
+    <Label item="SW_[Name]Label_OutlineR">
         <Font>4</Font>
-        <Text>AT</Text>
+        <Text>[Name]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -163,9 +164,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <!-- -->
-    <Label item="SW_ATKNumber">
-        <EQType>23</EQType>
+    <!-- Number Label -->
+    <Label item="SW_[Name]Number">
+        <EQType>[EQLabelType.[Name]]</EQType>
         <Font>3</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -183,4 +184,5 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
+    <!--  -->
 </XML>

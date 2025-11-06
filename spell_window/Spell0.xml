@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
-<XML ID="EQInterfaceDefinitionLanguage">
-    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+    <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
     <!-- -->
     <Label item="CSPW_Spell0Number">
         <Text>1</Text>
@@ -309,7 +309,7 @@
         </TextColor>
     </Label>
     <!-- -->
-    <SpellGem item="CSPW_Spell0">
+    <SpellGem item = "CSPW_Spell0">
         <ScreenID>CSPW_Spell0</ScreenID>
         <SpellIconOffsetX>2</SpellIconOffsetX>
         <SpellIconOffsetY>2</SpellIconOffsetY>

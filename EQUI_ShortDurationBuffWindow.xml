@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Composite>
-        <Include>r_buff_window/ShortBuff0.xml</Include>
-        <Include>r_buff_window/ShortBuff1.xml</Include>
-        <Include>r_buff_window/ShortBuff2.xml</Include>
-        <Include>r_buff_window/ShortBuff3.xml</Include>
-        <Include>r_buff_window/ShortBuff4.xml</Include>
-        <Include>r_buff_window/ShortBuff5.xml</Include>
+        <Include>song_window/Song0.xml</Include>
+        <Include>song_window/Song1.xml</Include>
+        <Include>song_window/Song2.xml</Include>
+        <Include>song_window/Song3.xml</Include>
+        <Include>song_window/Song4.xml</Include>
+        <Include>song_window/Song5.xml</Include>
     </Composite>
     <!--  -->
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />

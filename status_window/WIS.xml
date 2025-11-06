@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-    <!-- -->
+    <!-- Stat Label -->
     <Label item="SW_WISLabel">
         <Font>4</Font>
         <Text>WIS</Text>
@@ -19,7 +19,7 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_TL">
+    <Label item="SW_WISLabel_OutlineTL">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -36,7 +36,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_T">
+    <Label item="SW_WISLabel_OutlineT">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -53,7 +53,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_TR">
+    <Label item="SW_WISLabel_OutlineTR">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -70,7 +70,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_BL">
+    <Label item="SW_WISLabel_OutlineBL">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -87,7 +87,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_B">
+    <Label item="SW_WISLabel_OutlineB">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -104,7 +104,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_BR">
+    <Label item="SW_WISLabel_OutlineBR">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -121,7 +121,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_L">
+    <Label item="SW_WISLabel_OutlineL">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -138,7 +138,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_WISLabel_Shadow_R">
+    <Label item="SW_WISLabel_OutlineR">
         <Font>4</Font>
         <Text>WIS</Text>
         <NoWrap>true</NoWrap>
@@ -155,7 +155,7 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <!-- -->
+    <!-- Number Label -->
     <Label item="SW_WISNumber">
         <EQType>9</EQType>
         <Font>3</Font>
@@ -173,4 +173,5 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
+    <!--  -->
 </XML>

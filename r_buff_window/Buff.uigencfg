@@ -1,0 +1,4 @@
+TemplateFilename = "Buff.xmltemplate"
+OutputFormat = "Buff{0}.xml"
+StartIndex = 0
+Count = 15

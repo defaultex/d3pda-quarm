@@ -2,12 +2,12 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <!--  -->
     <Composite>
-        <!--  -->
+        <!-- player window  -->
         <Include>player_window\PlayerName.xml</Include>
         <Include>player_window\PlayerHP.xml</Include>
         <Include>player_window\PlayerMP.xml</Include>
         <Include>player_window\PlayerEN.xml</Include>
-        <!--  -->
+        <!-- left stat window -->
         <Include>status_window\STR.xml</Include>
         <Include>status_window\STA.xml</Include>
         <Include>status_window\AGI.xml</Include>
@@ -15,23 +15,25 @@
         <Include>status_window\WIS.xml</Include>
         <Include>status_window\INT.xml</Include>
         <Include>status_window\CHA.xml</Include>
-        <!--  -->
+        <!-- right stat window -->
         <Include>status_window\AC.xml</Include>
-        <Include>status_window\ATK.xml</Include>
+        <Include>status_window\AT.xml</Include>
         <Include>status_window\MR.xml</Include>
         <Include>status_window\CR.xml</Include>
         <Include>status_window\FR.xml</Include>
         <Include>status_window\PR.xml</Include>
         <Include>status_window\DR.xml</Include>
-        <!--  -->
+        <!-- stat window gauges -->
         <Include>status_window\XP.xml</Include>
         <Include>status_window\AA.xml</Include>
+        <Include>status_window\XPGauge.xml</Include>
+        <Include>status_window\AAGauge.xml</Include>
         <!--  -->
     </Composite>
     <!--  -->
     <Schema xmlns="EverQuestData"
             xmlns:dt="EverQuestDataTypes" />
-    <!--  -->
+    <!-- Player Window Background  -->
     <StaticAnimation item="PW_IWnd0">
         <Animation>D3PDA_IWnd_Item0_Serif</Animation>
         <Location>
@@ -120,7 +122,7 @@
             <CY>30</CY>
         </Size>
     </StaticAnimation>
-    <!--  -->
+    <!-- Status Window Background -->
     <StaticAnimation item="SW_Frame_Top">
         <Animation>D3PDA_LargeBorder_Top</Animation>
         <Location>
@@ -132,7 +134,7 @@
             <CY>10</CY>
         </Size>
     </StaticAnimation>
-    <!--  -->
+    <!-- left half of Status Window  -->
     <StaticAnimation item="SWL_IWnd0">
         <Animation>D3PDA_IWnd_Item0_Serif</Animation>
         <Location>
@@ -331,7 +333,7 @@
             <CY>30</CY>
         </Size>
     </StaticAnimation>
-    <!--  -->
+    <!-- right half of Status Window -->
     <StaticAnimation item="SWR_IWnd0">
         <Animation>D3PDA_IWnd_Item0_Serif</Animation>
         <Location>
@@ -486,7 +488,7 @@
             <CY>30</CY>
         </Size>
     </StaticAnimation>
-    <!--  -->
+    <!-- Player Window Layouts -->
     <Screen item="Player_Name_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
@@ -497,23 +499,23 @@
             <CX>138</CX>
             <CY>20</CY>
         </Size>
-        <Pieces>Player_NameLabel_Shadow_TL</Pieces>
-        <Pieces>Player_NameLabel_Shadow_T</Pieces>
-        <Pieces>Player_NameLabel_Shadow_TR</Pieces>
-        <Pieces>Player_NameLabel_Shadow_BL</Pieces>
-        <Pieces>Player_NameLabel_Shadow_B</Pieces>
-        <Pieces>Player_NameLabel_Shadow_BR</Pieces>
-        <Pieces>Player_NameLabel_Shadow_L</Pieces>
-        <Pieces>Player_NameLabel_Shadow_R</Pieces>
+        <Pieces>Player_NameLabel_OutlineTL</Pieces>
+        <Pieces>Player_NameLabel_OutlineT</Pieces>
+        <Pieces>Player_NameLabel_OutlineTR</Pieces>
+        <Pieces>Player_NameLabel_OutlineBL</Pieces>
+        <Pieces>Player_NameLabel_OutlineB</Pieces>
+        <Pieces>Player_NameLabel_OutlineBR</Pieces>
+        <Pieces>Player_NameLabel_OutlineL</Pieces>
+        <Pieces>Player_NameLabel_OutlineR</Pieces>
         <Pieces>Player_NameLabel</Pieces>
-        <Pieces>Player_Level_Shadow_TL</Pieces>
-        <Pieces>Player_Level_Shadow_T</Pieces>
-        <Pieces>Player_Level_Shadow_TR</Pieces>
-        <Pieces>Player_Level_Shadow_BL</Pieces>
-        <Pieces>Player_Level_Shadow_B</Pieces>
-        <Pieces>Player_Level_Shadow_BR</Pieces>
-        <Pieces>Player_Level_Shadow_L</Pieces>
-        <Pieces>Player_Level_Shadow_R</Pieces>
+        <Pieces>Player_Level_OutlineTL</Pieces>
+        <Pieces>Player_Level_OutlineT</Pieces>
+        <Pieces>Player_Level_OutlineTR</Pieces>
+        <Pieces>Player_Level_OutlineBL</Pieces>
+        <Pieces>Player_Level_OutlineB</Pieces>
+        <Pieces>Player_Level_OutlineBR</Pieces>
+        <Pieces>Player_Level_OutlineL</Pieces>
+        <Pieces>Player_Level_OutlineR</Pieces>
         <Pieces>Player_Level</Pieces>
     </Screen>
     <Screen item="Player_HPKey_Layout">
@@ -526,14 +528,14 @@
             <CX>32</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>Player_HPKey_Shadow_TL</Pieces>
-        <Pieces>Player_HPKey_Shadow_T</Pieces>
-        <Pieces>Player_HPKey_Shadow_TR</Pieces>
-        <Pieces>Player_HPKey_Shadow_BL</Pieces>
-        <Pieces>Player_HPKey_Shadow_B</Pieces>
-        <Pieces>Player_HPKey_Shadow_BR</Pieces>
-        <Pieces>Player_HPKey_Shadow_L</Pieces>
-        <Pieces>Player_HPKey_Shadow_R</Pieces>
+        <Pieces>Player_HPKey_OutlineTL</Pieces>
+        <Pieces>Player_HPKey_OutlineT</Pieces>
+        <Pieces>Player_HPKey_OutlineTR</Pieces>
+        <Pieces>Player_HPKey_OutlineBL</Pieces>
+        <Pieces>Player_HPKey_OutlineB</Pieces>
+        <Pieces>Player_HPKey_OutlineBR</Pieces>
+        <Pieces>Player_HPKey_OutlineL</Pieces>
+        <Pieces>Player_HPKey_OutlineR</Pieces>
         <Pieces>Player_HPKey</Pieces>
     </Screen>
     <Screen item="Player_HPLabel_Layout">
@@ -544,23 +546,23 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>60</LeftAnchorOffset>
         <RightAnchorOffset>6</RightAnchorOffset>
-        <Pieces>Player_HPLabel_Shadow_TL</Pieces>
-        <Pieces>Player_HPLabel_Shadow_T</Pieces>
-        <Pieces>Player_HPLabel_Shadow_TR</Pieces>
-        <Pieces>Player_HPLabel_Shadow_BL</Pieces>
-        <Pieces>Player_HPLabel_Shadow_B</Pieces>
-        <Pieces>Player_HPLabel_Shadow_BR</Pieces>
-        <Pieces>Player_HPLabel_Shadow_L</Pieces>
-        <Pieces>Player_HPLabel_Shadow_R</Pieces>
+        <Pieces>Player_HPLabel_OutlineTL</Pieces>
+        <Pieces>Player_HPLabel_OutlineT</Pieces>
+        <Pieces>Player_HPLabel_OutlineTR</Pieces>
+        <Pieces>Player_HPLabel_OutlineBL</Pieces>
+        <Pieces>Player_HPLabel_OutlineB</Pieces>
+        <Pieces>Player_HPLabel_OutlineBR</Pieces>
+        <Pieces>Player_HPLabel_OutlineL</Pieces>
+        <Pieces>Player_HPLabel_OutlineR</Pieces>
         <Pieces>Player_HPLabel</Pieces>
-        <Pieces>Player_HPPercent_Shadow_TL</Pieces>
-        <Pieces>Player_HPPercent_Shadow_T</Pieces>
-        <Pieces>Player_HPPercent_Shadow_TR</Pieces>
-        <Pieces>Player_HPPercent_Shadow_BL</Pieces>
-        <Pieces>Player_HPPercent_Shadow_B</Pieces>
-        <Pieces>Player_HPPercent_Shadow_BR</Pieces>
-        <Pieces>Player_HPPercent_Shadow_L</Pieces>
-        <Pieces>Player_HPPercent_Shadow_R</Pieces>
+        <Pieces>Player_HPPercent_OutlineTL</Pieces>
+        <Pieces>Player_HPPercent_OutlineT</Pieces>
+        <Pieces>Player_HPPercent_OutlineTR</Pieces>
+        <Pieces>Player_HPPercent_OutlineBL</Pieces>
+        <Pieces>Player_HPPercent_OutlineB</Pieces>
+        <Pieces>Player_HPPercent_OutlineBR</Pieces>
+        <Pieces>Player_HPPercent_OutlineL</Pieces>
+        <Pieces>Player_HPPercent_OutlineR</Pieces>
         <Pieces>Player_HPPercent</Pieces>
     </Screen>
     <Screen item="Player_HP_Layout">
@@ -588,14 +590,14 @@
             <CX>32</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>Player_ManaKey_Shadow_TL</Pieces>
-        <Pieces>Player_ManaKey_Shadow_T</Pieces>
-        <Pieces>Player_ManaKey_Shadow_TR</Pieces>
-        <Pieces>Player_ManaKey_Shadow_BL</Pieces>
-        <Pieces>Player_ManaKey_Shadow_B</Pieces>
-        <Pieces>Player_ManaKey_Shadow_BR</Pieces>
-        <Pieces>Player_ManaKey_Shadow_L</Pieces>
-        <Pieces>Player_ManaKey_Shadow_R</Pieces>
+        <Pieces>Player_ManaKey_OutlineTL</Pieces>
+        <Pieces>Player_ManaKey_OutlineT</Pieces>
+        <Pieces>Player_ManaKey_OutlineTR</Pieces>
+        <Pieces>Player_ManaKey_OutlineBL</Pieces>
+        <Pieces>Player_ManaKey_OutlineB</Pieces>
+        <Pieces>Player_ManaKey_OutlineBR</Pieces>
+        <Pieces>Player_ManaKey_OutlineL</Pieces>
+        <Pieces>Player_ManaKey_OutlineR</Pieces>
         <Pieces>Player_ManaKey</Pieces>
     </Screen>
     <Screen item="Player_ManaLabel_Layout">
@@ -606,23 +608,23 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>60</LeftAnchorOffset>
         <RightAnchorOffset>6</RightAnchorOffset>
-        <Pieces>Player_ManaLabel_Shadow_TL</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_T</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_TR</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_BL</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_B</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_BR</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_L</Pieces>
-        <Pieces>Player_ManaLabel_Shadow_R</Pieces>
+        <Pieces>Player_ManaLabel_OutlineTL</Pieces>
+        <Pieces>Player_ManaLabel_OutlineT</Pieces>
+        <Pieces>Player_ManaLabel_OutlineTR</Pieces>
+        <Pieces>Player_ManaLabel_OutlineBL</Pieces>
+        <Pieces>Player_ManaLabel_OutlineB</Pieces>
+        <Pieces>Player_ManaLabel_OutlineBR</Pieces>
+        <Pieces>Player_ManaLabel_OutlineL</Pieces>
+        <Pieces>Player_ManaLabel_OutlineR</Pieces>
         <Pieces>Player_ManaLabel</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_TL</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_T</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_TR</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_BL</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_B</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_BR</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_L</Pieces>
-        <Pieces>Player_ManaPercent_Shadow_R</Pieces>
+        <Pieces>Player_ManaPercent_OutlineTL</Pieces>
+        <Pieces>Player_ManaPercent_OutlineT</Pieces>
+        <Pieces>Player_ManaPercent_OutlineTR</Pieces>
+        <Pieces>Player_ManaPercent_OutlineBL</Pieces>
+        <Pieces>Player_ManaPercent_OutlineB</Pieces>
+        <Pieces>Player_ManaPercent_OutlineBR</Pieces>
+        <Pieces>Player_ManaPercent_OutlineL</Pieces>
+        <Pieces>Player_ManaPercent_OutlineR</Pieces>
         <Pieces>Player_ManaPercent</Pieces>
     </Screen>
     <Screen item="Player_Mana_Layout">
@@ -650,14 +652,14 @@
             <CX>32</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>Player_ENKey_Shadow_TL</Pieces>
-        <Pieces>Player_ENKey_Shadow_T</Pieces>
-        <Pieces>Player_ENKey_Shadow_TR</Pieces>
-        <Pieces>Player_ENKey_Shadow_BL</Pieces>
-        <Pieces>Player_ENKey_Shadow_B</Pieces>
-        <Pieces>Player_ENKey_Shadow_BR</Pieces>
-        <Pieces>Player_ENKey_Shadow_L</Pieces>
-        <Pieces>Player_ENKey_Shadow_R</Pieces>
+        <Pieces>Player_ENKey_OutlineTL</Pieces>
+        <Pieces>Player_ENKey_OutlineT</Pieces>
+        <Pieces>Player_ENKey_OutlineTR</Pieces>
+        <Pieces>Player_ENKey_OutlineBL</Pieces>
+        <Pieces>Player_ENKey_OutlineB</Pieces>
+        <Pieces>Player_ENKey_OutlineBR</Pieces>
+        <Pieces>Player_ENKey_OutlineL</Pieces>
+        <Pieces>Player_ENKey_OutlineR</Pieces>
         <Pieces>Player_ENKey</Pieces>
     </Screen>
     <Screen item="Player_FatigueLabel_Layout">
@@ -668,23 +670,23 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>60</LeftAnchorOffset>
         <RightAnchorOffset>6</RightAnchorOffset>
-        <Pieces>Player_FatigueLabel_Shadow_TL</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_T</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_TR</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_BL</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_B</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_BR</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_L</Pieces>
-        <Pieces>Player_FatigueLabel_Shadow_R</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineTL</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineT</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineTR</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineBL</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineB</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineBR</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineL</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineR</Pieces>
         <Pieces>Player_FatigueLabel</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_TL</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_T</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_TR</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_BL</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_B</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_BR</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_L</Pieces>
-        <Pieces>Player_FatiguePercent_Shadow_R</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineTL</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineT</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineTR</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineBL</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineB</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineBR</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineL</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineR</Pieces>
         <Pieces>Player_FatiguePercent</Pieces>
     </Screen>
     <Screen item="Player_Fatigue_Layout">
@@ -702,7 +704,7 @@
         <!-- <Pieces>Player_EnNumber</Pieces> -->
         <Pieces>Player_FatigueLabel_Layout</Pieces>
     </Screen>
-    <!--  -->
+    <!-- Status Window Layouts (left) -->
     <Screen item="SW_STRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <AutoStretch>true</AutoStretch>
@@ -710,14 +712,14 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>4</TopAnchorOffset>
         <BottomAnchorOffset>34</BottomAnchorOffset>
-        <Pieces>SW_STRLabel_Shadow_TL</Pieces>
-        <Pieces>SW_STRLabel_Shadow_T</Pieces>
-        <Pieces>SW_STRLabel_Shadow_TR</Pieces>
-        <Pieces>SW_STRLabel_Shadow_BL</Pieces>
-        <Pieces>SW_STRLabel_Shadow_B</Pieces>
-        <Pieces>SW_STRLabel_Shadow_BR</Pieces>
-        <Pieces>SW_STRLabel_Shadow_L</Pieces>
-        <Pieces>SW_STRLabel_Shadow_R</Pieces>
+        <Pieces>SW_STRLabel_OutlineTL</Pieces>
+        <Pieces>SW_STRLabel_OutlineT</Pieces>
+        <Pieces>SW_STRLabel_OutlineTR</Pieces>
+        <Pieces>SW_STRLabel_OutlineBL</Pieces>
+        <Pieces>SW_STRLabel_OutlineB</Pieces>
+        <Pieces>SW_STRLabel_OutlineBR</Pieces>
+        <Pieces>SW_STRLabel_OutlineL</Pieces>
+        <Pieces>SW_STRLabel_OutlineR</Pieces>
         <Pieces>SW_STRLabel</Pieces>
         <Pieces>SW_STRNumber</Pieces>
     </Screen>
@@ -728,14 +730,14 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>34</TopAnchorOffset>
         <BottomAnchorOffset>64</BottomAnchorOffset>
-        <Pieces>SW_STALabel_Shadow_TL</Pieces>
-        <Pieces>SW_STALabel_Shadow_T</Pieces>
-        <Pieces>SW_STALabel_Shadow_TR</Pieces>
-        <Pieces>SW_STALabel_Shadow_BL</Pieces>
-        <Pieces>SW_STALabel_Shadow_B</Pieces>
-        <Pieces>SW_STALabel_Shadow_BR</Pieces>
-        <Pieces>SW_STALabel_Shadow_L</Pieces>
-        <Pieces>SW_STALabel_Shadow_R</Pieces>
+        <Pieces>SW_STALabel_OutlineTL</Pieces>
+        <Pieces>SW_STALabel_OutlineT</Pieces>
+        <Pieces>SW_STALabel_OutlineTR</Pieces>
+        <Pieces>SW_STALabel_OutlineBL</Pieces>
+        <Pieces>SW_STALabel_OutlineB</Pieces>
+        <Pieces>SW_STALabel_OutlineBR</Pieces>
+        <Pieces>SW_STALabel_OutlineL</Pieces>
+        <Pieces>SW_STALabel_OutlineR</Pieces>
         <Pieces>SW_STALabel</Pieces>
         <Pieces>SW_STANumber</Pieces>
     </Screen>
@@ -746,14 +748,14 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>64</TopAnchorOffset>
         <BottomAnchorOffset>94</BottomAnchorOffset>
-        <Pieces>SW_AGILabel_Shadow_TL</Pieces>
-        <Pieces>SW_AGILabel_Shadow_T</Pieces>
-        <Pieces>SW_AGILabel_Shadow_TR</Pieces>
-        <Pieces>SW_AGILabel_Shadow_BL</Pieces>
-        <Pieces>SW_AGILabel_Shadow_B</Pieces>
-        <Pieces>SW_AGILabel_Shadow_BR</Pieces>
-        <Pieces>SW_AGILabel_Shadow_L</Pieces>
-        <Pieces>SW_AGILabel_Shadow_R</Pieces>
+        <Pieces>SW_AGILabel_OutlineTL</Pieces>
+        <Pieces>SW_AGILabel_OutlineT</Pieces>
+        <Pieces>SW_AGILabel_OutlineTR</Pieces>
+        <Pieces>SW_AGILabel_OutlineBL</Pieces>
+        <Pieces>SW_AGILabel_OutlineB</Pieces>
+        <Pieces>SW_AGILabel_OutlineBR</Pieces>
+        <Pieces>SW_AGILabel_OutlineL</Pieces>
+        <Pieces>SW_AGILabel_OutlineR</Pieces>
         <Pieces>SW_AGILabel</Pieces>
         <Pieces>SW_AGINumber</Pieces>
     </Screen>
@@ -764,14 +766,14 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>94</TopAnchorOffset>
         <BottomAnchorOffset>124</BottomAnchorOffset>
-        <Pieces>SW_DEXLabel_Shadow_TL</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_T</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_TR</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_BL</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_B</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_BR</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_L</Pieces>
-        <Pieces>SW_DEXLabel_Shadow_R</Pieces>
+        <Pieces>SW_DEXLabel_OutlineTL</Pieces>
+        <Pieces>SW_DEXLabel_OutlineT</Pieces>
+        <Pieces>SW_DEXLabel_OutlineTR</Pieces>
+        <Pieces>SW_DEXLabel_OutlineBL</Pieces>
+        <Pieces>SW_DEXLabel_OutlineB</Pieces>
+        <Pieces>SW_DEXLabel_OutlineBR</Pieces>
+        <Pieces>SW_DEXLabel_OutlineL</Pieces>
+        <Pieces>SW_DEXLabel_OutlineR</Pieces>
         <Pieces>SW_DEXLabel</Pieces>
         <Pieces>SW_DEXNumber</Pieces>
     </Screen>
@@ -782,14 +784,14 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>124</TopAnchorOffset>
         <BottomAnchorOffset>154</BottomAnchorOffset>
-        <Pieces>SW_WISLabel_Shadow_TL</Pieces>
-        <Pieces>SW_WISLabel_Shadow_T</Pieces>
-        <Pieces>SW_WISLabel_Shadow_TR</Pieces>
-        <Pieces>SW_WISLabel_Shadow_BL</Pieces>
-        <Pieces>SW_WISLabel_Shadow_B</Pieces>
-        <Pieces>SW_WISLabel_Shadow_BR</Pieces>
-        <Pieces>SW_WISLabel_Shadow_L</Pieces>
-        <Pieces>SW_WISLabel_Shadow_R</Pieces>
+        <Pieces>SW_WISLabel_OutlineTL</Pieces>
+        <Pieces>SW_WISLabel_OutlineT</Pieces>
+        <Pieces>SW_WISLabel_OutlineTR</Pieces>
+        <Pieces>SW_WISLabel_OutlineBL</Pieces>
+        <Pieces>SW_WISLabel_OutlineB</Pieces>
+        <Pieces>SW_WISLabel_OutlineBR</Pieces>
+        <Pieces>SW_WISLabel_OutlineL</Pieces>
+        <Pieces>SW_WISLabel_OutlineR</Pieces>
         <Pieces>SW_WISLabel</Pieces>
         <Pieces>SW_WISNumber</Pieces>
     </Screen>
@@ -800,14 +802,14 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>154</TopAnchorOffset>
         <BottomAnchorOffset>184</BottomAnchorOffset>
-        <Pieces>SW_INTLabel_Shadow_TL</Pieces>
-        <Pieces>SW_INTLabel_Shadow_T</Pieces>
-        <Pieces>SW_INTLabel_Shadow_TR</Pieces>
-        <Pieces>SW_INTLabel_Shadow_BL</Pieces>
-        <Pieces>SW_INTLabel_Shadow_B</Pieces>
-        <Pieces>SW_INTLabel_Shadow_BR</Pieces>
-        <Pieces>SW_INTLabel_Shadow_L</Pieces>
-        <Pieces>SW_INTLabel_Shadow_R</Pieces>
+        <Pieces>SW_INTLabel_OutlineTL</Pieces>
+        <Pieces>SW_INTLabel_OutlineT</Pieces>
+        <Pieces>SW_INTLabel_OutlineTR</Pieces>
+        <Pieces>SW_INTLabel_OutlineBL</Pieces>
+        <Pieces>SW_INTLabel_OutlineB</Pieces>
+        <Pieces>SW_INTLabel_OutlineBR</Pieces>
+        <Pieces>SW_INTLabel_OutlineL</Pieces>
+        <Pieces>SW_INTLabel_OutlineR</Pieces>
         <Pieces>SW_INTLabel</Pieces>
         <Pieces>SW_INTNumber</Pieces>
     </Screen>
@@ -818,18 +820,18 @@
         <RightAnchorOffset>70</RightAnchorOffset>
         <TopAnchorOffset>184</TopAnchorOffset>
         <BottomAnchorOffset>214</BottomAnchorOffset>
-        <Pieces>SW_CHALabel_Shadow_TL</Pieces>
-        <Pieces>SW_CHALabel_Shadow_T</Pieces>
-        <Pieces>SW_CHALabel_Shadow_TR</Pieces>
-        <Pieces>SW_CHALabel_Shadow_BL</Pieces>
-        <Pieces>SW_CHALabel_Shadow_B</Pieces>
-        <Pieces>SW_CHALabel_Shadow_BR</Pieces>
-        <Pieces>SW_CHALabel_Shadow_L</Pieces>
-        <Pieces>SW_CHALabel_Shadow_R</Pieces>
+        <Pieces>SW_CHALabel_OutlineTL</Pieces>
+        <Pieces>SW_CHALabel_OutlineT</Pieces>
+        <Pieces>SW_CHALabel_OutlineTR</Pieces>
+        <Pieces>SW_CHALabel_OutlineBL</Pieces>
+        <Pieces>SW_CHALabel_OutlineB</Pieces>
+        <Pieces>SW_CHALabel_OutlineBR</Pieces>
+        <Pieces>SW_CHALabel_OutlineL</Pieces>
+        <Pieces>SW_CHALabel_OutlineR</Pieces>
         <Pieces>SW_CHALabel</Pieces>
         <Pieces>SW_CHANumber</Pieces>
     </Screen>
-    <!--  -->
+    <!-- Status Window Layouts (right)  -->
     <Screen item="SW_ACLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <AutoStretch>true</AutoStretch>
@@ -839,18 +841,18 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>4</TopAnchorOffset>
         <BottomAnchorOffset>34</BottomAnchorOffset>
-        <Pieces>SW_ACLabel_Shadow_TL</Pieces>
-        <Pieces>SW_ACLabel_Shadow_T</Pieces>
-        <Pieces>SW_ACLabel_Shadow_TR</Pieces>
-        <Pieces>SW_ACLabel_Shadow_BL</Pieces>
-        <Pieces>SW_ACLabel_Shadow_B</Pieces>
-        <Pieces>SW_ACLabel_Shadow_BR</Pieces>
-        <Pieces>SW_ACLabel_Shadow_L</Pieces>
-        <Pieces>SW_ACLabel_Shadow_R</Pieces>
+        <Pieces>SW_ACLabel_OutlineTL</Pieces>
+        <Pieces>SW_ACLabel_OutlineT</Pieces>
+        <Pieces>SW_ACLabel_OutlineTR</Pieces>
+        <Pieces>SW_ACLabel_OutlineBL</Pieces>
+        <Pieces>SW_ACLabel_OutlineB</Pieces>
+        <Pieces>SW_ACLabel_OutlineBR</Pieces>
+        <Pieces>SW_ACLabel_OutlineL</Pieces>
+        <Pieces>SW_ACLabel_OutlineR</Pieces>
         <Pieces>SW_ACLabel</Pieces>
         <Pieces>SW_ACNumber</Pieces>
     </Screen>
-    <Screen item="SW_ATKLabel_Layout">
+    <Screen item="SW_ATLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <AutoStretch>true</AutoStretch>
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -859,16 +861,16 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>34</TopAnchorOffset>
         <BottomAnchorOffset>64</BottomAnchorOffset>
-        <Pieces>SW_ATKLabel_Shadow_TL</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_T</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_TR</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_BL</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_B</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_BR</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_L</Pieces>
-        <Pieces>SW_ATKLabel_Shadow_R</Pieces>
-        <Pieces>SW_ATKLabel</Pieces>
-        <Pieces>SW_ATKNumber</Pieces>
+        <Pieces>SW_ATLabel_OutlineTL</Pieces>
+        <Pieces>SW_ATLabel_OutlineT</Pieces>
+        <Pieces>SW_ATLabel_OutlineTR</Pieces>
+        <Pieces>SW_ATLabel_OutlineBL</Pieces>
+        <Pieces>SW_ATLabel_OutlineB</Pieces>
+        <Pieces>SW_ATLabel_OutlineBR</Pieces>
+        <Pieces>SW_ATLabel_OutlineL</Pieces>
+        <Pieces>SW_ATLabel_OutlineR</Pieces>
+        <Pieces>SW_ATLabel</Pieces>
+        <Pieces>SW_ATNumber</Pieces>
     </Screen>
     <Screen item="SW_MRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
@@ -879,14 +881,14 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>64</TopAnchorOffset>
         <BottomAnchorOffset>94</BottomAnchorOffset>
-        <Pieces>SW_MRLabel_Shadow_TL</Pieces>
-        <Pieces>SW_MRLabel_Shadow_T</Pieces>
-        <Pieces>SW_MRLabel_Shadow_TR</Pieces>
-        <Pieces>SW_MRLabel_Shadow_BL</Pieces>
-        <Pieces>SW_MRLabel_Shadow_B</Pieces>
-        <Pieces>SW_MRLabel_Shadow_BR</Pieces>
-        <Pieces>SW_MRLabel_Shadow_L</Pieces>
-        <Pieces>SW_MRLabel_Shadow_R</Pieces>
+        <Pieces>SW_MRLabel_OutlineTL</Pieces>
+        <Pieces>SW_MRLabel_OutlineT</Pieces>
+        <Pieces>SW_MRLabel_OutlineTR</Pieces>
+        <Pieces>SW_MRLabel_OutlineBL</Pieces>
+        <Pieces>SW_MRLabel_OutlineB</Pieces>
+        <Pieces>SW_MRLabel_OutlineBR</Pieces>
+        <Pieces>SW_MRLabel_OutlineL</Pieces>
+        <Pieces>SW_MRLabel_OutlineR</Pieces>
         <Pieces>SW_MRLabel</Pieces>
         <Pieces>SW_MRNumber</Pieces>
     </Screen>
@@ -899,14 +901,14 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>94</TopAnchorOffset>
         <BottomAnchorOffset>124</BottomAnchorOffset>
-        <Pieces>SW_FRLabel_Shadow_TL</Pieces>
-        <Pieces>SW_FRLabel_Shadow_T</Pieces>
-        <Pieces>SW_FRLabel_Shadow_TR</Pieces>
-        <Pieces>SW_FRLabel_Shadow_BL</Pieces>
-        <Pieces>SW_FRLabel_Shadow_B</Pieces>
-        <Pieces>SW_FRLabel_Shadow_BR</Pieces>
-        <Pieces>SW_FRLabel_Shadow_L</Pieces>
-        <Pieces>SW_FRLabel_Shadow_R</Pieces>
+        <Pieces>SW_FRLabel_OutlineTL</Pieces>
+        <Pieces>SW_FRLabel_OutlineT</Pieces>
+        <Pieces>SW_FRLabel_OutlineTR</Pieces>
+        <Pieces>SW_FRLabel_OutlineBL</Pieces>
+        <Pieces>SW_FRLabel_OutlineB</Pieces>
+        <Pieces>SW_FRLabel_OutlineBR</Pieces>
+        <Pieces>SW_FRLabel_OutlineL</Pieces>
+        <Pieces>SW_FRLabel_OutlineR</Pieces>
         <Pieces>SW_FRLabel</Pieces>
         <Pieces>SW_FRNumber</Pieces>
     </Screen>
@@ -919,14 +921,14 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>124</TopAnchorOffset>
         <BottomAnchorOffset>154</BottomAnchorOffset>
-        <Pieces>SW_CRLabel_Shadow_TL</Pieces>
-        <Pieces>SW_CRLabel_Shadow_T</Pieces>
-        <Pieces>SW_CRLabel_Shadow_TR</Pieces>
-        <Pieces>SW_CRLabel_Shadow_BL</Pieces>
-        <Pieces>SW_CRLabel_Shadow_B</Pieces>
-        <Pieces>SW_CRLabel_Shadow_BR</Pieces>
-        <Pieces>SW_CRLabel_Shadow_L</Pieces>
-        <Pieces>SW_CRLabel_Shadow_R</Pieces>
+        <Pieces>SW_CRLabel_OutlineTL</Pieces>
+        <Pieces>SW_CRLabel_OutlineT</Pieces>
+        <Pieces>SW_CRLabel_OutlineTR</Pieces>
+        <Pieces>SW_CRLabel_OutlineBL</Pieces>
+        <Pieces>SW_CRLabel_OutlineB</Pieces>
+        <Pieces>SW_CRLabel_OutlineBR</Pieces>
+        <Pieces>SW_CRLabel_OutlineL</Pieces>
+        <Pieces>SW_CRLabel_OutlineR</Pieces>
         <Pieces>SW_CRLabel</Pieces>
         <Pieces>SW_CRNumber</Pieces>
     </Screen>
@@ -939,14 +941,14 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>154</TopAnchorOffset>
         <BottomAnchorOffset>184</BottomAnchorOffset>
-        <Pieces>SW_PRLabel_Shadow_TL</Pieces>
-        <Pieces>SW_PRLabel_Shadow_T</Pieces>
-        <Pieces>SW_PRLabel_Shadow_TR</Pieces>
-        <Pieces>SW_PRLabel_Shadow_BL</Pieces>
-        <Pieces>SW_PRLabel_Shadow_B</Pieces>
-        <Pieces>SW_PRLabel_Shadow_BR</Pieces>
-        <Pieces>SW_PRLabel_Shadow_L</Pieces>
-        <Pieces>SW_PRLabel_Shadow_R</Pieces>
+        <Pieces>SW_PRLabel_OutlineTL</Pieces>
+        <Pieces>SW_PRLabel_OutlineT</Pieces>
+        <Pieces>SW_PRLabel_OutlineTR</Pieces>
+        <Pieces>SW_PRLabel_OutlineBL</Pieces>
+        <Pieces>SW_PRLabel_OutlineB</Pieces>
+        <Pieces>SW_PRLabel_OutlineBR</Pieces>
+        <Pieces>SW_PRLabel_OutlineL</Pieces>
+        <Pieces>SW_PRLabel_OutlineR</Pieces>
         <Pieces>SW_PRLabel</Pieces>
         <Pieces>SW_PRNumber</Pieces>
     </Screen>
@@ -959,19 +961,19 @@
         <RightAnchorOffset>34</RightAnchorOffset>
         <TopAnchorOffset>184</TopAnchorOffset>
         <BottomAnchorOffset>214</BottomAnchorOffset>
-        <Pieces>SW_DRLabel_Shadow_TL</Pieces>
-        <Pieces>SW_DRLabel_Shadow_T</Pieces>
-        <Pieces>SW_DRLabel_Shadow_TR</Pieces>
-        <Pieces>SW_DRLabel_Shadow_BL</Pieces>
-        <Pieces>SW_DRLabel_Shadow_B</Pieces>
-        <Pieces>SW_DRLabel_Shadow_BR</Pieces>
-        <Pieces>SW_DRLabel_Shadow_L</Pieces>
-        <Pieces>SW_DRLabel_Shadow_R</Pieces>
+        <Pieces>SW_DRLabel_OutlineTL</Pieces>
+        <Pieces>SW_DRLabel_OutlineT</Pieces>
+        <Pieces>SW_DRLabel_OutlineTR</Pieces>
+        <Pieces>SW_DRLabel_OutlineBL</Pieces>
+        <Pieces>SW_DRLabel_OutlineB</Pieces>
+        <Pieces>SW_DRLabel_OutlineBR</Pieces>
+        <Pieces>SW_DRLabel_OutlineL</Pieces>
+        <Pieces>SW_DRLabel_OutlineR</Pieces>
         <Pieces>SW_DRLabel</Pieces>
         <Pieces>SW_DRNumber</Pieces>
     </Screen>
-    <!-- -->
-    <Screen item="SW_XPKey_Layout">
+    <!-- Status Window Layouts (xp and aa) -->
+    <Screen item="SW_XPLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -981,17 +983,17 @@
             <CX>32</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_XPKey_Shadow_TL</Pieces>
-        <Pieces>SW_XPKey_Shadow_T</Pieces>
-        <Pieces>SW_XPKey_Shadow_TR</Pieces>
-        <Pieces>SW_XPKey_Shadow_BL</Pieces>
-        <Pieces>SW_XPKey_Shadow_B</Pieces>
-        <Pieces>SW_XPKey_Shadow_BR</Pieces>
-        <Pieces>SW_XPKey_Shadow_L</Pieces>
-        <Pieces>SW_XPKey_Shadow_R</Pieces>
-        <Pieces>SW_XPKey</Pieces>
+        <Pieces>SW_XPLabel_OutlineTL</Pieces>
+        <Pieces>SW_XPLabel_OutlineT</Pieces>
+        <Pieces>SW_XPLabel_OutlineTR</Pieces>
+        <Pieces>SW_XPLabel_OutlineBL</Pieces>
+        <Pieces>SW_XPLabel_OutlineB</Pieces>
+        <Pieces>SW_XPLabel_OutlineBR</Pieces>
+        <Pieces>SW_XPLabel_OutlineL</Pieces>
+        <Pieces>SW_XPLabel_OutlineR</Pieces>
+        <Pieces>SW_XPLabel</Pieces>
     </Screen>
-    <Screen item="SW_XPLabel_Layout">
+    <Screen item="SW_XPValue_Layout">
         <Style_Transparent>true</Style_Transparent>
         <AutoStretch>true</AutoStretch>
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -999,23 +1001,23 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>60</LeftAnchorOffset>
         <RightAnchorOffset>6</RightAnchorOffset>
-        <Pieces>SW_XPLabel_Shadow_TL</Pieces>
-        <Pieces>SW_XPLabel_Shadow_T</Pieces>
-        <Pieces>SW_XPLabel_Shadow_TR</Pieces>
-        <Pieces>SW_XPLabel_Shadow_BL</Pieces>
-        <Pieces>SW_XPLabel_Shadow_B</Pieces>
-        <Pieces>SW_XPLabel_Shadow_BR</Pieces>
-        <Pieces>SW_XPLabel_Shadow_L</Pieces>
-        <Pieces>SW_XPLabel_Shadow_R</Pieces>
-        <Pieces>SW_XPLabel</Pieces>
-        <Pieces>SW_XPPercent_Shadow_TL</Pieces>
-        <Pieces>SW_XPPercent_Shadow_T</Pieces>
-        <Pieces>SW_XPPercent_Shadow_TR</Pieces>
-        <Pieces>SW_XPPercent_Shadow_BL</Pieces>
-        <Pieces>SW_XPPercent_Shadow_B</Pieces>
-        <Pieces>SW_XPPercent_Shadow_BR</Pieces>
-        <Pieces>SW_XPPercent_Shadow_L</Pieces>
-        <Pieces>SW_XPPercent_Shadow_R</Pieces>
+        <Pieces>SW_XPValue_OutlineTL</Pieces>
+        <Pieces>SW_XPValue_OutlineT</Pieces>
+        <Pieces>SW_XPValue_OutlineTR</Pieces>
+        <Pieces>SW_XPValue_OutlineBL</Pieces>
+        <Pieces>SW_XPValue_OutlineB</Pieces>
+        <Pieces>SW_XPValue_OutlineBR</Pieces>
+        <Pieces>SW_XPValue_OutlineL</Pieces>
+        <Pieces>SW_XPValue_OutlineR</Pieces>
+        <Pieces>SW_XPValue</Pieces>
+        <Pieces>SW_XPPercent_OutlineTL</Pieces>
+        <Pieces>SW_XPPercent_OutlineT</Pieces>
+        <Pieces>SW_XPPercent_OutlineTR</Pieces>
+        <Pieces>SW_XPPercent_OutlineBL</Pieces>
+        <Pieces>SW_XPPercent_OutlineB</Pieces>
+        <Pieces>SW_XPPercent_OutlineBR</Pieces>
+        <Pieces>SW_XPPercent_OutlineL</Pieces>
+        <Pieces>SW_XPPercent_OutlineR</Pieces>
         <Pieces>SW_XPPercent</Pieces>
     </Screen>
     <Screen item="SW_XP_Layout">
@@ -1025,11 +1027,11 @@
         <RightAnchorOffset>197</RightAnchorOffset>
         <TopAnchorOffset>208</TopAnchorOffset>
         <BottomAnchorOffset>238</BottomAnchorOffset>
-        <Pieces>SW_XPKey_Layout</Pieces>
-        <Pieces>SW_ExpGauge</Pieces>
         <Pieces>SW_XPLabel_Layout</Pieces>
+        <Pieces>SW_ExpGauge</Pieces>
+        <Pieces>SW_XPValue_Layout</Pieces>
     </Screen>
-    <Screen item="SW_AAKey_Layout">
+    <Screen item="SW_AALabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -1039,17 +1041,17 @@
             <CX>32</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_AAKey_Shadow_TL</Pieces>
-        <Pieces>SW_AAKey_Shadow_T</Pieces>
-        <Pieces>SW_AAKey_Shadow_TR</Pieces>
-        <Pieces>SW_AAKey_Shadow_BL</Pieces>
-        <Pieces>SW_AAKey_Shadow_B</Pieces>
-        <Pieces>SW_AAKey_Shadow_BR</Pieces>
-        <Pieces>SW_AAKey_Shadow_L</Pieces>
-        <Pieces>SW_AAKey_Shadow_R</Pieces>
-        <Pieces>SW_AAKey</Pieces>
+        <Pieces>SW_AALabel_OutlineTL</Pieces>
+        <Pieces>SW_AALabel_OutlineT</Pieces>
+        <Pieces>SW_AALabel_OutlineTR</Pieces>
+        <Pieces>SW_AALabel_OutlineBL</Pieces>
+        <Pieces>SW_AALabel_OutlineB</Pieces>
+        <Pieces>SW_AALabel_OutlineBR</Pieces>
+        <Pieces>SW_AALabel_OutlineL</Pieces>
+        <Pieces>SW_AALabel_OutlineR</Pieces>
+        <Pieces>SW_AALabel</Pieces>
     </Screen>
-    <Screen item="SW_AALabel_Layout">
+    <Screen item="SW_AAValue_Layout">
         <Style_Transparent>true</Style_Transparent>
         <AutoStretch>true</AutoStretch>
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -1057,23 +1059,23 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>60</LeftAnchorOffset>
         <RightAnchorOffset>6</RightAnchorOffset>
-        <Pieces>SW_AALabel_Shadow_TL</Pieces>
-        <Pieces>SW_AALabel_Shadow_T</Pieces>
-        <Pieces>SW_AALabel_Shadow_TR</Pieces>
-        <Pieces>SW_AALabel_Shadow_BL</Pieces>
-        <Pieces>SW_AALabel_Shadow_B</Pieces>
-        <Pieces>SW_AALabel_Shadow_BR</Pieces>
-        <Pieces>SW_AALabel_Shadow_L</Pieces>
-        <Pieces>SW_AALabel_Shadow_R</Pieces>
-        <Pieces>SW_AALabel</Pieces>
-        <Pieces>SW_AAPercent_Shadow_TL</Pieces>
-        <Pieces>SW_AAPercent_Shadow_T</Pieces>
-        <Pieces>SW_AAPercent_Shadow_TR</Pieces>
-        <Pieces>SW_AAPercent_Shadow_BL</Pieces>
-        <Pieces>SW_AAPercent_Shadow_B</Pieces>
-        <Pieces>SW_AAPercent_Shadow_BR</Pieces>
-        <Pieces>SW_AAPercent_Shadow_L</Pieces>
-        <Pieces>SW_AAPercent_Shadow_R</Pieces>
+        <Pieces>SW_AAValue_OutlineTL</Pieces>
+        <Pieces>SW_AAValue_OutlineT</Pieces>
+        <Pieces>SW_AAValue_OutlineTR</Pieces>
+        <Pieces>SW_AAValue_OutlineBL</Pieces>
+        <Pieces>SW_AAValue_OutlineB</Pieces>
+        <Pieces>SW_AAValue_OutlineBR</Pieces>
+        <Pieces>SW_AAValue_OutlineL</Pieces>
+        <Pieces>SW_AAValue_OutlineR</Pieces>
+        <Pieces>SW_AAValue</Pieces>
+        <Pieces>SW_AAPercent_OutlineTL</Pieces>
+        <Pieces>SW_AAPercent_OutlineT</Pieces>
+        <Pieces>SW_AAPercent_OutlineTR</Pieces>
+        <Pieces>SW_AAPercent_OutlineBL</Pieces>
+        <Pieces>SW_AAPercent_OutlineB</Pieces>
+        <Pieces>SW_AAPercent_OutlineBR</Pieces>
+        <Pieces>SW_AAPercent_OutlineL</Pieces>
+        <Pieces>SW_AAPercent_OutlineR</Pieces>
         <Pieces>SW_AAPercent</Pieces>
     </Screen>
     <Screen item="SW_AA_Layout">
@@ -1083,9 +1085,9 @@
         <RightAnchorOffset>197</RightAnchorOffset>
         <TopAnchorOffset>238</TopAnchorOffset>
         <BottomAnchorOffset>268</BottomAnchorOffset>
-        <Pieces>SW_AAKey_Layout</Pieces>
-        <Pieces>SW_AAGauge</Pieces>
         <Pieces>SW_AALabel_Layout</Pieces>
+        <Pieces>SW_AAGauge</Pieces>
+        <Pieces>SW_AAValue_Layout</Pieces>
     </Screen>
     <!--  -->
     <Screen item="StatusWindow">
@@ -1102,7 +1104,7 @@
         <Pieces>SW_INTLabel_Layout</Pieces>
         <Pieces>SW_CHALabel_Layout</Pieces>
         <Pieces>SW_ACLabel_Layout</Pieces>
-        <Pieces>SW_ATKLabel_Layout</Pieces>
+        <Pieces>SW_ATLabel_Layout</Pieces>
         <Pieces>SW_MRLabel_Layout</Pieces>
         <Pieces>SW_FRLabel_Layout</Pieces>
         <Pieces>SW_CRLabel_Layout</Pieces>

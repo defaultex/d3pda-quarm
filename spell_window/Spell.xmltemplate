@@ -156,7 +156,7 @@
     </Label>
     <!-- -->
     <Label item="CSPW_Spell[i]Label">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -173,7 +173,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineTL">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -190,7 +190,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineT">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -207,7 +207,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineTR">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -224,7 +224,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineBL">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -241,7 +241,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineB">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -258,7 +258,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineBR">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -275,7 +275,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineL">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -292,7 +292,7 @@
         </TextColor>
     </Label>
     <Label item="CSPW_Spell[i]Label_OutlineR">
-        <EQType>[i+60]</EQType>
+        <EQType>[EQLabelType.Spell[i]]</EQType>
         <Font>3</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -317,7 +317,7 @@
         <SpellIconSizeY>18</SpellIconSizeY>
         <Location>
             <X>18</X>
-            <Y>[y]</Y>
+            <Y>[i*30]</Y>
         </Location>
         <Size>
             <CX>179</CX>
