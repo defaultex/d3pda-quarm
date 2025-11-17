@@ -2,11 +2,11 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- Animation -->
-    <StaticAnimation item="SWL_IWnd_Gauge8">
+    <StaticAnimation item="SWL_IWnd_Gauge[calc i + 7]">
         <Animation>D3PDA_IWnd_GaugeHolder</Animation>
         <Location>
             <X>18</X>
-            <Y>362</Y>
+            <Y>[calc (i + 7) * 30 + 122]</Y>
         </Location>
         <Size>
             <CX>32</CX>
@@ -14,9 +14,9 @@
         </Size>
     </StaticAnimation>
     <!-- Stat Label -->
-    <Label item="SW_AALabel">
+    <Label item="SW_[Enum]Label">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -31,9 +31,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineTL">
+    <Label item="SW_[Enum]Label_OutlineTL">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -48,9 +48,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineT">
+    <Label item="SW_[Enum]Label_OutlineT">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -65,9 +65,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineTR">
+    <Label item="SW_[Enum]Label_OutlineTR">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -82,9 +82,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineBL">
+    <Label item="SW_[Enum]Label_OutlineBL">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -99,9 +99,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineB">
+    <Label item="SW_[Enum]Label_OutlineB">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -116,9 +116,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineBR">
+    <Label item="SW_[Enum]Label_OutlineBR">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -133,9 +133,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineL">
+    <Label item="SW_[Enum]Label_OutlineL">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -150,9 +150,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_AALabel_OutlineR">
+    <Label item="SW_[Enum]Label_OutlineR">
         <Font>4</Font>
-        <Text>AA</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -168,8 +168,8 @@
         </TextColor>
     </Label>
     <!-- Percentage Value -->
-    <Label item="SW_AAValue">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -185,8 +185,8 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineTL">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineTL">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -203,8 +203,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineT">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineT">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -221,8 +221,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineTR">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineTR">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -239,8 +239,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineBL">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineBL">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -257,8 +257,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineB">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineB">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -275,8 +275,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineBR">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineBR">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -293,8 +293,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineL">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineL">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -310,8 +310,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAValue_OutlineR">
-        <EQType>27</EQType>
+    <Label item="SW_[Enum]Value_OutlineR">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -328,7 +328,7 @@
         </TextColor>
     </Label>
     <!-- Percent Symbol -->
-    <Label item="SW_AAPercent">
+    <Label item="SW_[Enum]Percent">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -343,7 +343,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineTL">
+    <Label item="SW_[Enum]Percent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -359,7 +359,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineT">
+    <Label item="SW_[Enum]Percent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -375,7 +375,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineTR">
+    <Label item="SW_[Enum]Percent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -391,7 +391,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineBL">
+    <Label item="SW_[Enum]Percent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -407,7 +407,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineB">
+    <Label item="SW_[Enum]Percent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -423,7 +423,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineBR">
+    <Label item="SW_[Enum]Percent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -439,7 +439,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineL">
+    <Label item="SW_[Enum]Percent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -454,7 +454,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPercent_OutlineR">
+    <Label item="SW_[Enum]Percent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -471,8 +471,8 @@
     </Label>
 
     <!-- Percentage Value -->
-    <Label item="SW_AAPerHourValue">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -490,8 +490,8 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineTL">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineTL">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -508,8 +508,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineT">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineT">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -526,8 +526,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineTR">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineTR">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -544,8 +544,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineBL">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineBL">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -562,8 +562,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineB">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineB">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -580,8 +580,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineBR">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineBR">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -598,8 +598,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineL">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineL">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -615,8 +615,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourValue_OutlineR">
-        <EQType>86</EQType>
+    <Label item="SW_[Enum]PerHourValue_OutlineR">
+        <EQType>[EQLabelType.[Enum]PerHour]</EQType>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -634,7 +634,7 @@
     </Label>
 
     <!-- Percent Symbol -->
-    <Label item="SW_AAPerHourPercent">
+    <Label item="SW_[Enum]PerHourPercent">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -649,7 +649,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineTL">
+    <Label item="SW_[Enum]PerHourPercent_OutlineTL">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -665,7 +665,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineT">
+    <Label item="SW_[Enum]PerHourPercent_OutlineT">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -681,7 +681,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineTR">
+    <Label item="SW_[Enum]PerHourPercent_OutlineTR">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -697,7 +697,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineBL">
+    <Label item="SW_[Enum]PerHourPercent_OutlineBL">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -713,7 +713,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineB">
+    <Label item="SW_[Enum]PerHourPercent_OutlineB">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -729,7 +729,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineBR">
+    <Label item="SW_[Enum]PerHourPercent_OutlineBR">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -745,7 +745,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineL">
+    <Label item="SW_[Enum]PerHourPercent_OutlineL">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -760,7 +760,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="SW_AAPerHourPercent_OutlineR">
+    <Label item="SW_[Enum]PerHourPercent_OutlineR">
         <Text>%h</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
@@ -776,8 +776,8 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Gauge item="SW_AAGauge">
-        <EQType>5</EQType>
+    <Gauge item="SW_[Enum]Gauge">
+        <EQType>[EQGaugeType.[Enum]]</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
@@ -805,30 +805,30 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>true</DrawLinesFill>
     </Gauge>
-    <!-- SW_AALabel_Layout
-    <Screen item="SW_AALabel_Layout">
+    <!-- SW_[Enum]Label_Layout
+    <Screen item="SW_[Enum]Label_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>6</X>
-            <Y>240</Y>
+            <Y>[calc (i + 7) * 30]</Y>
         </Location>
         <Size>
             <CX>60</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_AALabel_OutlineTL</Pieces>
-        <Pieces>SW_AALabel_OutlineT</Pieces>
-        <Pieces>SW_AALabel_OutlineTR</Pieces>
-        <Pieces>SW_AALabel_OutlineBL</Pieces>
-        <Pieces>SW_AALabel_OutlineB</Pieces>
-        <Pieces>SW_AALabel_OutlineBR</Pieces>
-        <Pieces>SW_AALabel_OutlineL</Pieces>
-        <Pieces>SW_AALabel_OutlineR</Pieces>
-        <Pieces>SW_AALabel</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineTL</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineT</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineTR</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineBL</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineB</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineBR</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineL</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineR</Pieces>
+        <Pieces>SW_[Enum]Label</Pieces>
     </Screen>
     -->
-    <!-- SW_AAValue_Layout
-    <Screen item="SW_AAValue_Layout">
+    <!-- SW_[Enum]Value_Layout
+    <Screen item="SW_[Enum]Value_Layout">
         <Style_Transparent>true</Style_Transparent>
         <AutoStretch>true</AutoStretch>
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
@@ -836,28 +836,28 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>60</LeftAnchorOffset>
         <RightAnchorOffset>6</RightAnchorOffset>
-        <Pieces>SW_AAValue_OutlineTL</Pieces>
-        <Pieces>SW_AAValue_OutlineT</Pieces>
-        <Pieces>SW_AAValue_OutlineTR</Pieces>
-        <Pieces>SW_AAValue_OutlineBL</Pieces>
-        <Pieces>SW_AAValue_OutlineB</Pieces>
-        <Pieces>SW_AAValue_OutlineBR</Pieces>
-        <Pieces>SW_AAValue_OutlineL</Pieces>
-        <Pieces>SW_AAValue_OutlineR</Pieces>
-        <Pieces>SW_AAValue</Pieces>
-        <Pieces>SW_AAPercent_OutlineTL</Pieces>
-        <Pieces>SW_AAPercent_OutlineT</Pieces>
-        <Pieces>SW_AAPercent_OutlineTR</Pieces>
-        <Pieces>SW_AAPercent_OutlineBL</Pieces>
-        <Pieces>SW_AAPercent_OutlineB</Pieces>
-        <Pieces>SW_AAPercent_OutlineBR</Pieces>
-        <Pieces>SW_AAPercent_OutlineL</Pieces>
-        <Pieces>SW_AAPercent_OutlineR</Pieces>
-        <Pieces>SW_AAPercent</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineTL</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineT</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineTR</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineBL</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineB</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineBR</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineL</Pieces>
+        <Pieces>SW_[Enum]Value_OutlineR</Pieces>
+        <Pieces>SW_[Enum]Value</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineTL</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineT</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineTR</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineBL</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineB</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineBR</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineL</Pieces>
+        <Pieces>SW_[Enum]Percent_OutlineR</Pieces>
+        <Pieces>SW_[Enum]Percent</Pieces>
     </Screen>
     -->
-    <!-- SW_AAPerHourValue_Layout
-    <Screen item="SW_AAPerHourValue_Layout">
+    <!-- SW_[Enum]PerHourValue_Layout
+    <Screen item="SW_[Enum]PerHourValue_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>26</X>
@@ -867,40 +867,40 @@
             <CX>54</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_AAPerHourValue_OutlineTL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineT</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineTR</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineBL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineB</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineBR</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineR</Pieces>
-        <Pieces>SW_AAPerHourValue</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineTL</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineT</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineTR</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineBL</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineB</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineBR</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineL</Pieces>
-        <Pieces>SW_AAPerHourPercent_OutlineR</Pieces>
-        <Pieces>SW_AAPerHourPercent</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineTL</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineT</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineTR</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineBL</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineB</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineBR</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineL</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_OutlineR</Pieces>
+        <Pieces>SW_[Enum]PerHourValue</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineTL</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineT</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineTR</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineBL</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineB</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineBR</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineL</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent_OutlineR</Pieces>
+        <Pieces>SW_[Enum]PerHourPercent</Pieces>
     </Screen>
     -->
-    <!-- SW_AA_Layout
-    <Screen item="SW_AA_Layout">
+    <!-- SW_[Enum]_Layout
+    <Screen item="SW_[Enum]_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>7</X>
-            <Y>235</Y>
+            <Y>[calc (i + 7) * 30 - 5]</Y>
         </Location>
         <Size>
             <CX>190</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_AAGauge</Pieces>
-        <Pieces>SW_AAPerHourValue_Layout</Pieces>
-        <Pieces>SW_AAValue_Layout</Pieces>
+        <Pieces>SW_[Enum]Gauge</Pieces>
+        <Pieces>SW_[Enum]PerHourValue_Layout</Pieces>
+        <Pieces>SW_[Enum]Value_Layout</Pieces>
     </Screen>
     -->
 </XML>

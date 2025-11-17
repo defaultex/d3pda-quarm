@@ -2,8 +2,21 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- -->
-    <Label item="GW_Key[i+1]">
-        <Text>F[i+2]</Text>
+	<StaticAnimation item="GW_IWnd_GaugeHolder[i]">
+		<Animation>D3PDA_IWnd_GaugeHolder</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>18</X>
+			<Y>[calc i * 30]</Y>
+		</Location>
+		<Size>
+			<CX>32</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+    <!-- -->
+    <Label item="GW_Key[i]">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -18,8 +31,8 @@
             <B>182</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineTL">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineTL">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -33,8 +46,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineT">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineT">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -49,8 +62,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineTR">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineTR">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -65,8 +78,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineBL">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineBL">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -81,8 +94,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineB">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineB">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -97,8 +110,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineBR">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineBR">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -113,8 +126,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineL">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineL">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -129,8 +142,8 @@
             <B>100</B>
         </TextColor>
     </Label>
-    <Label item="GW_Key[i+1]_OutlineR">
-        <Text>F[i+2]</Text>
+    <Label item="GW_Key[i]_OutlineR">
+        <Text>F[calc i + 1]</Text>
         <Font>4</Font>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
@@ -146,9 +159,9 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="GW_HPLabel[i+1]">
-		<ScreenID>HPLabel[i+1]</ScreenID>
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]">
+		<ScreenID>HPLabel[i]</ScreenID>
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -164,8 +177,8 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_TL">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_TL">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -182,8 +195,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_T">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_T">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -200,8 +213,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_TR">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_TR">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -218,8 +231,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_BL">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_BL">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -236,8 +249,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_B">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_B">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -254,8 +267,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_BR">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_BR">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -272,8 +285,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_L">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_L">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -289,8 +302,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel[i+1]_Shadow_R">
-        <EQType>[EQLabelType.GroupMember[i+1]HPPercent]</EQType>
+    <Label item="GW_HPLabel[i]_Shadow_R">
+        <EQType>[EQLabelType.GroupMember[i]HPPercent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -307,7 +320,7 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="GW_HPPercent[i+1]">
+    <Label item="GW_HPPercent[i]">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -322,7 +335,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_TL">
+    <Label item="GW_HPPercent[i]_Shadow_TL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -338,7 +351,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_T">
+    <Label item="GW_HPPercent[i]_Shadow_T">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -354,7 +367,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_TR">
+    <Label item="GW_HPPercent[i]_Shadow_TR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -370,7 +383,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_BL">
+    <Label item="GW_HPPercent[i]_Shadow_BL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -386,7 +399,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_B">
+    <Label item="GW_HPPercent[i]_Shadow_B">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -402,7 +415,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_BR">
+    <Label item="GW_HPPercent[i]_Shadow_BR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -418,7 +431,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_L">
+    <Label item="GW_HPPercent[i]_Shadow_L">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -433,7 +446,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent[i+1]_Shadow_R">
+    <Label item="GW_HPPercent[i]_Shadow_R">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -449,8 +462,8 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Gauge item="GW_NameLabel[i+1]">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -462,8 +475,8 @@
             <B>255</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_TL">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_TL">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -476,8 +489,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_T">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_T">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -490,8 +503,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_TR">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_TR">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -504,8 +517,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_BL">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_BL">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -518,8 +531,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_B">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_B">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -532,8 +545,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_BR">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_BR">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -546,8 +559,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_L">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_L">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -559,8 +572,8 @@
             <B>0</B>
         </TextColor>
     </Gauge>
-    <Gauge item="GW_NameLabel[i+1]_Shadow_R">
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_NameLabel[i]_Shadow_R">
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <Font>4</Font>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -573,9 +586,9 @@
         </TextColor>
     </Gauge>
     <!-- -->
-    <Gauge item="GW_Gauge[i+1]">
-        <ScreenID>Gauge[i+1]</ScreenID>
-        <EQType>[EQGaugeType.Group[i+1]HP]</EQType>
+    <Gauge item="GW_Gauge[i]">
+        <ScreenID>Gauge[i]</ScreenID>
+        <EQType>[EQGaugeType.Group[i]HP]</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
@@ -597,9 +610,9 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <Gauge item="GW_PetGauge[i+1]">
-        <ScreenID>PetGauge[i+1]</ScreenID>
-        <EQType>[EQGaugeType.Group[i+1]PetHP]</EQType>
+    <Gauge item="GW_PetGauge[i]">
+        <ScreenID>PetGauge[i]</ScreenID>
+        <EQType>[EQGaugeType.Group[i]PetHP]</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>-8</GaugeOffsetY>
         <Location>
@@ -620,5 +633,86 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!-- -->
+    <!-- 
+    <Screen item="GW_Key[i]_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>12</X>
+			<Y>[calc i * 30 + 5]</Y>
+		</Location>
+		<Size>
+			<CX>22</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>GW_Key[i]_OutlineTL</Pieces>
+		<Pieces>GW_Key[i]_OutlineT</Pieces>
+		<Pieces>GW_Key[i]_OutlineTR</Pieces>
+		<Pieces>GW_Key[i]_OutlineBL</Pieces>
+		<Pieces>GW_Key[i]_OutlineB</Pieces>
+		<Pieces>GW_Key[i]_OutlineBR</Pieces>
+		<Pieces>GW_Key[i]_OutlineL</Pieces>
+		<Pieces>GW_Key[i]_OutlineR</Pieces>
+		<Pieces>GW_Key[i]</Pieces>
+	</Screen>
+    <Screen item="GW_Group[i]_Label_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>60</LeftAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<Pieces>GW_HPLabel[i]_Shadow_TL</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_T</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_TR</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_BL</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_B</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_BR</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_L</Pieces>
+		<Pieces>GW_HPLabel[i]_Shadow_R</Pieces>
+		<Pieces>GW_HPLabel[i]</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_TL</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_T</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_TR</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_BL</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_B</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_BR</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_L</Pieces>
+		<Pieces>GW_HPPercent[i]_Shadow_R</Pieces>
+		<Pieces>GW_HPPercent[i]</Pieces>
+	</Screen>
+	<Screen item="GW_Group[i]_Name_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>20</LeftAnchorOffset>
+		<RightAnchorOffset>64</RightAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<Pieces>GW_NameLabel[i]_Shadow_TL</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_T</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_TR</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_BL</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_B</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_BR</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_L</Pieces>
+		<Pieces>GW_NameLabel[i]_Shadow_R</Pieces>
+		<Pieces>GW_NameLabel[i]</Pieces>
+	</Screen>
+	<Screen item="GW_Group[i]_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>28</X>
+			<Y>[calc i * 30 - 2]</Y>
+		</Location>
+		<Size>
+			<CX>168</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>GW_Gauge[i]</Pieces>
+		<Pieces>GW_PetGauge[i]</Pieces>
+		<Pieces>GW_Group[i]_Label_Layout</Pieces>
+		<Pieces>GW_Group[i]_Name_Layout</Pieces>
+	</Screen>
+    -->
 </XML>

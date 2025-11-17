@@ -26,21 +26,12 @@ enum EQLabelType {
     CR = SaveCold,
     MR = SaveMagic,
 
-    HPPercent = 19,
     CurHP = 17,
     MaxHP = 18,
-    CurAndMaxHP = 70,
-
+    HPPercent = 19,
     MPPercent = 20,
-    CurMP = 124,
-    MaxMP = 125,
-    CurAndMaxMP = 80, //128,
-
     ENPercent = 21,
-    CurEN = 126,
-    MaxEN = 127,
-    CurAndMaxEN = 129,
-
+    
     AC = 22,
     AT = 23,
 
@@ -99,8 +90,9 @@ enum EQLabelType {
     Spell5 = 65,
     Spell6 = 66,
     Spell7 = 67,
-    Spell8 = 133,
-    CastingSpellName = 134,
+
+    CurAndMaxHP = 70,
+
 
     AvailableAA = 71,
     XPtoAA = 72,
@@ -117,10 +109,24 @@ enum EQLabelType {
     PlayersPetName = 68,
     PlayersPetHPPercent = 69,
 
-    Song1 = 135,
-    Song2 = 136,
-    Song3 = 137,
-    Song4 = 138,
-    Song5 = 139,
-    Song6 = 140,
+    // added by zeal
+    CurAndMaxMP = 80,
+    XPPerHour = 81,
+    PetOwner = 82,
+    InvSlotsEmpty = 83,
+    InvSlotsCount = 84,
+    InvSlotsUsed = 85,
+    AAPerHour = 86,
+    CurMP = 124,
+    MaxMP = 125,
+    CastingSpellName = 134,
+    Song1 = 135, //
+    Song2 = 136, //
+    Song3 = 137, // 
+    Song4 = 138, //
+    Song5 = 139, //
+    Song6 = 140, //
+    //
+
+    CurAndMaxEN = 129,
 }

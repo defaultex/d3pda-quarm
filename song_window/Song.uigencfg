@@ -1,4 +1,14 @@
-TemplateFilename = "Song.xmltemplate"
-OutputFormat = "Song{0}.xml"
+TemplateFilename = Song.xmltemplate
+OutputFormat = Song[i].xml
 StartIndex = 0
-Count = 6
+Count = 5
+
+Copy(
+    Regexp = <Screen item="SDBW_Buff[i]_Label_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_BuffWindow_r.xml
+)
+
+Copy(
+    Regexp = <Screen item="SDBW_Buff[i]_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_BuffWindow_r.xml
+)

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
-    <Schema xmlns="EverQuestData"
-            xmlns:dt="EverQuestDataTypes" />
-    <!--  -->
-    <Label item="Player_ManaKey">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Label item="Player_[Name]Key">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -20,9 +19,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineTL">
+    <Label item="Player_[Name]Key_OutlineTL">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -36,9 +35,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineT">
+    <Label item="Player_[Name]Key_OutlineT">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -53,9 +52,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineTR">
+    <Label item="Player_[Name]Key_OutlineTR">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -70,9 +69,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineBL">
+    <Label item="Player_[Name]Key_OutlineBL">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -87,9 +86,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineB">
+    <Label item="Player_[Name]Key_OutlineB">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -104,9 +103,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineBR">
+    <Label item="Player_[Name]Key_OutlineBR">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -121,9 +120,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineL">
+    <Label item="Player_[Name]Key_OutlineL">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -138,9 +137,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ManaKey_OutlineR">
+    <Label item="Player_[Name]Key_OutlineR">
         <Font>4</Font>
-        <Text>MP</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -155,10 +154,10 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <!--  -->
-    <Label item="Player_ManaLabel">
-        <ScreenID>ManaLabel</ScreenID>
-        <EQType>20</EQType>
+    <!-- -->
+    <Label item="Player_[Name]Label">
+        <ScreenID>[Name]Label</ScreenID>
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -174,8 +173,8 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineTL">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineTL">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -192,8 +191,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineT">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineT">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -210,8 +209,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineTR">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineTR">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -228,8 +227,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineBL">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineBL">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -246,8 +245,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineB">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineB">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -264,8 +263,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineBR">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineBR">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -282,8 +281,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineL">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineL">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -299,8 +298,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaLabel_OutlineR">
-        <EQType>20</EQType>
+    <Label item="Player_[Name]Label_OutlineR">
+        <EQType>[EQLabelType.[Enum]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -316,8 +315,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!--  -->
-    <Label item="Player_ManaPercent">
+    <!-- -->
+    <Label item="Player_[Name]Percent">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -332,7 +331,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineTL">
+    <Label item="Player_[Name]Percent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -348,7 +347,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineT">
+    <Label item="Player_[Name]Percent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -364,7 +363,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineTR">
+    <Label item="Player_[Name]Percent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -380,7 +379,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineBL">
+    <Label item="Player_[Name]Percent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -396,7 +395,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineB">
+    <Label item="Player_[Name]Percent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -412,7 +411,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineBR">
+    <Label item="Player_[Name]Percent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -428,7 +427,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineL">
+    <Label item="Player_[Name]Percent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -443,7 +442,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_ManaPercent_OutlineR">
+    <Label item="Player_[Name]Percent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -458,10 +457,9 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!--  -->
-    <Label item="Player_ManaNumber">
-        <ScreenID>PlayerManaNumber</ScreenID>
-        <EQType>80</EQType>
+    <!-- -->
+    <Label item="Player_[Name]Number">
+        <EQType>[EQLabelType.CurAndMax[Enum]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AutoStretch>true</AutoStretch>
@@ -469,16 +467,23 @@
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>24</LeftAnchorOffset>
         <RightAnchorOffset>24</RightAnchorOffset>
+        <Location>
+            <X>24</X>
+            <Y>-1</Y>
+        </Location>
+        <Size>
+            <CX>149</CX>
+            <CY>18</CY>
+        </Size>
         <TextColor>
             <R>180</R>
             <G>180</G>
             <B>180</B>
         </TextColor>
     </Label>
-    <Gauge item="Player_Mana">
-        <ScreenID>PlayerMana</ScreenID>
-        <EQType>2</EQType>
-        <Font>3</Font>
+    <Gauge item="Player_[Name]">
+        <ScreenID>Player[Name]</ScreenID>
+        <EQType>[EQGaugeType.[Name]]</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
@@ -490,24 +495,42 @@
             <CY>12</CY>
         </Size>
         <FillTint>
-            <R>0</R>
+            <R>240</R>
             <G>0</G>
-            <B>240</B>
+            <B>0</B>
         </FillTint>
-        <LinesFillTint>
-            <R>128</R>
-            <G>128</G>
-            <B>220</B>
-        </LinesFillTint>
         <GaugeDrawTemplate>
             <Background>D3PDA_Gauge_Background</Background>
             <Fill>D3PDA_Gauge_Fill</Fill>
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <Gauge item="Player_ManaTick">
-        <ScreenID>PlayerManaTick</ScreenID>
-        <EQType>24</EQType>
+    <Gauge item="Pet_HP">
+        <ScreenID>PetHP</ScreenID>
+        <EQType>16</EQType>
+        <TextOffsetY>-250</TextOffsetY>
+        <GaugeOffsetY>-8</GaugeOffsetY>
+        <Location>
+            <X>6</X>
+            <Y>18</Y>
+        </Location>
+        <Size>
+            <CX>162</CX>
+            <CY>4</CY>
+        </Size>
+        <FillTint>
+            <R>51</R>
+            <G>192</G>
+            <B>51</B>
+        </FillTint>
+        <GaugeDrawTemplate>
+            <Fill>D3PDA_Gauge_LinesFill</Fill>
+        </GaugeDrawTemplate>
+        <DrawLinesFill>false</DrawLinesFill>
+    </Gauge>
+    <Gauge item="Player_[Tick]">
+        <ScreenID>Player[Tick]</ScreenID>
+        <EQType>[EQGaugeType.[Tick]]</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>-8</GaugeOffsetY>
         <Location>
@@ -528,5 +551,69 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!--  -->
+    <!-- 
+    <Screen item="Player_[Name]Key_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>6</X>
+            <Y>[calc (i + 1) * 30 + 5]</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_[Name]Key_OutlineTL</Pieces>
+        <Pieces>Player_[Name]Key_OutlineT</Pieces>
+        <Pieces>Player_[Name]Key_OutlineTR</Pieces>
+        <Pieces>Player_[Name]Key_OutlineBL</Pieces>
+        <Pieces>Player_[Name]Key_OutlineB</Pieces>
+        <Pieces>Player_[Name]Key_OutlineBR</Pieces>
+        <Pieces>Player_[Name]Key_OutlineL</Pieces>
+        <Pieces>Player_[Name]Key_OutlineR</Pieces>
+        <Pieces>Player_[Name]Key</Pieces>
+    </Screen>
+    <Screen item="Player_[Name]Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>60</LeftAnchorOffset>
+        <RightAnchorOffset>6</RightAnchorOffset>
+        <Pieces>Player_[Name]Label_OutlineTL</Pieces>
+        <Pieces>Player_[Name]Label_OutlineT</Pieces>
+        <Pieces>Player_[Name]Label_OutlineTR</Pieces>
+        <Pieces>Player_[Name]Label_OutlineBL</Pieces>
+        <Pieces>Player_[Name]Label_OutlineB</Pieces>
+        <Pieces>Player_[Name]Label_OutlineBR</Pieces>
+        <Pieces>Player_[Name]Label_OutlineL</Pieces>
+        <Pieces>Player_[Name]Label_OutlineR</Pieces>
+        <Pieces>Player_[Name]Label</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineTL</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineT</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineTR</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineBL</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineB</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineBR</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineL</Pieces>
+        <Pieces>Player_[Name]Percent_OutlineR</Pieces>
+        <Pieces>Player_[Name]Percent</Pieces>
+    </Screen>
+    <Screen item="Player_[Name]_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>28</X>
+            <Y>[calc (i + 1) * 30 - 2]</Y>
+        </Location>
+        <Size>
+            <CX>168</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_[Name]</Pieces>
+        <Pieces>Player_[Tick]</Pieces>
+        <Pieces>Pet_HP</Pieces>
+        <Pieces>Player_[Name]Number</Pieces>
+        <Pieces>Player_[Name]Label_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

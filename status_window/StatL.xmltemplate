@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <StaticAnimation item="SWL_IWnd_Stat[i]">
+        <Animation>D3PDA_IWnd_StatHolder</Animation>
+        <Location>
+            <X>18</X>
+            <Y>[calc i * 30 + 122]</Y>
+        </Location>
+        <Size>
+            <CX>64</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
     <!-- Stat Label -->
-    <Label item="SW_[Name]Label">
+    <Label item="SW_[Enum]Label">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -19,9 +31,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineTL">
+    <Label item="SW_[Enum]Label_OutlineTL">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -36,9 +48,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineT">
+    <Label item="SW_[Enum]Label_OutlineT">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -53,9 +65,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineTR">
+    <Label item="SW_[Enum]Label_OutlineTR">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -70,9 +82,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineBL">
+    <Label item="SW_[Enum]Label_OutlineBL">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -87,9 +99,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineB">
+    <Label item="SW_[Enum]Label_OutlineB">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -104,9 +116,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineBR">
+    <Label item="SW_[Enum]Label_OutlineBR">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -121,9 +133,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineL">
+    <Label item="SW_[Enum]Label_OutlineL">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -138,9 +150,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Name]Label_OutlineR">
+    <Label item="SW_[Enum]Label_OutlineR">
         <Font>4</Font>
-        <Text>[Name]</Text>
+        <Text>[Enum]</Text>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
@@ -156,8 +168,8 @@
         </TextColor>
     </Label>
     <!-- Number Label -->
-    <Label item="SW_[Name]Number">
-        <EQType>[EQLabelType.[Name]]</EQType>
+    <Label item="SW_[Enum]Number">
+        <EQType>[EQLabelType.[Enum]]</EQType>
         <Font>3</Font>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
@@ -173,5 +185,27 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <!--  -->
+    <!-- 
+    <Screen item="SW_[Enum]Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>10</X>
+            <Y>[calc i * 30]</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>SW_[Enum]Label_OutlineTL</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineT</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineTR</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineBL</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineB</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineBR</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineL</Pieces>
+        <Pieces>SW_[Enum]Label_OutlineR</Pieces>
+        <Pieces>SW_[Enum]Label</Pieces>
+        <Pieces>SW_[Enum]Number</Pieces>
+    </Screen>
+    -->
 </XML>

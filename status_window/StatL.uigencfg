@@ -1,0 +1,8 @@
+TemplateFilename = StatL.xmltemplate
+OutputFormat = [Enum].xml
+Enum = STR, STA, AGI, DEX, WIS, INT, CHA
+
+Copy(
+    Regexp = <Screen item="SW_[Enum]Label_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_PlayerWindow.xml
+)

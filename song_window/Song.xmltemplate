@@ -26,7 +26,7 @@
     <!--  -->
     <Label item="SDBW_Buff[i]_Label">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -43,7 +43,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_TL">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -60,7 +60,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_T">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -77,7 +77,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_TR">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -94,7 +94,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_BL">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -111,7 +111,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_B">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -128,7 +128,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_BR">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -145,7 +145,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_L">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -162,7 +162,7 @@
     </Label>
     <Label item="SDBW_Buff[i]_Label_R">
         <Font>3</Font>
-        <EQType>[EQLabelType.Song[i+1]]</EQType>
+        <EQType>[EQLabelType.Song[calc i + 1]]</EQType>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -177,5 +177,35 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!--  -->
+    <!--
+    <Screen item="SDBW_Buff[i]_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorOffset>36</LeftAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff[i]_Label_TL</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_T</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_TR</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_BL</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_B</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_BR</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_L</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_R</Pieces>
+        <Pieces>SDBW_Buff[i]_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff[i]_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>[calc i * 34]</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff[i]_Button</Pieces>
+        <Pieces>SDBW_Buff[i]_Label_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

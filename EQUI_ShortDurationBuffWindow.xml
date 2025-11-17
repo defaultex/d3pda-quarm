@@ -132,7 +132,7 @@
         <Pieces>SDBW_Buff5_Label</Pieces>
     </Screen>
     <!--  -->
-    <Screen item="SDBW_Buff0_Display">
+    <Screen item="SDBW_Buff0_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -145,7 +145,7 @@
         <Pieces>SDBW_Buff0_Button</Pieces>
         <Pieces>SDBW_Buff0_Label_Layout</Pieces>
     </Screen>
-    <Screen item="SDBW_Buff1_Display">
+    <Screen item="SDBW_Buff1_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -158,7 +158,7 @@
         <Pieces>SDBW_Buff1_Button</Pieces>
         <Pieces>SDBW_Buff1_Label_Layout</Pieces>
     </Screen>
-    <Screen item="SDBW_Buff2_Display">
+    <Screen item="SDBW_Buff2_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -171,7 +171,7 @@
         <Pieces>SDBW_Buff2_Button</Pieces>
         <Pieces>SDBW_Buff2_Label_Layout</Pieces>
     </Screen>
-    <Screen item="SDBW_Buff3_Display">
+    <Screen item="SDBW_Buff3_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -184,7 +184,7 @@
         <Pieces>SDBW_Buff3_Button</Pieces>
         <Pieces>SDBW_Buff3_Label_Layout</Pieces>
     </Screen>
-    <Screen item="SDBW_Buff4_Display">
+    <Screen item="SDBW_Buff4_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -197,7 +197,7 @@
         <Pieces>SDBW_Buff4_Button</Pieces>
         <Pieces>SDBW_Buff4_Label_Layout</Pieces>
     </Screen>
-    <Screen item="SDBW_Buff5_Display">
+    <Screen item="SDBW_Buff5_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -221,12 +221,12 @@
             <CY>204</CY>
         </Size>
         <!--  -->
-        <Pieces>SDBW_Buff0_Display</Pieces>
-        <Pieces>SDBW_Buff1_Display</Pieces>
-        <Pieces>SDBW_Buff2_Display</Pieces>
-        <Pieces>SDBW_Buff3_Display</Pieces>
-        <Pieces>SDBW_Buff4_Display</Pieces>
-        <Pieces>SDBW_Buff5_Display</Pieces>
+        <Pieces>SDBW_Buff0_Layout</Pieces>
+        <Pieces>SDBW_Buff1_Layout</Pieces>
+        <Pieces>SDBW_Buff2_Layout</Pieces>
+        <Pieces>SDBW_Buff3_Layout</Pieces>
+        <Pieces>SDBW_Buff4_Layout</Pieces>
+        <Pieces>SDBW_Buff5_Layout</Pieces>
         <!--  -->
     </Screen>
     <!--  -->

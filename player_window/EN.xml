@@ -2,9 +2,9 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- -->
-    <Label item="Player_HPKey">
+    <Label item="Player_FatigueKey">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -19,9 +19,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineTL">
+    <Label item="Player_FatigueKey_OutlineTL">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -35,9 +35,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineT">
+    <Label item="Player_FatigueKey_OutlineT">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -52,9 +52,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineTR">
+    <Label item="Player_FatigueKey_OutlineTR">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -69,9 +69,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineBL">
+    <Label item="Player_FatigueKey_OutlineBL">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -86,9 +86,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineB">
+    <Label item="Player_FatigueKey_OutlineB">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -103,9 +103,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineBR">
+    <Label item="Player_FatigueKey_OutlineBR">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -120,9 +120,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineL">
+    <Label item="Player_FatigueKey_OutlineL">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -137,9 +137,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_HPKey_OutlineR">
+    <Label item="Player_FatigueKey_OutlineR">
         <Font>4</Font>
-        <Text>HP</Text>
+        <Text>EN</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -155,9 +155,9 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_HPLabel">
-        <ScreenID>HPLabel</ScreenID>
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel">
+        <ScreenID>FatigueLabel</ScreenID>
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -171,10 +171,10 @@
             <R>255</R>
             <G>255</G>
             <B>255</B>
-        </TextColor>HPNumberLabel
+        </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineTL">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineTL">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -191,8 +191,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineT">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineT">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -209,8 +209,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineTR">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineTR">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -227,8 +227,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineBL">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineBL">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -245,8 +245,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineB">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineB">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -263,8 +263,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineBR">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineBR">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -281,8 +281,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineL">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineL">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -298,8 +298,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPLabel_OutlineR">
-        <EQType>19</EQType>
+    <Label item="Player_FatigueLabel_OutlineR">
+        <EQType>21</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -316,7 +316,7 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_HPPercent">
+    <Label item="Player_FatiguePercent">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -331,7 +331,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineTL">
+    <Label item="Player_FatiguePercent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -347,7 +347,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineT">
+    <Label item="Player_FatiguePercent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -363,7 +363,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineTR">
+    <Label item="Player_FatiguePercent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -379,7 +379,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineBL">
+    <Label item="Player_FatiguePercent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -395,7 +395,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineB">
+    <Label item="Player_FatiguePercent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -411,7 +411,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineBR">
+    <Label item="Player_FatiguePercent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -427,7 +427,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineL">
+    <Label item="Player_FatiguePercent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -442,7 +442,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_HPPercent_OutlineR">
+    <Label item="Player_FatiguePercent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -458,24 +458,9 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_HPNumber">
-        <EQType>70</EQType>
-        <Font>5</Font>
-        <NoWrap>true</NoWrap>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>24</LeftAnchorOffset>
-        <RightAnchorOffset>24</RightAnchorOffset>
-        <TextColor>
-            <R>180</R>
-            <G>180</G>
-            <B>180</B>
-        </TextColor>
-    </Label>
-    <Gauge item="Player_HP">
-        <ScreenID>PlayerHP</ScreenID>
-        <EQType>1</EQType>
+    <Gauge item="Player_Fatigue">
+        <ScreenID>PlayerFatigue</ScreenID>
+        <EQType>3</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
@@ -486,20 +471,16 @@
             <CX>162</CX>
             <CY>12</CY>
         </Size>
-        <FillTint>
-            <R>240</R>
-            <G>0</G>
-            <B>0</B>
-        </FillTint>
+        <FillTint><R>255</R><G>180</G><B>0</B></FillTint>
         <GaugeDrawTemplate>
             <Background>D3PDA_Gauge_Background</Background>
             <Fill>D3PDA_Gauge_Fill</Fill>
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <Gauge item="Pet_HP">
-        <ScreenID>PetHP</ScreenID>
-        <EQType>16</EQType>
+    <Gauge item="Player_MeleeTick">
+        <ScreenID>PlayerMeleeTick</ScreenID>
+        <EQType>34</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>-8</GaugeOffsetY>
         <Location>
@@ -511,14 +492,76 @@
             <CY>4</CY>
         </Size>
         <FillTint>
-            <R>51</R>
-            <G>192</G>
-            <B>51</B>
+            <R>220</R>
+            <G>220</G>
+            <B>220</B>
         </FillTint>
         <GaugeDrawTemplate>
             <Fill>D3PDA_Gauge_LinesFill</Fill>
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!-- -->
+    <!-- 
+    <Screen item="Player_FatigueKey_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>6</X>
+            <Y>95</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_FatigueKey_OutlineTL</Pieces>
+        <Pieces>Player_FatigueKey_OutlineT</Pieces>
+        <Pieces>Player_FatigueKey_OutlineTR</Pieces>
+        <Pieces>Player_FatigueKey_OutlineBL</Pieces>
+        <Pieces>Player_FatigueKey_OutlineB</Pieces>
+        <Pieces>Player_FatigueKey_OutlineBR</Pieces>
+        <Pieces>Player_FatigueKey_OutlineL</Pieces>
+        <Pieces>Player_FatigueKey_OutlineR</Pieces>
+        <Pieces>Player_FatigueKey</Pieces>
+    </Screen>
+    <Screen item="Player_FatigueLabel_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>60</LeftAnchorOffset>
+        <RightAnchorOffset>6</RightAnchorOffset>
+        <Pieces>Player_FatigueLabel_OutlineTL</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineT</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineTR</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineBL</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineB</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineBR</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineL</Pieces>
+        <Pieces>Player_FatigueLabel_OutlineR</Pieces>
+        <Pieces>Player_FatigueLabel</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineTL</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineT</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineTR</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineBL</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineB</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineBR</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineL</Pieces>
+        <Pieces>Player_FatiguePercent_OutlineR</Pieces>
+        <Pieces>Player_FatiguePercent</Pieces>
+    </Screen>
+    <Screen item="Player_Fatigue_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>28</X>
+            <Y>88</Y>
+        </Location>
+        <Size>
+            <CX>168</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_Fatigue</Pieces>
+        <Pieces>Player_MeleeTick</Pieces>
+        <Pieces>Player_FatigueLabel_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

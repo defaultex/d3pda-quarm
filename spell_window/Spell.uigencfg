@@ -1,4 +1,14 @@
-TemplateFilename = "Spell.xmltemplate"
-OutputFormat = "Spell{0}.xml"
+TemplateFilename = Spell.xmltemplate
+OutputFormat = Spell[i].xml
 StartIndex = 0
 Count = 8
+
+Copy(
+    Regexp = <Screen item="CSPW_Spell[i]Number_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_CastSpellWnd.xml
+)
+
+Copy(
+    Regexp = <Screen item="CSPW_Spell[i]_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_CastSpellWnd.xml
+)

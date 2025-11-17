@@ -2,9 +2,9 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- -->
-    <Label item="Player_ENKey">
+    <Label item="Player_ManaKey">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -19,9 +19,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineTL">
+    <Label item="Player_ManaKey_OutlineTL">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -35,9 +35,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineT">
+    <Label item="Player_ManaKey_OutlineT">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -52,9 +52,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineTR">
+    <Label item="Player_ManaKey_OutlineTR">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -69,9 +69,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineBL">
+    <Label item="Player_ManaKey_OutlineBL">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -86,9 +86,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineB">
+    <Label item="Player_ManaKey_OutlineB">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -103,9 +103,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineBR">
+    <Label item="Player_ManaKey_OutlineBR">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -120,9 +120,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineL">
+    <Label item="Player_ManaKey_OutlineL">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -137,9 +137,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="Player_ENKey_OutlineR">
+    <Label item="Player_ManaKey_OutlineR">
         <Font>4</Font>
-        <Text>EN</Text>
+        <Text>MP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -155,9 +155,9 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_FatigueLabel">
-        <ScreenID>FatigueLabel</ScreenID>
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel">
+        <ScreenID>ManaLabel</ScreenID>
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -173,8 +173,8 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineTL">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineTL">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -191,8 +191,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineT">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineT">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -209,8 +209,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineTR">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineTR">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -227,8 +227,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineBL">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineBL">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -245,8 +245,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineB">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineB">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -263,8 +263,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineBR">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineBR">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -281,8 +281,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineL">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineL">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -298,12 +298,13 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatigueLabel_OutlineR">
-        <EQType>21</EQType>
+    <Label item="Player_ManaLabel_OutlineR">
+        <EQType>20</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
         <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
         <LeftAnchorOffset>64</LeftAnchorOffset>
@@ -315,7 +316,7 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_FatiguePercent">
+    <Label item="Player_ManaPercent">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -330,7 +331,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineTL">
+    <Label item="Player_ManaPercent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -346,7 +347,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineT">
+    <Label item="Player_ManaPercent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -362,7 +363,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineTR">
+    <Label item="Player_ManaPercent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -378,7 +379,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineBL">
+    <Label item="Player_ManaPercent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -394,7 +395,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineB">
+    <Label item="Player_ManaPercent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -410,7 +411,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineBR">
+    <Label item="Player_ManaPercent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -426,7 +427,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineL">
+    <Label item="Player_ManaPercent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -441,7 +442,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="Player_FatiguePercent_OutlineR">
+    <Label item="Player_ManaPercent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -457,24 +458,32 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="Player_EnNumber">
-        <EQType>129</EQType>
-        <Font>4</Font>
+    <Label item="Player_ManaNumber">
+        <EQType>80</EQType>
+        <Font>5</Font>
         <NoWrap>true</NoWrap>
-        <Style_TransparentControl>true</Style_TransparentControl>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>24</LeftAnchorOffset>
+        <RightAnchorOffset>24</RightAnchorOffset>
         <Location>
-            <X>50</X>
-            <Y>82</Y>
+            <X>24</X>
+            <Y>-1</Y>
         </Location>
         <Size>
-            <CX>145</CX>
+            <CX>149</CX>
             <CY>18</CY>
         </Size>
+        <TextColor>
+            <R>180</R>
+            <G>180</G>
+            <B>180</B>
+        </TextColor>
     </Label>
-    <Gauge item="Player_EN">
-        <ScreenID>PlayerFatigue</ScreenID>
-        <EQType>3</EQType>
-        <Font>3</Font>
+    <Gauge item="Player_Mana">
+        <ScreenID>PlayerMana</ScreenID>
+        <EQType>2</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
@@ -485,30 +494,16 @@
             <CX>162</CX>
             <CY>12</CY>
         </Size>
-        <TextColor>
-            <R>240</R>
-            <G>240</G>
-            <B>240</B>
-        </TextColor>
-        <FillTint>
-            <R>255</R>
-            <G>180</G>
-            <B>0</B>
-        </FillTint>
-        <LinesFillTint>
-            <R>220</R>
-            <G>220</G>
-            <B>220</B>
-        </LinesFillTint>
+        <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
         <GaugeDrawTemplate>
             <Background>D3PDA_Gauge_Background</Background>
             <Fill>D3PDA_Gauge_Fill</Fill>
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <Gauge item="Player_MeleeTick">
-        <ScreenID>PlayerMeleeTick</ScreenID>
-        <EQType>34</EQType>
+    <Gauge item="Player_ManaTick">
+        <ScreenID>PlayerManaTick</ScreenID>
+        <EQType>24</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>-8</GaugeOffsetY>
         <Location>
@@ -529,5 +524,68 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!--  -->
+    <!-- 
+    <Screen item="Player_ManaKey_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>6</X>
+            <Y>65</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_ManaKey_OutlineTL</Pieces>
+        <Pieces>Player_ManaKey_OutlineT</Pieces>
+        <Pieces>Player_ManaKey_OutlineTR</Pieces>
+        <Pieces>Player_ManaKey_OutlineBL</Pieces>
+        <Pieces>Player_ManaKey_OutlineB</Pieces>
+        <Pieces>Player_ManaKey_OutlineBR</Pieces>
+        <Pieces>Player_ManaKey_OutlineL</Pieces>
+        <Pieces>Player_ManaKey_OutlineR</Pieces>
+        <Pieces>Player_ManaKey</Pieces>
+    </Screen>
+    <Screen item="Player_ManaLabel_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>60</LeftAnchorOffset>
+        <RightAnchorOffset>6</RightAnchorOffset>
+        <Pieces>Player_ManaLabel_OutlineTL</Pieces>
+        <Pieces>Player_ManaLabel_OutlineT</Pieces>
+        <Pieces>Player_ManaLabel_OutlineTR</Pieces>
+        <Pieces>Player_ManaLabel_OutlineBL</Pieces>
+        <Pieces>Player_ManaLabel_OutlineB</Pieces>
+        <Pieces>Player_ManaLabel_OutlineBR</Pieces>
+        <Pieces>Player_ManaLabel_OutlineL</Pieces>
+        <Pieces>Player_ManaLabel_OutlineR</Pieces>
+        <Pieces>Player_ManaLabel</Pieces>
+        <Pieces>Player_ManaPercent_OutlineTL</Pieces>
+        <Pieces>Player_ManaPercent_OutlineT</Pieces>
+        <Pieces>Player_ManaPercent_OutlineTR</Pieces>
+        <Pieces>Player_ManaPercent_OutlineBL</Pieces>
+        <Pieces>Player_ManaPercent_OutlineB</Pieces>
+        <Pieces>Player_ManaPercent_OutlineBR</Pieces>
+        <Pieces>Player_ManaPercent_OutlineL</Pieces>
+        <Pieces>Player_ManaPercent_OutlineR</Pieces>
+        <Pieces>Player_ManaPercent</Pieces>
+    </Screen>
+    <Screen item="Player_Mana_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>28</X>
+            <Y>58</Y>
+        </Location>
+        <Size>
+            <CX>168</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_Mana</Pieces>
+        <Pieces>Player_ManaTick</Pieces>
+        <Pieces>Player_ManaNumber</Pieces>
+        <Pieces>Player_ManaLabel_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

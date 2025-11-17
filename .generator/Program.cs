@@ -1,161 +1,162 @@
-﻿using System.Text;
+﻿using MathEvaluation.Context;
+using MathEvaluation.Extensions;
 
 partial class Program {
-    
-    [GeneratedRegex(@"\[EQLabelType.(?<name>[a-zA-Z0-9]+)\]")]
+    #region Regex
+
+    [GeneratedRegex(@"\[\s*EQLabelType.(?<LabelType>.*)\s*\]")]
     private static partial Regex EQLabelRegex();
 
-    [GeneratedRegex(@"\[EQGaugeType.(?<name>[a-zA-Z0-9]+)\]")]
+    [GeneratedRegex(@"\[\s*EQGaugeType.(?<GaugeType>.*)\s*\]")]
     private static partial Regex EQGaugeRegex();
 
-    // parses i, i+value, i-value, i*value, i/value, and i%value
-    [GeneratedRegex(@"\[i((?<op>[\/\+\-\*\%]{1})(?<value>\d+))*\]")]
-    private static partial Regex IndexRegex();
+    [GeneratedRegex(@"\[\s*(?<Iter>i)\s*\]", RegexOptions.IgnoreCase)]
+    private static partial Regex IterRegex();
 
-    static string ReplaceLabelTypes(string source) {
-        Match m;
-        while ((m = EQLabelRegex().Match(source)).Success) {
-            string name = m.Groups.GetValueOrDefault("name").Value;
-            int value = (int)Enum.Parse(typeof(EQLabelType), name);
-            source = source.Replace(m.Value, value.ToString());
-            Console.WriteLine($"   {m.Value} => {value}");
-        }
-        return source;
-    }
+    [GeneratedRegex(@"\[\s*(?<Enum>enum)\s*\]", RegexOptions.IgnoreCase)]
+    private static partial Regex EnumRegex();
 
-    static string ReplaceGaugeTypes(string source) {
-        Match m;
-        while ((m = EQGaugeRegex().Match(source)).Success) {
-            string name = m.Groups.GetValueOrDefault("name").Value;
-            int value = (int)Enum.Parse(typeof(EQGaugeType), name);
-            source = source.Replace(m.Value, value.ToString());
-            Console.WriteLine($"   {m.Value} => {value}");
-        }
-        return source;
-    }
+    [GeneratedRegex(@"\[\s*calc\s+(?<Calc>[^\[\]]*)\s*\]", RegexOptions.IgnoreCase)]
+    private static partial Regex CalcRegex();
 
-    static string ProcessIndices(string source, int i) {
-        Match m;
-        while ((m = IndexRegex().Match(source)).Success) {
-            string strValue = null, strOp = null;
-            if (m.Groups.TryGetValue("value", out Group g0)) {
-                strValue = g0.Value;
+    #endregion
+
+    static readonly Dictionary<string, string> ms_parameters = [];
+
+    static string ProcessRegex(string source, string key, Func<Regex> regex, Func<Group, string> fvalue, bool verbose = false) {
+        regex().Matches(source).All(m => {
+            string sourceValue = m.Captures[0].Value;
+            if (m.Groups.TryGetValue(key, out Group g)) {
+                string value = fvalue(g);
+                source = source.Replace(sourceValue, value);
+                if (verbose) { Console.WriteLine($"   {sourceValue} => {value}"); }
             }
-            if (m.Groups.TryGetValue("op", out Group g1)) {
-                strOp = g1.Value;
-            } 
-            int value = string.IsNullOrWhiteSpace(strValue) ? 0 : int.Parse(strValue);
-            string newValue = strOp switch {
-                "+" => $"{i + value}",
-                "-" => $"{i - value}",
-                "*" => $"{i * value}",
-                "/" => $"{i / value}",
-                "%" => $"{i % value}",
-                _ => $"{i}"
-            }; 
-            source = source.Replace(m.Value, newValue);
-            Console.WriteLine($"   {m.Value} => {newValue}");
+            return true;
+        });
+        return source;
+    }
+
+    static string ProcessString(string source, UIGenCfg genCfg, bool full = false) {
+        genCfg.Parameters.Keys.All(key => {
+            string value = ms_parameters.GetValueOrDefault(key, key);
+            source = Regex.Replace(source, @$"\[\s*(?<{key}>{key})\s*\]", value);
+            if (full) { Console.WriteLine($"   [{key}] => {value}"); }
+            return true;
+        });
+        source = ProcessRegex(source, "Iter", IterRegex, g => ms_parameters.GetValueOrDefault("i"), full);
+        source = ProcessRegex(source, "Enum", EnumRegex, g => ms_parameters.GetValueOrDefault("Enum"), full);
+        if (full) {
+            source = ProcessRegex(source, "Calc", CalcRegex, g => $"{(int)g.Value.Compile(ms_parameters, new DotNetStandardMathContext())(ms_parameters)}");
+            source = ProcessRegex(source, "LabelType", EQLabelRegex, g => $"{(int)Enum.Parse<EQLabelType>(g.Value)}");
+            source = ProcessRegex(source, "GaugeType", EQGaugeRegex, g => $"{(int)Enum.Parse<EQGaugeType>(g.Value)}");
         }
         return source;
     }
 
-    static string ProcessFile(string source, Func<string, string> proc = null) {
-        string output = (proc != null) ? proc(source) : source;
-        output = ReplaceLabelTypes(output);
-        output = ReplaceGaugeTypes(output);
-        return output;
-    }
+    static bool ShouldGen(UIGenCfg gencfg, string outputFile) =>
+        !File.Exists(outputFile) ||
+        File.GetLastWriteTime(gencfg.TemplateFilename) > File.GetLastWriteTime(outputFile) ||
+        File.GetLastWriteTime(gencfg.GenCfgPath) > File.GetLastWriteTime(outputFile);
 
-    static bool ShouldGen(string templatePath, string outputFile) =>
-        !File.Exists(outputFile) || File.GetLastWriteTime(templatePath) > File.GetLastWriteTime(outputFile);
-
-    // process an xmltemplate to produce a file from it
-    static bool GenerateFile(string templatePath, string outFilename, Func<string, string> proc = null) {
-        if (ShouldGen(templatePath, outFilename)) {
-            string original = File.ReadAllText(templatePath);
-            Console.WriteLine($"   Generating {outFilename}");
-            string output = ProcessFile(original, proc);
-            File.WriteAllText(outFilename, output);
-            return true;
-        } else {
-            Console.WriteLine($"   Skipping {outFilename}, file is newer than the template.");
-            return false;
-        }
-    }
-
-    // processes an xmltemplate to produce 'count - offset' amount of files from it
+    // processes an xmltemplate to produce multiple files
     static bool GenerateFiles(UIGenCfg gencfg) {
         bool result = false;
-        string original = File.ReadAllText(gencfg.TemplateFilename);
+
+        // batch changes to give any previous writes time to finish
+        BufferedCopyOp[] copyOps = new BufferedCopyOp[gencfg.CopyOps?.Length ?? 0];
+        for (int i = 0; i < gencfg.CopyOps.Length; i++) {
+            copyOps[i] = new BufferedCopyOp() {
+                Target = gencfg.CopyOps[i].Target,
+                Regexps = new string[gencfg.Count],
+                Outputs = new string[gencfg.Count]
+            };
+            for (int j = gencfg.StartIndex; j < gencfg.Count; j++) {
+                copyOps[i].Regexps[j] = gencfg.CopyOps[i].Regexp;
+            }
+        }
+
         for (int i = gencfg.StartIndex; i < gencfg.Count; i++) {
-            string outFilename = string.Format(gencfg.OutputFormat, i);
-            if (ShouldGen(gencfg.TemplateFilename, outFilename)) {
-                Console.WriteLine($"   Generating {outFilename}");
-                string output = ProcessIndices(original, i);
-                output = ProcessFile(output);
-                File.WriteAllText(outFilename, output);
-                result = true;
-            } else {
-                Console.WriteLine($"   Skipping {outFilename}, file is newer than the template.");
+            string enumValue = gencfg.IsEnumerative ? gencfg.Enum[i - gencfg.StartIndex] : null;
+            ms_parameters["i"] = $"{i}";
+            if (gencfg.IsEnumerative) {
+                ms_parameters["enum"] = enumValue;
+                ms_parameters["Enum"] = enumValue;
+            }
+            gencfg.Parameters.All(kvp => {
+                ms_parameters[kvp.Key] = kvp.Value[i - gencfg.StartIndex];
+                return true;
+            });
+
+            string output = null, filename = ProcessString(gencfg.OutputFormat, gencfg);
+            if (gencfg.ForceGeneration || ShouldGen(gencfg, filename)) {
+                Console.WriteLine($"   Generating {filename}");
+                output = File.ReadAllText(gencfg.TemplateFilename);
+                output = ProcessString(output, gencfg, true);
+                foreach (ReplaceOperation replaceOp in gencfg.ReplaceOps) {
+                    if (replaceOp.Target.Contains(filename)) {
+                        output = Regex.Replace(output, replaceOp.Regexp, replaceOp.Value);
+                        // Console.WriteLine($"   replace ({filename}): {replaceOp.Regexp} => {replaceOp.Value}");
+                    }
+                }
+                File.WriteAllText(filename, output);
+            } else { Console.WriteLine($"   Skipping {filename}, file is newer than the template."); }
+            result |= output != null;
+
+            for (int j = 0; j < copyOps.Length; j++) {
+                copyOps[j].Regexps[i] = ProcessString(copyOps[j].Regexps[i], gencfg);
+                copyOps[j].Outputs[i] = (output != null) ? Regex.Match(output, copyOps[j].Regexps[i])?.Value : null;
+            }
+        }
+        ms_parameters.Remove("i");
+        ms_parameters.Remove("enum");
+        ms_parameters.Remove("Enum");
+        gencfg.Parameters.Keys.All(key => ms_parameters.Remove(key));
+
+        // perform the batched copy operations
+        foreach (BufferedCopyOp copyOp in copyOps) {
+            string targetXml = File.ReadAllText(copyOp.Target);
+            bool doWrite = false;
+            for (int i = 0; i < copyOp.Regexps.Length; i++) {
+                if (copyOp.Outputs[i] != null) {
+                    targetXml = Regex.Replace(targetXml, copyOp.Regexps[i], copyOp.Outputs[i]);
+                    // Console.WriteLine($"   copy ({copyOp.Target}): {copyOp.Regexps[i]} => {copyOp.Outputs[i]}");
+                    doWrite = true;
+                }
+            }
+            if (doWrite) {
+                File.WriteAllText(copyOp.Target, targetXml);
             }
         }
         return result;
     }
 
     // ----------------------------------------------------------
-    //  special cases
-    // ----------------------------------------------------------
-
-    static void GenStatWindow() {
-        foreach (string stat in new[] {
-            "STR",
-            "STA",
-            "AGI",
-            "DEX",
-            "WIS",
-            "INT",
-            "CHA",
-            "XP",
-            "AA" }) {
-            GenerateFile("./status_window/StatL.xmltemplate", $"./status_window/{stat}.xml",
-                (source) => source.Replace("[Name]", stat));
-        }
-        foreach (string stat in new[] {
-            "AC",
-            "AT",
-            "MR",
-            "FR",
-            "CR",
-            "PR",
-            "DR"}) {
-            GenerateFile("./status_window/StatR.xmltemplate", $"./status_window/{stat}.xml",
-                (source) => source.Replace("[Name]", stat));
-        }
-    }
-
-    // ----------------------------------------------------------
     //  main
     // ----------------------------------------------------------
+
+    static Program() {
+        ms_parameters = [];
+        foreach (string label in Enum.GetNames<EQLabelType>()) {
+            ms_parameters[$"EQLabelType.{label}"] = $"{(int)Enum.Parse<EQLabelType>(label)}";
+        }
+        foreach (string gauge in Enum.GetNames<EQGaugeType>()) {
+            ms_parameters[$"EQGaugeType.{gauge}"] = $"{(int)Enum.Parse<EQGaugeType>(gauge)}";
+        }
+    }
 
     static void Main(string[] args) {
         // step into the ui folder
         Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "../");
-        
         // scan through directories to find generator config files and process them accordingly
         string[] dirs = Directory.GetDirectories("./");
         foreach (string dir in dirs) {
-            string[] files = Directory.GetFiles(dir, "*.uigencfg");
-            if (files == null || files.Length < 1) { continue; }
-            UIGenCfg gencfg = new(files[0]);
-            gencfg.WriteConsole();
-            GenerateFiles(gencfg);
+            foreach (string file in Directory.GetFiles(dir, "*.uigencfg")) {
+                UIGenCfg gencfg = new(file);
+                gencfg.WriteConsole();
+                GenerateFiles(gencfg);
+            }
         }
-
-        // specialized output
-        GenStatWindow();
-
         Console.WriteLine("Done!");
-
         //const string uiroot = @"..";
         //GenerateMerchant($"{uiroot}/D3PDA_MerchantWnd.xml");
     }
@@ -168,10 +169,7 @@ partial class Program {
         string IndexPattern = @"\[" + indexer + @"(\+(?<value>-*[0-9]+))*\]";
         Match m;
         while ((m = Regex.Match(source, IndexPattern)).Success) {
-            string strValue = null;
-            if (m.Groups.TryGetValue("value", out Group g)) {
-                strValue = g.Value;
-            }
+            string strValue = m.Groups.TryGetValue("value", out Group g) ? g.Value : null;
             int value = string.IsNullOrEmpty(strValue) ? 0 : int.Parse(strValue);
             string newValue = $"{i + value}";
             source = source.Replace(m.Value, newValue);

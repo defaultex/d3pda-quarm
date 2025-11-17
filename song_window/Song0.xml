@@ -177,5 +177,35 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!--  -->
+    <!--
+    <Screen item="SDBW_Buff0_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorOffset>36</LeftAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>SDBW_Buff0_Label_TL</Pieces>
+        <Pieces>SDBW_Buff0_Label_T</Pieces>
+        <Pieces>SDBW_Buff0_Label_TR</Pieces>
+        <Pieces>SDBW_Buff0_Label_BL</Pieces>
+        <Pieces>SDBW_Buff0_Label_B</Pieces>
+        <Pieces>SDBW_Buff0_Label_BR</Pieces>
+        <Pieces>SDBW_Buff0_Label_L</Pieces>
+        <Pieces>SDBW_Buff0_Label_R</Pieces>
+        <Pieces>SDBW_Buff0_Label</Pieces>
+    </Screen>
+    <Screen item="SDBW_Buff0_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>SDBW_Buff0_Button</Pieces>
+        <Pieces>SDBW_Buff0_Label_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

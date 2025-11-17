@@ -1,6 +1,6 @@
-<?xml version = "1.0"?>
-<XML ID = "EQInterfaceDefinitionLanguage">
-    <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- -->
     <Label item="CSPW_Spell1Number">
         <Text>2</Text>
@@ -309,7 +309,7 @@
         </TextColor>
     </Label>
     <!-- -->
-    <SpellGem item = "CSPW_Spell1">
+    <SpellGem item="CSPW_Spell1">
         <ScreenID>CSPW_Spell1</ScreenID>
         <SpellIconOffsetX>2</SpellIconOffsetX>
         <SpellIconOffsetY>2</SpellIconOffsetY>
@@ -328,5 +328,71 @@
             <Background>D3PDA_IWnd_GemBackground</Background>
         </SpellGemDrawTemplate>
     </SpellGem>
-    <!-- -->
+    <Gauge item="CSPW_Spell1Recast">
+		<ScreenID>CSPW_Spell1Recast</ScreenID>
+        <EQType>27</EQType>
+        <TextOffsetY>-250</TextOffsetY>
+        <GaugeOffsetY>0</GaugeOffsetY>
+        <Location>
+            <X>42</X>
+            <Y>30</Y>
+        </Location>
+        <Size>
+            <CX>155</CX>
+            <CY>30</CY>
+        </Size>
+        <FillTint>
+            <R>75</R>
+            <G>101</G>
+            <B>100</B>
+        </FillTint>
+        <GaugeDrawTemplate>
+            <Fill>D3PDA_Gauge_CastFill</Fill>
+        </GaugeDrawTemplate>
+        <DrawLinesFill>false</DrawLinesFill>
+    </Gauge>
+    <!-- CSPW_Spell1Number_Layout
+    <Screen item="CSPW_Spell1Number_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>1</X>
+			<Y>34</Y>
+		</Location>
+		<Size>
+			<CX>22</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>CSPW_Spell1Number_OutlineTL</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineT</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineTR</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineBL</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineB</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineBR</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineL</Pieces>
+		<Pieces>CSPW_Spell1Number_OutlineR</Pieces>
+		<Pieces>CSPW_Spell1Number</Pieces>
+	</Screen>
+    -->
+    <!-- CSPW_Spell1_Layout
+    <Screen item="CSPW_Spell1_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>50</X>
+			<Y>30</Y>
+		</Location>
+		<Size>
+			<CX>147</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>CSPW_Spell1Label_OutlineTL</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineT</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineTR</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineBL</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineB</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineBR</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineL</Pieces>
+		<Pieces>CSPW_Spell1Label_OutlineR</Pieces>
+		<Pieces>CSPW_Spell1Label</Pieces>
+	</Screen>
+    -->
 </XML>

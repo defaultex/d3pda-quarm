@@ -263,7 +263,7 @@
         <Pieces>BW_Buff14_Label</Pieces>
     </Screen>
     <!--  -->
-    <Screen item="BW_Buff0_Display">
+    <Screen item="BW_Buff0_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -276,7 +276,7 @@
         <Pieces>BW_Buff0_Button</Pieces>
         <Pieces>BW_Buff0_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff1_Display">
+    <Screen item="BW_Buff1_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -289,7 +289,7 @@
         <Pieces>BW_Buff1_Button</Pieces>
         <Pieces>BW_Buff1_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff2_Display">
+    <Screen item="BW_Buff2_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -302,7 +302,7 @@
         <Pieces>BW_Buff2_Button</Pieces>
         <Pieces>BW_Buff2_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff3_Display">
+    <Screen item="BW_Buff3_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -315,7 +315,7 @@
         <Pieces>BW_Buff3_Button</Pieces>
         <Pieces>BW_Buff3_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff4_Display">
+    <Screen item="BW_Buff4_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -328,7 +328,7 @@
         <Pieces>BW_Buff4_Button</Pieces>
         <Pieces>BW_Buff4_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff5_Display">
+    <Screen item="BW_Buff5_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -341,7 +341,7 @@
         <Pieces>BW_Buff5_Button</Pieces>
         <Pieces>BW_Buff5_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff6_Display">
+    <Screen item="BW_Buff6_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -354,7 +354,7 @@
         <Pieces>BW_Buff6_Button</Pieces>
         <Pieces>BW_Buff6_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff7_Display">
+    <Screen item="BW_Buff7_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -367,7 +367,7 @@
         <Pieces>BW_Buff7_Button</Pieces>
         <Pieces>BW_Buff7_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff8_Display">
+    <Screen item="BW_Buff8_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -380,7 +380,7 @@
         <Pieces>BW_Buff8_Button</Pieces>
         <Pieces>BW_Buff8_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff9_Display">
+    <Screen item="BW_Buff9_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -393,7 +393,7 @@
         <Pieces>BW_Buff9_Button</Pieces>
         <Pieces>BW_Buff9_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff10_Display">
+    <Screen item="BW_Buff10_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -406,7 +406,7 @@
         <Pieces>BW_Buff10_Button</Pieces>
         <Pieces>BW_Buff10_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff11_Display">
+    <Screen item="BW_Buff11_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -419,7 +419,7 @@
         <Pieces>BW_Buff11_Button</Pieces>
         <Pieces>BW_Buff11_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff12_Display">
+    <Screen item="BW_Buff12_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
@@ -432,11 +432,11 @@
         <Pieces>BW_Buff12_Button</Pieces>
         <Pieces>BW_Buff12_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff13_Display">
+    <Screen item="BW_Buff13_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
-            <Y>440</Y>
+            <Y>442</Y>
         </Location>
         <Size>
             <CX>182</CX>
@@ -445,11 +445,11 @@
         <Pieces>BW_Buff13_Button</Pieces>
         <Pieces>BW_Buff13_Label_Layout</Pieces>
     </Screen>
-    <Screen item="BW_Buff14_Display">
+    <Screen item="BW_Buff14_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>0</X>
-            <Y>474</Y>
+            <Y>476</Y>
         </Location>
         <Size>
             <CX>182</CX>
@@ -469,21 +469,21 @@
             <CY>510</CY>
         </Size>
         <!--  -->
-        <Pieces>BW_Buff0_Display</Pieces>
-        <Pieces>BW_Buff1_Display</Pieces>
-        <Pieces>BW_Buff2_Display</Pieces>
-        <Pieces>BW_Buff3_Display</Pieces>
-        <Pieces>BW_Buff4_Display</Pieces>
-        <Pieces>BW_Buff5_Display</Pieces>
-        <Pieces>BW_Buff6_Display</Pieces>
-        <Pieces>BW_Buff7_Display</Pieces>
-        <Pieces>BW_Buff8_Display</Pieces>
-        <Pieces>BW_Buff9_Display</Pieces>
-        <Pieces>BW_Buff10_Display</Pieces>
-        <Pieces>BW_Buff11_Display</Pieces>
-        <Pieces>BW_Buff12_Display</Pieces>
-        <Pieces>BW_Buff13_Display</Pieces>
-        <Pieces>BW_Buff14_Display</Pieces>
+        <Pieces>BW_Buff0_Layout</Pieces>
+        <Pieces>BW_Buff1_Layout</Pieces>
+        <Pieces>BW_Buff2_Layout</Pieces>
+        <Pieces>BW_Buff3_Layout</Pieces>
+        <Pieces>BW_Buff4_Layout</Pieces>
+        <Pieces>BW_Buff5_Layout</Pieces>
+        <Pieces>BW_Buff6_Layout</Pieces>
+        <Pieces>BW_Buff7_Layout</Pieces>
+        <Pieces>BW_Buff8_Layout</Pieces>
+        <Pieces>BW_Buff9_Layout</Pieces>
+        <Pieces>BW_Buff10_Layout</Pieces>
+        <Pieces>BW_Buff11_Layout</Pieces>
+        <Pieces>BW_Buff12_Layout</Pieces>
+        <Pieces>BW_Buff13_Layout</Pieces>
+        <Pieces>BW_Buff14_Layout</Pieces>
         <!--  -->
     </Screen>
     <!--  -->

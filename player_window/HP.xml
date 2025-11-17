@@ -2,22 +2,9 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- -->
-	<StaticAnimation item="GW_IWnd_GaugeHolder5">
-		<Animation>D3PDA_IWnd_GaugeHolder</Animation>
-		<Style_Transparent>true</Style_Transparent>
-		<Location>
-			<X>18</X>
-			<Y>150</Y>
-		</Location>
-		<Size>
-			<CX>32</CX>
-			<CY>30</CY>
-		</Size>
-	</StaticAnimation>
-    <!-- -->
-    <Label item="GW_Key5">
-        <Text>F6</Text>
+    <Label item="Player_HPKey">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -29,11 +16,12 @@
             <R>156</R>
             <G>182</G>
             <B>182</B>
+            <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineTL">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineTL">
         <Font>4</Font>
+        <Text>HP</Text>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -44,11 +32,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineT">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineT">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -60,11 +49,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineTR">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineTR">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -76,11 +66,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineBL">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineBL">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -92,11 +83,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineB">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineB">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -108,11 +100,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineBR">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineBR">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -124,11 +117,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineL">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineL">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -140,11 +134,12 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="GW_Key5_OutlineR">
-        <Text>F6</Text>
+    <Label item="Player_HPKey_OutlineR">
         <Font>4</Font>
+        <Text>HP</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -156,12 +151,13 @@
             <R>75</R>
             <G>101</G>
             <B>100</B>
+            <Alpha>64</Alpha>
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="GW_HPLabel5">
-		<ScreenID>HPLabel5</ScreenID>
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel">
+        <ScreenID>HPLabel</ScreenID>
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -177,8 +173,8 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_TL">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineTL">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -195,8 +191,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_T">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineT">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -213,8 +209,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_TR">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineTR">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -231,8 +227,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_BL">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineBL">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -249,8 +245,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_B">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineB">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -267,8 +263,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_BR">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineBR">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -285,8 +281,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_L">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineL">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -302,8 +298,8 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPLabel5_Shadow_R">
-        <EQType>39</EQType>
+    <Label item="Player_HPLabel_OutlineR">
+        <EQType>19</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -320,7 +316,7 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Label item="GW_HPPercent5">
+    <Label item="Player_HPPercent">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -335,7 +331,7 @@
             <B>255</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_TL">
+    <Label item="Player_HPPercent_OutlineTL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -351,7 +347,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_T">
+    <Label item="Player_HPPercent_OutlineT">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -367,7 +363,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_TR">
+    <Label item="Player_HPPercent_OutlineTR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -383,7 +379,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_BL">
+    <Label item="Player_HPPercent_OutlineBL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -399,7 +395,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_B">
+    <Label item="Player_HPPercent_OutlineB">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -415,7 +411,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_BR">
+    <Label item="Player_HPPercent_OutlineBR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -431,7 +427,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_L">
+    <Label item="Player_HPPercent_OutlineL">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -446,7 +442,7 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <Label item="GW_HPPercent5_Shadow_R">
+    <Label item="Player_HPPercent_OutlineR">
         <Text>%</Text>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
@@ -462,133 +458,32 @@
         </TextColor>
     </Label>
     <!-- -->
-    <Gauge item="GW_NameLabel5">
-        <EQType>15</EQType>
-        <Font>4</Font>
+    <Label item="Player_HPNumber">
+        <EQType>70</EQType>
+        <Font>5</Font>
+        <NoWrap>true</NoWrap>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>3</LeftAnchorOffset>
+        <LeftAnchorOffset>24</LeftAnchorOffset>
+        <RightAnchorOffset>24</RightAnchorOffset>
+        <Location>
+            <X>24</X>
+            <Y>-1</Y>
+        </Location>
+        <Size>
+            <CX>149</CX>
+            <CY>18</CY>
+        </Size>
         <TextColor>
-            <R>255</R>
-            <G>255</G>
-            <B>255</B>
+            <R>180</R>
+            <G>180</G>
+            <B>180</B>
         </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_TL">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>2</LeftAnchorOffset>
-        <TopAnchorOffset>-1</TopAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_T">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>3</LeftAnchorOffset>
-        <TopAnchorOffset>-2</TopAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_TR">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>4</LeftAnchorOffset>
-        <TopAnchorOffset>-1</TopAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_BL">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>2</LeftAnchorOffset>
-        <TopAnchorOffset>1</TopAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_B">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>3</LeftAnchorOffset>
-        <TopAnchorOffset>2</TopAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_BR">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>4</LeftAnchorOffset>
-        <TopAnchorOffset>1</TopAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_L">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>1</LeftAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <Gauge item="GW_NameLabel5_Shadow_R">
-        <EQType>15</EQType>
-        <Font>4</Font>
-        <AutoStretch>true</AutoStretch>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>5</LeftAnchorOffset>
-        <TextColor>
-            <R>0</R>
-            <G>0</G>
-            <B>0</B>
-        </TextColor>
-    </Gauge>
-    <!-- -->
-    <Gauge item="GW_Gauge5">
-        <ScreenID>Gauge5</ScreenID>
-        <EQType>15</EQType>
+    </Label>
+    <Gauge item="Player_HP">
+        <ScreenID>PlayerHP</ScreenID>
+        <EQType>1</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>0</GaugeOffsetY>
         <Location>
@@ -610,9 +505,9 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <Gauge item="GW_PetGauge5">
-        <ScreenID>PetGauge5</ScreenID>
-        <EQType>21</EQType>
+    <Gauge item="Pet_HP">
+        <ScreenID>PetHP</ScreenID>
+        <EQType>16</EQType>
         <TextOffsetY>-250</TextOffsetY>
         <GaugeOffsetY>-8</GaugeOffsetY>
         <Location>
@@ -634,85 +529,67 @@
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
     <!-- 
-    <Screen item="GW_Key5_Layout">
-		<Style_Transparent>true</Style_Transparent>
-		<Location>
-			<X>12</X>
-			<Y>155</Y>
-		</Location>
-		<Size>
-			<CX>22</CX>
-			<CY>30</CY>
-		</Size>
-		<Pieces>GW_Key5_OutlineTL</Pieces>
-		<Pieces>GW_Key5_OutlineT</Pieces>
-		<Pieces>GW_Key5_OutlineTR</Pieces>
-		<Pieces>GW_Key5_OutlineBL</Pieces>
-		<Pieces>GW_Key5_OutlineB</Pieces>
-		<Pieces>GW_Key5_OutlineBR</Pieces>
-		<Pieces>GW_Key5_OutlineL</Pieces>
-		<Pieces>GW_Key5_OutlineR</Pieces>
-		<Pieces>GW_Key5</Pieces>
-	</Screen>
-    <Screen item="GW_Group5_Label_Layout">
-		<Style_Transparent>true</Style_Transparent>
-		<AutoStretch>true</AutoStretch>
-		<LeftAnchorToLeft>false</LeftAnchorToLeft>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
-		<LeftAnchorOffset>60</LeftAnchorOffset>
-		<RightAnchorOffset>6</RightAnchorOffset>
-		<Pieces>GW_HPLabel5_Shadow_TL</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_T</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_TR</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_BL</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_B</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_BR</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_L</Pieces>
-		<Pieces>GW_HPLabel5_Shadow_R</Pieces>
-		<Pieces>GW_HPLabel5</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_TL</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_T</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_TR</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_BL</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_B</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_BR</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_L</Pieces>
-		<Pieces>GW_HPPercent5_Shadow_R</Pieces>
-		<Pieces>GW_HPPercent5</Pieces>
-	</Screen>
-	<Screen item="GW_Group5_Name_Layout">
-		<Style_Transparent>true</Style_Transparent>
-		<AutoStretch>true</AutoStretch>
-		<RightAnchorToLeft>false</RightAnchorToLeft>
-		<BottomAnchorToTop>false</BottomAnchorToTop>
-		<LeftAnchorOffset>20</LeftAnchorOffset>
-		<RightAnchorOffset>64</RightAnchorOffset>
-		<TopAnchorOffset>3</TopAnchorOffset>
-		<Pieces>GW_NameLabel5_Shadow_TL</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_T</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_TR</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_BL</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_B</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_BR</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_L</Pieces>
-		<Pieces>GW_NameLabel5_Shadow_R</Pieces>
-		<Pieces>GW_NameLabel5</Pieces>
-	</Screen>
-	<Screen item="GW_Group5_Layout">
-		<Style_Transparent>true</Style_Transparent>
-		<Location>
-			<X>28</X>
-			<Y>148</Y>
-		</Location>
-		<Size>
-			<CX>168</CX>
-			<CY>30</CY>
-		</Size>
-		<Pieces>GW_Gauge5</Pieces>
-		<Pieces>GW_PetGauge5</Pieces>
-		<Pieces>GW_Group5_Label_Layout</Pieces>
-		<Pieces>GW_Group5_Name_Layout</Pieces>
-	</Screen>
+    <Screen item="Player_HPKey_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>6</X>
+            <Y>35</Y>
+        </Location>
+        <Size>
+            <CX>32</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_HPKey_OutlineTL</Pieces>
+        <Pieces>Player_HPKey_OutlineT</Pieces>
+        <Pieces>Player_HPKey_OutlineTR</Pieces>
+        <Pieces>Player_HPKey_OutlineBL</Pieces>
+        <Pieces>Player_HPKey_OutlineB</Pieces>
+        <Pieces>Player_HPKey_OutlineBR</Pieces>
+        <Pieces>Player_HPKey_OutlineL</Pieces>
+        <Pieces>Player_HPKey_OutlineR</Pieces>
+        <Pieces>Player_HPKey</Pieces>
+    </Screen>
+    <Screen item="Player_HPLabel_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorToLeft>false</LeftAnchorToLeft>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <LeftAnchorOffset>60</LeftAnchorOffset>
+        <RightAnchorOffset>6</RightAnchorOffset>
+        <Pieces>Player_HPLabel_OutlineTL</Pieces>
+        <Pieces>Player_HPLabel_OutlineT</Pieces>
+        <Pieces>Player_HPLabel_OutlineTR</Pieces>
+        <Pieces>Player_HPLabel_OutlineBL</Pieces>
+        <Pieces>Player_HPLabel_OutlineB</Pieces>
+        <Pieces>Player_HPLabel_OutlineBR</Pieces>
+        <Pieces>Player_HPLabel_OutlineL</Pieces>
+        <Pieces>Player_HPLabel_OutlineR</Pieces>
+        <Pieces>Player_HPLabel</Pieces>
+        <Pieces>Player_HPPercent_OutlineTL</Pieces>
+        <Pieces>Player_HPPercent_OutlineT</Pieces>
+        <Pieces>Player_HPPercent_OutlineTR</Pieces>
+        <Pieces>Player_HPPercent_OutlineBL</Pieces>
+        <Pieces>Player_HPPercent_OutlineB</Pieces>
+        <Pieces>Player_HPPercent_OutlineBR</Pieces>
+        <Pieces>Player_HPPercent_OutlineL</Pieces>
+        <Pieces>Player_HPPercent_OutlineR</Pieces>
+        <Pieces>Player_HPPercent</Pieces>
+    </Screen>
+    <Screen item="Player_HP_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>28</X>
+            <Y>28</Y>
+        </Location>
+        <Size>
+            <CX>168</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>Player_HP</Pieces>
+        <Pieces>Pet_HP</Pieces>
+        <Pieces>Player_HPNumber</Pieces>
+        <Pieces>Player_HPLabel_Layout</Pieces>
+    </Screen>
     -->
 </XML>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- Static animations to build the status window -->
+    <StaticAnimation item="SW_Frame_Top">
+        <Animation>D3PDA_LargeBorder_Top</Animation>
+        <Location>
+            <X>42</X>
+            <Y>119</Y>
+        </Location>
+        <Size>
+            <CX>84</CX>
+            <CY>10</CY>
+        </Size>
+    </StaticAnimation>
+    <!-- left half of Status Window  -->
+    <StaticAnimation item="SWL_IWnd0">
+        <Animation>D3PDA_IWnd_Item0_Serif</Animation>
+        <Location>
+            <X>0</X>
+            <Y>122</Y>
+        </Location>
+        <Size>
+            <CX>42</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd1">
+        <Animation>D3PDA_IWnd_Item1</Animation>
+        <Location>
+            <X>0</X>
+            <Y>152</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd2">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>0</X>
+            <Y>182</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd3">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>0</X>
+            <Y>212</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd4">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>0</X>
+            <Y>242</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd5">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>0</X>
+            <Y>272</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd6">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>0</X>
+            <Y>302</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd7">
+        <Animation>D3PDA_IWnd_ItemNminus1</Animation>
+        <Location>
+            <X>0</X>
+            <Y>332</Y>
+        </Location>
+        <Size>
+            <CX>20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWL_IWnd8">
+        <Animation>D3PDA_IWnd_ItemN_Serif</Animation>
+        <Location>
+            <X>0</X>
+            <Y>362</Y>
+        </Location>
+        <Size>
+            <CX>42</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <!-- right half of Status Window -->
+    <StaticAnimation item="SWR_IWnd0">
+        <Animation>D3PDA_IWnd_Item0_Serif</Animation>
+        <Location>
+            <X>168</X>
+            <Y>122</Y>
+        </Location>
+        <Size>
+            <CX>-42</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWR_IWnd1">
+        <Animation>D3PDA_IWnd_Item1</Animation>
+        <Location>
+            <X>168</X>
+            <Y>152</Y>
+        </Location>
+        <Size>
+            <CX>-20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWR_IWnd2">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>168</X>
+            <Y>182</Y>
+        </Location>
+        <Size>
+            <CX>-20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWR_IWnd3">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>168</X>
+            <Y>212</Y>
+        </Location>
+        <Size>
+            <CX>-20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWR_IWnd4">
+        <Animation>D3PDA_IWnd_ItemI</Animation>
+        <Location>
+            <X>168</X>
+            <Y>242</Y>
+        </Location>
+        <Size>
+            <CX>-20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWR_IWnd5">
+        <Animation>D3PDA_IWnd_ItemNminus1</Animation>
+        <Location>
+            <X>168</X>
+            <Y>272</Y>
+        </Location>
+        <Size>
+            <CX>-20</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <StaticAnimation item="SWR_IWnd6">
+        <Animation>D3PDA_IWnd_ItemN_Serif</Animation>
+        <Location>
+            <X>168</X>
+            <Y>302</Y>
+        </Location>
+        <Size>
+            <CX>-42</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
+    <!-- -->
+</XML>

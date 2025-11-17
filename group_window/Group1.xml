@@ -2,6 +2,19 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- -->
+	<StaticAnimation item="GW_IWnd_GaugeHolder1">
+		<Animation>D3PDA_IWnd_GaugeHolder</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>18</X>
+			<Y>30</Y>
+		</Location>
+		<Size>
+			<CX>32</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+    <!-- -->
     <Label item="GW_Key1">
         <Text>F2</Text>
         <Font>4</Font>
@@ -620,5 +633,86 @@
         </GaugeDrawTemplate>
         <DrawLinesFill>false</DrawLinesFill>
     </Gauge>
-    <!-- -->
+    <!-- 
+    <Screen item="GW_Key1_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>12</X>
+			<Y>35</Y>
+		</Location>
+		<Size>
+			<CX>22</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>GW_Key1_OutlineTL</Pieces>
+		<Pieces>GW_Key1_OutlineT</Pieces>
+		<Pieces>GW_Key1_OutlineTR</Pieces>
+		<Pieces>GW_Key1_OutlineBL</Pieces>
+		<Pieces>GW_Key1_OutlineB</Pieces>
+		<Pieces>GW_Key1_OutlineBR</Pieces>
+		<Pieces>GW_Key1_OutlineL</Pieces>
+		<Pieces>GW_Key1_OutlineR</Pieces>
+		<Pieces>GW_Key1</Pieces>
+	</Screen>
+    <Screen item="GW_Group1_Label_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>60</LeftAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<Pieces>GW_HPLabel1_Shadow_TL</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_T</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_TR</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_BL</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_B</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_BR</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_L</Pieces>
+		<Pieces>GW_HPLabel1_Shadow_R</Pieces>
+		<Pieces>GW_HPLabel1</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_TL</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_T</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_TR</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_BL</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_B</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_BR</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_L</Pieces>
+		<Pieces>GW_HPPercent1_Shadow_R</Pieces>
+		<Pieces>GW_HPPercent1</Pieces>
+	</Screen>
+	<Screen item="GW_Group1_Name_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorOffset>20</LeftAnchorOffset>
+		<RightAnchorOffset>64</RightAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<Pieces>GW_NameLabel1_Shadow_TL</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_T</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_TR</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_BL</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_B</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_BR</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_L</Pieces>
+		<Pieces>GW_NameLabel1_Shadow_R</Pieces>
+		<Pieces>GW_NameLabel1</Pieces>
+	</Screen>
+	<Screen item="GW_Group1_Layout">
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>28</X>
+			<Y>28</Y>
+		</Location>
+		<Size>
+			<CX>168</CX>
+			<CY>30</CY>
+		</Size>
+		<Pieces>GW_Gauge1</Pieces>
+		<Pieces>GW_PetGauge1</Pieces>
+		<Pieces>GW_Group1_Label_Layout</Pieces>
+		<Pieces>GW_Group1_Name_Layout</Pieces>
+	</Screen>
+    -->
 </XML>

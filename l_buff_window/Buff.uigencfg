@@ -1,4 +1,14 @@
-TemplateFilename = "Buff.xmltemplate"
-OutputFormat = "Buff{0}.xml"
+TemplateFilename = Buff.xmltemplate
+OutputFormat = Buff[i].xml
 StartIndex = 0
 Count = 15
+
+Copy(
+    Regexp = <Screen item="BW_Buff[i]_Label_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_BuffWindow_l.xml
+)
+
+Copy(
+    Regexp = <Screen item="BW_Buff[i]_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_BuffWindow_l.xml
+)

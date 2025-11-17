@@ -2,12 +2,15 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <!--  -->
     <Composite>
-        <!-- player window  -->
+        <!--  -->
+        <Include>player_window\Animations.xml</Include>
+        <Include>status_window\Animations.xml</Include>
+        <!-- Player Window -->
         <Include>player_window\PlayerName.xml</Include>
-        <Include>player_window\PlayerHP.xml</Include>
-        <Include>player_window\PlayerMP.xml</Include>
-        <Include>player_window\PlayerEN.xml</Include>
-        <!-- left stat window -->
+        <Include>player_window\HP.xml</Include>
+        <Include>player_window\MP.xml</Include>
+        <Include>player_window\EN.xml</Include>
+        <!-- Status Window - Left -->
         <Include>status_window\STR.xml</Include>
         <Include>status_window\STA.xml</Include>
         <Include>status_window\AGI.xml</Include>
@@ -15,7 +18,9 @@
         <Include>status_window\WIS.xml</Include>
         <Include>status_window\INT.xml</Include>
         <Include>status_window\CHA.xml</Include>
-        <!-- right stat window -->
+        <Include>status_window\XP.xml</Include>
+        <Include>status_window\AA.xml</Include>
+        <!-- Status Window - Right -->
         <Include>status_window\AC.xml</Include>
         <Include>status_window\AT.xml</Include>
         <Include>status_window\MR.xml</Include>
@@ -23,471 +28,10 @@
         <Include>status_window\FR.xml</Include>
         <Include>status_window\PR.xml</Include>
         <Include>status_window\DR.xml</Include>
-        <!-- stat window gauges -->
-        <Include>status_window\XP.xml</Include>
-        <Include>status_window\AA.xml</Include>
-        <Include>status_window\XPGauge.xml</Include>
-        <Include>status_window\AAGauge.xml</Include>
         <!--  -->
     </Composite>
     <!--  -->
-    <Schema xmlns="EverQuestData"
-            xmlns:dt="EverQuestDataTypes" />
-    <!-- Player Window Background  -->
-    <StaticAnimation item="PW_IWnd0">
-        <Animation>D3PDA_IWnd_Item0_Serif</Animation>
-        <Location>
-            <X>0</X>
-            <Y>0</Y>
-        </Location>
-        <Size>
-            <CX>42</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd1">
-        <Animation>D3PDA_IWnd_Item1</Animation>
-        <Location>
-            <X>0</X>
-            <Y>30</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd2">
-        <Animation>D3PDA_IWnd_ItemNminus1</Animation>
-        <Location>
-            <X>0</X>
-            <Y>60</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd3">
-        <Animation>D3PDA_IWnd_ItemN_Serif</Animation>
-        <Location>
-            <X>0</X>
-            <Y>90</Y>
-        </Location>
-        <Size>
-            <CX>42</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd_Header">
-        <Animation>D3PDA_IWnd_Header</Animation>
-        <Location>
-            <X>18</X>
-            <Y>0</Y>
-        </Location>
-        <Size>
-            <CX>179</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd_GaugeHolder1">
-        <Animation>D3PDA_IWnd_GaugeHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>30</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd_GaugeHolder2">
-        <Animation>D3PDA_IWnd_GaugeHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>60</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="PW_IWnd_GaugeHolder3">
-        <Animation>D3PDA_IWnd_GaugeHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>90</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <!-- Status Window Background -->
-    <StaticAnimation item="SW_Frame_Top">
-        <Animation>D3PDA_LargeBorder_Top</Animation>
-        <Location>
-            <X>42</X>
-            <Y>119</Y>
-        </Location>
-        <Size>
-            <CX>84</CX>
-            <CY>10</CY>
-        </Size>
-    </StaticAnimation>
-    <!-- left half of Status Window  -->
-    <StaticAnimation item="SWL_IWnd0">
-        <Animation>D3PDA_IWnd_Item0_Serif</Animation>
-        <Location>
-            <X>0</X>
-            <Y>122</Y>
-        </Location>
-        <Size>
-            <CX>42</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd1">
-        <Animation>D3PDA_IWnd_Item1</Animation>
-        <Location>
-            <X>0</X>
-            <Y>152</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd2">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>0</X>
-            <Y>182</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd3">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>0</X>
-            <Y>212</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd4">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>0</X>
-            <Y>242</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd5">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>0</X>
-            <Y>272</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd6">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>0</X>
-            <Y>302</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd7">
-        <Animation>D3PDA_IWnd_ItemNminus1</Animation>
-        <Location>
-            <X>0</X>
-            <Y>332</Y>
-        </Location>
-        <Size>
-            <CX>20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd8">
-        <Animation>D3PDA_IWnd_ItemN_Serif</Animation>
-        <Location>
-            <X>0</X>
-            <Y>362</Y>
-        </Location>
-        <Size>
-            <CX>42</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat0">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>122</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat1">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>152</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat2">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>182</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat3">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>212</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat4">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>242</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat5">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>272</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Stat6">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>302</Y>
-        </Location>
-        <Size>
-            <CX>64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Gauge7">
-        <Animation>D3PDA_IWnd_GaugeHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>332</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWL_IWnd_Gauge8">
-        <Animation>D3PDA_IWnd_GaugeHolder</Animation>
-        <Location>
-            <X>18</X>
-            <Y>362</Y>
-        </Location>
-        <Size>
-            <CX>32</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <!-- right half of Status Window -->
-    <StaticAnimation item="SWR_IWnd0">
-        <Animation>D3PDA_IWnd_Item0_Serif</Animation>
-        <Location>
-            <X>168</X>
-            <Y>122</Y>
-        </Location>
-        <Size>
-            <CX>-42</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd1">
-        <Animation>D3PDA_IWnd_Item1</Animation>
-        <Location>
-            <X>168</X>
-            <Y>152</Y>
-        </Location>
-        <Size>
-            <CX>-20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd2">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>168</X>
-            <Y>182</Y>
-        </Location>
-        <Size>
-            <CX>-20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd3">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>168</X>
-            <Y>212</Y>
-        </Location>
-        <Size>
-            <CX>-20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd4">
-        <Animation>D3PDA_IWnd_ItemI</Animation>
-        <Location>
-            <X>168</X>
-            <Y>242</Y>
-        </Location>
-        <Size>
-            <CX>-20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd5">
-        <Animation>D3PDA_IWnd_ItemNminus1</Animation>
-        <Location>
-            <X>168</X>
-            <Y>272</Y>
-        </Location>
-        <Size>
-            <CX>-20</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd6">
-        <Animation>D3PDA_IWnd_ItemN_Serif</Animation>
-        <Location>
-            <X>168</X>
-            <Y>302</Y>
-        </Location>
-        <Size>
-            <CX>-42</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat0">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>122</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat1">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>152</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat2">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>182</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat3">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>212</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat4">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>242</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat5">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>272</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
-    <StaticAnimation item="SWR_IWnd_Stat6">
-        <Animation>D3PDA_IWnd_StatHolder</Animation>
-        <Location>
-            <X>150</X>
-            <Y>302</Y>
-        </Location>
-        <Size>
-            <CX>-64</CX>
-            <CY>30</CY>
-        </Size>
-    </StaticAnimation>
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
     <!-- Player Window Layouts -->
     <Screen item="Player_Name_Layout">
         <Style_Transparent>true</Style_Transparent>
@@ -518,6 +62,7 @@
         <Pieces>Player_Level_OutlineR</Pieces>
         <Pieces>Player_Level</Pieces>
     </Screen>
+    <!-- HP -->
     <Screen item="Player_HPKey_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
@@ -580,6 +125,7 @@
         <Pieces>Player_HPNumber</Pieces>
         <Pieces>Player_HPLabel_Layout</Pieces>
     </Screen>
+    <!-- Mana -->
     <Screen item="Player_ManaKey_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
@@ -642,7 +188,8 @@
         <Pieces>Player_ManaNumber</Pieces>
         <Pieces>Player_ManaLabel_Layout</Pieces>
     </Screen>
-    <Screen item="Player_ENKey_Layout">
+    <!-- Endurance -->
+    <Screen item="Player_FatigueKey_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>6</X>
@@ -652,15 +199,15 @@
             <CX>32</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>Player_ENKey_OutlineTL</Pieces>
-        <Pieces>Player_ENKey_OutlineT</Pieces>
-        <Pieces>Player_ENKey_OutlineTR</Pieces>
-        <Pieces>Player_ENKey_OutlineBL</Pieces>
-        <Pieces>Player_ENKey_OutlineB</Pieces>
-        <Pieces>Player_ENKey_OutlineBR</Pieces>
-        <Pieces>Player_ENKey_OutlineL</Pieces>
-        <Pieces>Player_ENKey_OutlineR</Pieces>
-        <Pieces>Player_ENKey</Pieces>
+        <Pieces>Player_FatigueKey_OutlineTL</Pieces>
+        <Pieces>Player_FatigueKey_OutlineT</Pieces>
+        <Pieces>Player_FatigueKey_OutlineTR</Pieces>
+        <Pieces>Player_FatigueKey_OutlineBL</Pieces>
+        <Pieces>Player_FatigueKey_OutlineB</Pieces>
+        <Pieces>Player_FatigueKey_OutlineBR</Pieces>
+        <Pieces>Player_FatigueKey_OutlineL</Pieces>
+        <Pieces>Player_FatigueKey_OutlineR</Pieces>
+        <Pieces>Player_FatigueKey</Pieces>
     </Screen>
     <Screen item="Player_FatigueLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
@@ -699,19 +246,21 @@
             <CX>168</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>Player_EN</Pieces>
+        <Pieces>Player_Fatigue</Pieces>
         <Pieces>Player_MeleeTick</Pieces>
-        <!-- <Pieces>Player_EnNumber</Pieces> -->
         <Pieces>Player_FatigueLabel_Layout</Pieces>
     </Screen>
     <!-- Status Window Layouts (left) -->
     <Screen item="SW_STRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>4</TopAnchorOffset>
-        <BottomAnchorOffset>34</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_STRLabel_OutlineTL</Pieces>
         <Pieces>SW_STRLabel_OutlineT</Pieces>
         <Pieces>SW_STRLabel_OutlineTR</Pieces>
@@ -725,11 +274,14 @@
     </Screen>
     <Screen item="SW_STALabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>34</TopAnchorOffset>
-        <BottomAnchorOffset>64</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>30</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_STALabel_OutlineTL</Pieces>
         <Pieces>SW_STALabel_OutlineT</Pieces>
         <Pieces>SW_STALabel_OutlineTR</Pieces>
@@ -743,11 +295,14 @@
     </Screen>
     <Screen item="SW_AGILabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>64</TopAnchorOffset>
-        <BottomAnchorOffset>94</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>60</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_AGILabel_OutlineTL</Pieces>
         <Pieces>SW_AGILabel_OutlineT</Pieces>
         <Pieces>SW_AGILabel_OutlineTR</Pieces>
@@ -761,11 +316,14 @@
     </Screen>
     <Screen item="SW_DEXLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>94</TopAnchorOffset>
-        <BottomAnchorOffset>124</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>90</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_DEXLabel_OutlineTL</Pieces>
         <Pieces>SW_DEXLabel_OutlineT</Pieces>
         <Pieces>SW_DEXLabel_OutlineTR</Pieces>
@@ -779,11 +337,14 @@
     </Screen>
     <Screen item="SW_WISLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>124</TopAnchorOffset>
-        <BottomAnchorOffset>154</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>120</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_WISLabel_OutlineTL</Pieces>
         <Pieces>SW_WISLabel_OutlineT</Pieces>
         <Pieces>SW_WISLabel_OutlineTR</Pieces>
@@ -797,11 +358,14 @@
     </Screen>
     <Screen item="SW_INTLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>154</TopAnchorOffset>
-        <BottomAnchorOffset>184</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>150</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_INTLabel_OutlineTL</Pieces>
         <Pieces>SW_INTLabel_OutlineT</Pieces>
         <Pieces>SW_INTLabel_OutlineTR</Pieces>
@@ -815,11 +379,14 @@
     </Screen>
     <Screen item="SW_CHALabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>10</LeftAnchorOffset>
-        <RightAnchorOffset>70</RightAnchorOffset>
-        <TopAnchorOffset>184</TopAnchorOffset>
-        <BottomAnchorOffset>214</BottomAnchorOffset>
+        <Location>
+            <X>10</X>
+            <Y>180</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_CHALabel_OutlineTL</Pieces>
         <Pieces>SW_CHALabel_OutlineT</Pieces>
         <Pieces>SW_CHALabel_OutlineTR</Pieces>
@@ -831,16 +398,17 @@
         <Pieces>SW_CHALabel</Pieces>
         <Pieces>SW_CHANumber</Pieces>
     </Screen>
-    <!-- Status Window Layouts (right)  -->
+    <!-- Status Window Layouts (right) -->
     <Screen item="SW_ACLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>4</TopAnchorOffset>
-        <BottomAnchorOffset>34</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_ACLabel_OutlineTL</Pieces>
         <Pieces>SW_ACLabel_OutlineT</Pieces>
         <Pieces>SW_ACLabel_OutlineTR</Pieces>
@@ -854,13 +422,14 @@
     </Screen>
     <Screen item="SW_ATLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>34</TopAnchorOffset>
-        <BottomAnchorOffset>64</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>30</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_ATLabel_OutlineTL</Pieces>
         <Pieces>SW_ATLabel_OutlineT</Pieces>
         <Pieces>SW_ATLabel_OutlineTR</Pieces>
@@ -874,13 +443,14 @@
     </Screen>
     <Screen item="SW_MRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>64</TopAnchorOffset>
-        <BottomAnchorOffset>94</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>60</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_MRLabel_OutlineTL</Pieces>
         <Pieces>SW_MRLabel_OutlineT</Pieces>
         <Pieces>SW_MRLabel_OutlineTR</Pieces>
@@ -894,13 +464,14 @@
     </Screen>
     <Screen item="SW_FRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>94</TopAnchorOffset>
-        <BottomAnchorOffset>124</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>90</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_FRLabel_OutlineTL</Pieces>
         <Pieces>SW_FRLabel_OutlineT</Pieces>
         <Pieces>SW_FRLabel_OutlineTR</Pieces>
@@ -914,13 +485,14 @@
     </Screen>
     <Screen item="SW_CRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>124</TopAnchorOffset>
-        <BottomAnchorOffset>154</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>120</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_CRLabel_OutlineTL</Pieces>
         <Pieces>SW_CRLabel_OutlineT</Pieces>
         <Pieces>SW_CRLabel_OutlineTR</Pieces>
@@ -934,13 +506,14 @@
     </Screen>
     <Screen item="SW_PRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>154</TopAnchorOffset>
-        <BottomAnchorOffset>184</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>150</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_PRLabel_OutlineTL</Pieces>
         <Pieces>SW_PRLabel_OutlineT</Pieces>
         <Pieces>SW_PRLabel_OutlineTR</Pieces>
@@ -954,13 +527,14 @@
     </Screen>
     <Screen item="SW_DRLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorToLeft>false</LeftAnchorToLeft>
-        <RightAnchorToLeft>false</RightAnchorToLeft>
-        <LeftAnchorOffset>94</LeftAnchorOffset>
-        <RightAnchorOffset>34</RightAnchorOffset>
-        <TopAnchorOffset>184</TopAnchorOffset>
-        <BottomAnchorOffset>214</BottomAnchorOffset>
+        <Location>
+            <X>103</X>
+            <Y>180</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_DRLabel_OutlineTL</Pieces>
         <Pieces>SW_DRLabel_OutlineT</Pieces>
         <Pieces>SW_DRLabel_OutlineTR</Pieces>
@@ -976,11 +550,11 @@
     <Screen item="SW_XPLabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
-            <X>0</X>
-            <Y>5</Y>
+            <X>6</X>
+            <Y>210</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>60</CX>
             <CY>30</CY>
         </Size>
         <Pieces>SW_XPLabel_OutlineTL</Pieces>
@@ -1020,25 +594,57 @@
         <Pieces>SW_XPPercent_OutlineR</Pieces>
         <Pieces>SW_XPPercent</Pieces>
     </Screen>
+    <Screen item="SW_XPPerHourValue_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>26</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>54</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>SW_XPPerHourValue_OutlineTL</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineT</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineTR</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineBL</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineB</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineBR</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineL</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineR</Pieces>
+        <Pieces>SW_XPPerHourValue</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineTL</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineT</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineTR</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineBL</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineB</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineBR</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineL</Pieces>
+        <Pieces>SW_XPPerHourPercent_OutlineR</Pieces>
+        <Pieces>SW_XPPerHourPercent</Pieces>
+    </Screen>
     <Screen item="SW_XP_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>7</LeftAnchorOffset>
-        <RightAnchorOffset>197</RightAnchorOffset>
-        <TopAnchorOffset>208</TopAnchorOffset>
-        <BottomAnchorOffset>238</BottomAnchorOffset>
-        <Pieces>SW_XPLabel_Layout</Pieces>
-        <Pieces>SW_ExpGauge</Pieces>
+        <Location>
+            <X>7</X>
+            <Y>205</Y>
+        </Location>
+        <Size>
+            <CX>190</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>SW_XPGauge</Pieces>
+        <Pieces>SW_XPPerHourValue_Layout</Pieces>
         <Pieces>SW_XPValue_Layout</Pieces>
     </Screen>
     <Screen item="SW_AALabel_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
-            <X>0</X>
-            <Y>5</Y>
+            <X>6</X>
+            <Y>240</Y>
         </Location>
         <Size>
-            <CX>32</CX>
+            <CX>60</CX>
             <CY>30</CY>
         </Size>
         <Pieces>SW_AALabel_OutlineTL</Pieces>
@@ -1078,15 +684,47 @@
         <Pieces>SW_AAPercent_OutlineR</Pieces>
         <Pieces>SW_AAPercent</Pieces>
     </Screen>
+    <Screen item="SW_AAPerHourValue_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>26</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>54</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>SW_AAPerHourValue_OutlineTL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineT</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineTR</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineBL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineB</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineBR</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineR</Pieces>
+        <Pieces>SW_AAPerHourValue</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineTL</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineT</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineTR</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineBL</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineB</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineBR</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineL</Pieces>
+        <Pieces>SW_AAPerHourPercent_OutlineR</Pieces>
+        <Pieces>SW_AAPerHourPercent</Pieces>
+    </Screen>
     <Screen item="SW_AA_Layout">
         <Style_Transparent>true</Style_Transparent>
-        <AutoStretch>true</AutoStretch>
-        <LeftAnchorOffset>7</LeftAnchorOffset>
-        <RightAnchorOffset>197</RightAnchorOffset>
-        <TopAnchorOffset>238</TopAnchorOffset>
-        <BottomAnchorOffset>268</BottomAnchorOffset>
-        <Pieces>SW_AALabel_Layout</Pieces>
+        <Location>
+            <X>7</X>
+            <Y>235</Y>
+        </Location>
+        <Size>
+            <CX>190</CX>
+            <CY>30</CY>
+        </Size>
         <Pieces>SW_AAGauge</Pieces>
+        <Pieces>SW_AAPerHourValue_Layout</Pieces>
         <Pieces>SW_AAValue_Layout</Pieces>
     </Screen>
     <!--  -->
@@ -1095,7 +733,7 @@
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <TopAnchorOffset>122</TopAnchorOffset>
+        <TopAnchorOffset>125</TopAnchorOffset>
         <Pieces>SW_STRLabel_Layout</Pieces>
         <Pieces>SW_STALabel_Layout</Pieces>
         <Pieces>SW_AGILabel_Layout</Pieces>
@@ -1110,6 +748,8 @@
         <Pieces>SW_CRLabel_Layout</Pieces>
         <Pieces>SW_PRLabel_Layout</Pieces>
         <Pieces>SW_DRLabel_Layout</Pieces>
+        <Pieces>SW_XPLabel_Layout</Pieces>
+        <Pieces>SW_AALabel_Layout</Pieces>
         <Pieces>SW_XP_Layout</Pieces>
         <Pieces>SW_AA_Layout</Pieces>
     </Screen>
@@ -1120,7 +760,7 @@
             <CX>197</CX>
             <CY>394</CY>
         </Size>
-        <!--  -->
+        <!-- player window -->
         <Pieces>PW_IWnd0</Pieces>
         <Pieces>PW_IWnd1</Pieces>
         <Pieces>PW_IWnd2</Pieces>
@@ -1132,13 +772,13 @@
         <!--  -->
         <Pieces>Player_HPKey_Layout</Pieces>
         <Pieces>Player_ManaKey_Layout</Pieces>
-        <Pieces>Player_ENKey_Layout</Pieces>
+        <Pieces>Player_FatigueKey_Layout</Pieces>
         <!--  -->
         <Pieces>Player_Name_Layout</Pieces>
         <Pieces>Player_HP_Layout</Pieces>
         <Pieces>Player_Mana_Layout</Pieces>
         <Pieces>Player_Fatigue_Layout</Pieces>
-        <!--  -->
+        <!-- status window -->
         <Pieces>SW_Frame_Top</Pieces>
         <Pieces>SWL_IWnd0</Pieces>
         <Pieces>SWL_IWnd1</Pieces>

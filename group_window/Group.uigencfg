@@ -1,4 +1,24 @@
-TemplateFilename = "Group.xmltemplate"
-OutputFormat = "Group{0}.xml"
+TemplateFilename = Group.xmltemplate
+OutputFormat = Group[i].xml
 StartIndex = 1
 Count = 6
+
+Copy(
+    Regexp = <Screen item="GW_Key[i]_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_GroupWindow.xml
+)
+
+Copy(
+    Regexp = <Screen item="GW_Group[i]_Label_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_GroupWindow.xml
+)
+
+Copy(
+    Regexp = <Screen item="GW_Group[i]_Name_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_GroupWindow.xml
+)
+
+Copy(
+    Regexp = <Screen item="GW_Group[i]_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_GroupWindow.xml
+)

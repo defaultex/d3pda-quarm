@@ -1,0 +1,82 @@
+TemplateFilename = Gauges.xmltemplate
+OutputFormat = [Enum].xml
+Enum = HP, MP, EN
+
+Param(
+    Key = Name
+    Value = HP, Mana, Fatigue
+)
+
+Param(
+    Key = Tick
+    Value = HPTick, ManaTick, MeleeTick
+)
+
+# replace the mana bar tint with blue
+Replace(
+    Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
+    Target = player_window/MP.xml
+    Value = <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
+)
+
+# replace the endurance bar tint with yellow-orange
+Replace(
+    Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
+    Target = player_window/EN.xml
+    Value = <FillTint><R>255</R><G>180</G><B>0</B></FillTint>
+)
+
+# remove the pet hp gauge from Mana and Endurance gauges
+Replace(
+    Regexp = \s*<Gauge\s+item=\s*\"Pet_HP\"\s*>(?:.|\n)*?(</Gauge>)
+    Target = player_window/MP.xml, player_window/EN.xml
+    Value = 
+)
+
+# remove the pet hp gauge from Mana and Endurance gauges
+Replace(
+    Regexp = \s*<Pieces>\s*Pet_HP\s*</Pieces>
+    Target = player_window/MP.xml, player_window/EN.xml
+    Value = 
+)
+
+# remove the cur and max endurance since that isn't in this version
+Replace(
+    Regexp = \s*<\s*Gauge\s*item\s*=\s*"Player_HPTick"\s*>(?:.|\n)*?</Gauge>
+    Target = player_window/HP.xml
+    Value = 
+)
+# remove the cur and max endurance since that isn't in this version
+Replace(
+    Regexp = \s*<\s*Pieces\s*>\s*Player_HPTick\s*</Pieces>
+    Target = player_window/HP.xml
+    Value = 
+)
+
+# remove the cur and max endurance since that isn't in this version
+Replace(
+    Regexp = \s*<\s*Label\s*item\s*=\s*"Player_FatigueNumber"\s*>(?:.|\n)*?</Label>
+    Target = player_window/EN.xml
+    Value = 
+)
+# remove the cur and max endurance since that isn't in this version
+Replace(
+    Regexp = \s*<\s*Pieces\s*>\s*Player_FatigueNumber\s*</Pieces>
+    Target = player_window/EN.xml
+    Value = 
+)
+
+Copy(
+    Regexp = <Screen item="Player_[Name]Key_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_PlayerWindow.xml
+)
+
+Copy(
+    Regexp = <Screen item="Player_[Name]Label_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_PlayerWindow.xml
+)
+
+Copy(
+    Regexp = <Screen item="Player_[Name]_Layout">(?:.|\n)*?</Screen>
+    Target = EQUI_PlayerWindow.xml
+)

@@ -1,4 +1,4 @@
-TemplateFilename = "Button.xmltemplate"
-OutputFormat = "Button{0}.xml"
+TemplateFilename = Button.xmltemplate
+OutputFormat = Button[i].xml
 StartIndex = 0
 Count = 10

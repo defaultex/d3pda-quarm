@@ -6,8 +6,8 @@ enum EQGaugeType {
     Stamina = 3,  // STAGauge0
     Fatigue = Stamina,
 
-    Experience = 4,
-    AlternateAdvancementExperience = 5,
+    XP = 4,
+    AA = 5,
 
     Target = 6,
     Casting = 7,
@@ -31,7 +31,7 @@ enum EQGaugeType {
     CurrentMP3SongProgress = 22,
 
     // added by zeal
-    ExperiencePerHour = 23,
+    XPPerHour = 23,
     ServerTickTimer = 24,
     GlobalRecoveryTimer = 25,
     Spell0Recast = 26, // 
@@ -43,25 +43,11 @@ enum EQGaugeType {
     Spell6Recast = 32, // 
     Spell7Recast = 33, // 
     MeleeRecoveryTimer = 34,
-    // 
+    AAPerHour = 35,
+    // zeal aliases
+    HPTick = ServerTickTimer,
+    ManaTick = ServerTickTimer,
+    MeleeTick = MeleeRecoveryTimer,
 
-    CombatAbilityWindowTimeRemaining = 26,
-    TargetofTargetHP = 27,
-    ReSpawnTimer = 28,
-    InCombatTimer = 29,
-    WebBrowserLoading = 30,
-
-    Group1Mana = 31,
-    Group2Mana = 32,
-    Group3Mana = 33,
-    Group4Mana = 34,
-    Group5Mana = 35,
-
-    Group1Endurance = 36,
-    Group2Endurance = 37,
-    Group3Endurance = 38,
-    Group4Endurance = 39,
-    Group5Endurance = 40,
-
-    PetsTarget = 41,
+    //
 }

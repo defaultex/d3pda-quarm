@@ -175,5 +175,35 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!--  -->
+    <!--
+    <Screen item="BW_Buff0_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <LeftAnchorOffset>36</LeftAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>BW_Buff0_Label_TL</Pieces>
+        <Pieces>BW_Buff0_Label_T</Pieces>
+        <Pieces>BW_Buff0_Label_TR</Pieces>
+        <Pieces>BW_Buff0_Label_BL</Pieces>
+        <Pieces>BW_Buff0_Label_B</Pieces>
+        <Pieces>BW_Buff0_Label_BR</Pieces>
+        <Pieces>BW_Buff0_Label_L</Pieces>
+        <Pieces>BW_Buff0_Label_R</Pieces>
+        <Pieces>BW_Buff0_Label</Pieces>
+    </Screen>
+    <Screen item="BW_Buff0_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>0</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>BW_Buff0_Button</Pieces>
+        <Pieces>BW_Buff0_Label_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

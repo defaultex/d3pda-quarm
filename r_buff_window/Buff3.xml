@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData"
-            xmlns:dt="EverQuestDataTypes" />
+        xmlns:dt="EverQuestDataTypes" />
     <!--  -->
     <Button item="BW_Buff3_Button">
         <ScreenID>Buff3</ScreenID>
@@ -178,5 +178,35 @@
             <B>0</B>
         </TextColor>
     </Label>
-    <!--  -->
+    <!--
+    <Screen item="BW_Buff3_Label_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <AutoStretch>true</AutoStretch>
+        <RightAnchorOffset>38</RightAnchorOffset>
+        <RightAnchorToLeft>false</RightAnchorToLeft>
+        <BottomAnchorToTop>false</BottomAnchorToTop>
+        <Pieces>BW_Buff3_Label_TL</Pieces>
+        <Pieces>BW_Buff3_Label_T</Pieces>
+        <Pieces>BW_Buff3_Label_TR</Pieces>
+        <Pieces>BW_Buff3_Label_BL</Pieces>
+        <Pieces>BW_Buff3_Label_B</Pieces>
+        <Pieces>BW_Buff3_Label_BR</Pieces>
+        <Pieces>BW_Buff3_Label_L</Pieces>
+        <Pieces>BW_Buff3_Label_R</Pieces>
+        <Pieces>BW_Buff3_Label</Pieces>
+    </Screen>
+    <Screen item="BW_Buff3_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>0</X>
+            <Y>102</Y>
+        </Location>
+        <Size>
+            <CX>182</CX>
+            <CY>34</CY>
+        </Size>
+        <Pieces>BW_Buff3_Button</Pieces>
+        <Pieces>BW_Buff3_Label_Layout</Pieces>
+    </Screen>
+    -->
 </XML>

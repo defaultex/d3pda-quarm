@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
-
+	<!-- -->
     <Ui2DAnimation item="D3PDA_SpellWindow_Bg">
         <Frames>
             <Texture>assets/WindowPieces.tga</Texture>
@@ -15,5 +15,114 @@
             </Size>
         </Frames>
     </Ui2DAnimation>
-
+	<!-- -->
+	<StaticAnimation item="CSPW_IWnd0">
+		<Animation>D3PDA_IWnd_Item0</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd1">
+		<Animation>D3PDA_IWnd_Item1</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>30</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd2">
+		<Animation>D3PDA_IWnd_ItemI</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>60</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd3">
+		<Animation>D3PDA_IWnd_ItemI</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>90</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd4">
+		<Animation>D3PDA_IWnd_ItemI</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>120</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd5">
+		<Animation>D3PDA_IWnd_ItemI</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>150</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd6">
+		<Animation>D3PDA_IWnd_ItemI</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>180</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd7">
+		<Animation>D3PDA_IWnd_ItemNminus1</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>210</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+	<StaticAnimation item="CSPW_IWnd8">
+		<Animation>D3PDA_IWnd_ItemN</Animation>
+		<Style_Transparent>true</Style_Transparent>
+		<Location>
+			<X>0</X>
+			<Y>240</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>30</CY>
+		</Size>
+	</StaticAnimation>
+    <!-- -->
 </XML>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <StaticAnimation item="SWL_IWnd_Stat3">
+        <Animation>D3PDA_IWnd_StatHolder</Animation>
+        <Location>
+            <X>18</X>
+            <Y>212</Y>
+        </Location>
+        <Size>
+            <CX>64</CX>
+            <CY>30</CY>
+        </Size>
+    </StaticAnimation>
     <!-- Stat Label -->
     <Label item="SW_DEXLabel">
         <Font>4</Font>
@@ -173,5 +185,27 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <!--  -->
+    <!-- 
+    <Screen item="SW_DEXLabel_Layout">
+        <Style_Transparent>true</Style_Transparent>
+        <Location>
+            <X>10</X>
+            <Y>90</Y>
+        </Location>
+        <Size>
+            <CX>60</CX>
+            <CY>30</CY>
+        </Size>
+        <Pieces>SW_DEXLabel_OutlineTL</Pieces>
+        <Pieces>SW_DEXLabel_OutlineT</Pieces>
+        <Pieces>SW_DEXLabel_OutlineTR</Pieces>
+        <Pieces>SW_DEXLabel_OutlineBL</Pieces>
+        <Pieces>SW_DEXLabel_OutlineB</Pieces>
+        <Pieces>SW_DEXLabel_OutlineBR</Pieces>
+        <Pieces>SW_DEXLabel_OutlineL</Pieces>
+        <Pieces>SW_DEXLabel_OutlineR</Pieces>
+        <Pieces>SW_DEXLabel</Pieces>
+        <Pieces>SW_DEXNumber</Pieces>
+    </Screen>
+    -->
 </XML>
