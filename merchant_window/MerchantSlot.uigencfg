@@ -1,0 +1,4 @@
+TemplateFilename = MerchantSlot.xmltemplate
+OutputFormat = MerchantSlot[i].xml
+StartIndex = 0
+Count = 80

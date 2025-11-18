@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes"/>
+    <!-- -->
+    <InvSlot item="MW_MerchantSlot78">
+        <ScreenID>MW_MerchantSlot78</ScreenID>
+        <EQType>6078</EQType>
+        <Background>A_RecessedBox</Background>
+        <ItemOffsetX>2</ItemOffsetX>
+        <ItemOffsetY>2</ItemOffsetY>
+        <Location>
+            <X>0</X>
+            <Y>1365</Y>
+        </Location>
+        <Size>
+            <CX>35</CX>
+            <CY>35</CY>
+        </Size>
+    </InvSlot> 
+    <!-- --> 
+</XML>

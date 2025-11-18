@@ -1,9 +1,10 @@
 /* '.uigencfg' File Formats
  *
- * Iterative:
  *  TemplateFilename = somefile.xmltemplate
  *  OutputFormat = outfile[i].xml
- *  ForceGeneration = false
+ *  ForceGeneration = false     # forces the generator to run even if not needed
+
+ * Iterative:
  *  StartIndex = 0
  *  Count = 4
  *
@@ -19,12 +20,6 @@
  *      Value = HP, Mana, Fatigue
  *  )
  *
- *  + Copy from the generated file using regex into the specified target file.
- *  CopyOp(
- *      Regexp = <Screen item="SW_[Enum]Label_Layout">(?:.|\n)*?</Screen>
- *      Target = EQUI_PlayerWindow.xml
- *  )
- *
  *  + Replace text using regex in the specified file
  *  Replace(
  *      Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
@@ -32,8 +27,17 @@
  *      Value = <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
  *  )
  *
- * + ForceGeneration forces the generator to run even if it doesn't need to.
- * + [calc i * 6 + 4] notation can be used to evaluate math in the parser.
+ *  + Copy from the generated file using regex into the specified target file.
+ *  CopyOp(
+ *      Regexp = <Screen item="SW_[Enum]Label_Layout">(?:.|\n)*?</Screen>
+ *      Target = EQUI_PlayerWindow.xml
+ *  )
+ *
+ * + [EQLabelType.Mana] notation can be used to fetch parameters built-in and custom.
+ * + [calc i * 6 + Math.Floor(4.5)] notation can be used to evaluate math in the parser.
+ * |- Parameters can be accessed in calculation without bracket notation.
+ * |- The parses used a DotNetContext meaning it has access to .Net's math functions.
+ *
  */
 
 partial struct UIGenCfg {
