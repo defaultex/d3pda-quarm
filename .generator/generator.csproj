@@ -1,9 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <ItemGroup Label="ContentItems">
-    <Content Include="./templates/**/*" CopyToOutputDirectory="PreserveNewest" />
-  </ItemGroup>
-
   <ItemGroup>
     <PackageReference Include="MathEvaluator" Version="2.4.3" />
   </ItemGroup>

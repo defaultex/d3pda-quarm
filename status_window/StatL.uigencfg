@@ -1,8 +1,14 @@
-TemplateFilename = StatL.xmltemplate
-OutputFormat = [Enum].xml
-Enum = STR, STA, AGI, DEX, WIS, INT, CHA
+TemplateFilename = status_window/StatL.xmltemplate
+OutputFormat = status_window/[Stat].xml
+StartIndex = 0
+Count = 7
+
+Param(
+    Key = Stat
+    Value = STR, STA, AGI, DEX, WIS, INT, CHA
+)
 
 Copy(
-    Regexp = <Screen item="SW_[Enum]Label_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )

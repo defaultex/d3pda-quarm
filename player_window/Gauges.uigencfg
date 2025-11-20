@@ -1,6 +1,12 @@
-TemplateFilename = Gauges.xmltemplate
-OutputFormat = [Enum].xml
-Enum = HP, MP, EN
+TemplateFilename = player_window/Gauges.xmltemplate
+OutputFormat = player_window/[Stat].xml
+StartIndex = 0
+Count = 3
+
+Param(
+    Key = Stat
+    Value = HP, MP, EN
+)
 
 Param(
     Key = Name
@@ -28,55 +34,36 @@ Replace(
 
 # remove the pet hp gauge from Mana and Endurance gauges
 Replace(
-    Regexp = \s*<Gauge\s+item=\s*\"Pet_HP\"\s*>(?:.|\n)*?(</Gauge>)
+    Regexp = \s*(?:<Gauge\s+item=\s*\"Pet_HP\"\s*>(?:.|\n)*?(</Gauge\s*>)|\s*<\s*Pieces\s*>\s*Pet_HP\s*</Pieces\s*>)
     Target = player_window/MP.xml, player_window/EN.xml
     Value = 
 )
 
-# remove the pet hp gauge from Mana and Endurance gauges
+# remove the hp tick gauge since it's the same as the mana tick gauge
 Replace(
-    Regexp = \s*<Pieces>\s*Pet_HP\s*</Pieces>
-    Target = player_window/MP.xml, player_window/EN.xml
-    Value = 
-)
-
-# remove the cur and max endurance since that isn't in this version
-Replace(
-    Regexp = \s*<\s*Gauge\s*item\s*=\s*"Player_HPTick"\s*>(?:.|\n)*?</Gauge>
-    Target = player_window/HP.xml
-    Value = 
-)
-# remove the cur and max endurance since that isn't in this version
-Replace(
-    Regexp = \s*<\s*Pieces\s*>\s*Player_HPTick\s*</Pieces>
+    Regexp = \s*(?:<Gauge\s+item=\s*\"Player_HPTick\"\s*>(?:.|\n)*?(</Gauge\s*>)|\s*<\s*Pieces\s*>\s*Player_HPTick\s*</Pieces\s*>)
     Target = player_window/HP.xml
     Value = 
 )
 
 # remove the cur and max endurance since that isn't in this version
 Replace(
-    Regexp = \s*<\s*Label\s*item\s*=\s*"Player_FatigueNumber"\s*>(?:.|\n)*?</Label>
-    Target = player_window/EN.xml
-    Value = 
-)
-# remove the cur and max endurance since that isn't in this version
-Replace(
-    Regexp = \s*<\s*Pieces\s*>\s*Player_FatigueNumber\s*</Pieces>
+    Regexp = \s*(?:<Label\s+item=\s*\"Player_FatigueNumber\"\s*>(?:.|\n)*?(</Label\s*>)|\s*<\s*Pieces\s*>\s*Player_FatigueNumber\s*</Pieces\s*>)
     Target = player_window/EN.xml
     Value = 
 )
 
 Copy(
-    Regexp = <Screen item="Player_[Name]Key_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"Player_[Name]Key_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="Player_[Name]Label_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"Player_[Name]Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="Player_[Name]_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"Player_[Name]_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )

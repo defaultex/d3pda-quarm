@@ -1,24 +1,24 @@
-TemplateFilename = Group.xmltemplate
-OutputFormat = Group[i].xml
+TemplateFilename = group_window/Group.xmltemplate
+OutputFormat = group_window/Group[i].xml
 StartIndex = 1
 Count = 6
 
 Copy(
-    Regexp = <Screen item="GW_Key[i]_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"GW_Key[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_GroupWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="GW_Group[i]_Label_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"GW_Group[i]_Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_GroupWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="GW_Group[i]_Name_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"GW_Group[i]_Name_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_GroupWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="GW_Group[i]_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item\s*=\s*"GW_Group[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_GroupWindow.xml
 )

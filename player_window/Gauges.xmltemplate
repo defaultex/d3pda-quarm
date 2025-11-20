@@ -4,7 +4,7 @@
     <!-- -->
     <Label item="Player_[Name]Key">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -21,7 +21,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineTL">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
         <RightAnchorToLeft>false</RightAnchorToLeft>
@@ -37,7 +37,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineT">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -54,7 +54,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineTR">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -71,7 +71,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineBL">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -88,7 +88,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineB">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -105,7 +105,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineBR">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -122,7 +122,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineL">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -139,7 +139,7 @@
     </Label>
     <Label item="Player_[Name]Key_OutlineR">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignCenter>true</AlignCenter>
         <AutoStretch>true</AutoStretch>
@@ -157,7 +157,7 @@
     <!-- -->
     <Label item="Player_[Name]Label">
         <ScreenID>[Name]Label</ScreenID>
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -174,7 +174,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineTL">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -192,7 +192,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineT">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -210,7 +210,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineTR">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -228,7 +228,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineBL">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -246,7 +246,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineB">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -264,7 +264,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineBR">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -282,7 +282,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineL">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -299,7 +299,7 @@
         </TextColor>
     </Label>
     <Label item="Player_[Name]Label_OutlineR">
-        <EQType>[EQLabelType.[Enum]Percent]</EQType>
+        <EQType>[EQLabelType.[Stat]Percent]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -459,7 +459,7 @@
     </Label>
     <!-- -->
     <Label item="Player_[Name]Number">
-        <EQType>[EQLabelType.CurAndMax[Enum]]</EQType>
+        <EQType>[EQLabelType.CurAndMax[Stat]]</EQType>
         <Font>5</Font>
         <NoWrap>true</NoWrap>
         <AutoStretch>true</AutoStretch>

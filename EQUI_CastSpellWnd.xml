@@ -16,7 +16,7 @@
 	<!-- -->
 	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
 	<!-- -->
-	<Screen item = "CSPW_Spell0Number_Layout">
+	<Screen item="CSPW_Spell0Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -36,7 +36,7 @@
 		<Pieces>CSPW_Spell0Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell0Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell1Number_Layout">
+	<Screen item="CSPW_Spell1Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -56,7 +56,7 @@
 		<Pieces>CSPW_Spell1Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell1Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell2Number_Layout">
+	<Screen item="CSPW_Spell2Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -76,7 +76,7 @@
 		<Pieces>CSPW_Spell2Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell2Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell3Number_Layout">
+	<Screen item="CSPW_Spell3Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -96,7 +96,7 @@
 		<Pieces>CSPW_Spell3Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell3Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell4Number_Layout">
+	<Screen item="CSPW_Spell4Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -116,7 +116,7 @@
 		<Pieces>CSPW_Spell4Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell4Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell5Number_Layout">
+	<Screen item="CSPW_Spell5Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -136,7 +136,7 @@
 		<Pieces>CSPW_Spell5Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell5Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell6Number_Layout">
+	<Screen item="CSPW_Spell6Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -156,7 +156,7 @@
 		<Pieces>CSPW_Spell6Number_OutlineR</Pieces>
 		<Pieces>CSPW_Spell6Number</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell7Number_Layout">
+	<Screen item="CSPW_Spell7Number_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>1</X>
@@ -177,7 +177,7 @@
 		<Pieces>CSPW_Spell7Number</Pieces>
 	</Screen>
 	<!-- -->
-	<Screen item = "CSPW_Spell0_Layout">
+	<Screen item="CSPW_Spell0_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -197,7 +197,7 @@
 		<Pieces>CSPW_Spell0Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell0Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell1_Layout">
+	<Screen item="CSPW_Spell1_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -217,7 +217,7 @@
 		<Pieces>CSPW_Spell1Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell1Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell2_Layout">
+	<Screen item="CSPW_Spell2_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -237,7 +237,7 @@
 		<Pieces>CSPW_Spell2Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell2Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell3_Layout">
+	<Screen item="CSPW_Spell3_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -257,7 +257,7 @@
 		<Pieces>CSPW_Spell3Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell3Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell4_Layout">
+	<Screen item="CSPW_Spell4_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -277,7 +277,7 @@
 		<Pieces>CSPW_Spell4Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell4Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell5_Layout">
+	<Screen item="CSPW_Spell5_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -297,7 +297,7 @@
 		<Pieces>CSPW_Spell5Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell5Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell6_Layout">
+	<Screen item="CSPW_Spell6_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>
@@ -317,7 +317,7 @@
 		<Pieces>CSPW_Spell6Label_OutlineR</Pieces>
 		<Pieces>CSPW_Spell6Label</Pieces>
 	</Screen>
-	<Screen item = "CSPW_Spell7_Layout">
+	<Screen item="CSPW_Spell7_Layout">
 		<Style_Transparent>true</Style_Transparent>
 		<Location>
 			<X>50</X>

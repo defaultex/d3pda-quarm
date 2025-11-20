@@ -1,4 +1,4 @@
-TemplateFilename = MerchantSlot.xmltemplate
-OutputFormat = MerchantSlot[i].xml
+TemplateFilename = merchant_window/MerchantSlot.xmltemplate
+OutputFormat = merchant_window/MerchantSlot[i].xml
 StartIndex = 0
 Count = 80

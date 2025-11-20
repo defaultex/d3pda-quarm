@@ -14,9 +14,9 @@
         </Size>
     </StaticAnimation>
     <!-- Stat Label -->
-    <Label item="SW_[Enum]Label">
+    <Label item="SW_[Stat]Label">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -32,9 +32,9 @@
             <Alpha>192</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineTL">
+    <Label item="SW_[Stat]Label_OutlineTL">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -50,9 +50,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineT">
+    <Label item="SW_[Stat]Label_OutlineT">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -68,9 +68,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineTR">
+    <Label item="SW_[Stat]Label_OutlineTR">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -86,9 +86,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineBL">
+    <Label item="SW_[Stat]Label_OutlineBL">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -104,9 +104,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineB">
+    <Label item="SW_[Stat]Label_OutlineB">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -122,9 +122,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineBR">
+    <Label item="SW_[Stat]Label_OutlineBR">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -140,9 +140,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineL">
+    <Label item="SW_[Stat]Label_OutlineL">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -158,9 +158,9 @@
             <Alpha>64</Alpha>
         </TextColor>
     </Label>
-    <Label item="SW_[Enum]Label_OutlineR">
+    <Label item="SW_[Stat]Label_OutlineR">
         <Font>4</Font>
-        <Text>[Enum]</Text>
+        <Text>[Stat]</Text>
         <NoWrap>true</NoWrap>
         <AlignLeft>true</AlignLeft>
         <AutoStretch>true</AutoStretch>
@@ -177,8 +177,8 @@
         </TextColor>
     </Label>
     <!-- Number Label -->
-    <Label item="SW_[Enum]Number">
-        <EQType>[EQLabelType.[Enum]]</EQType>
+    <Label item="SW_[Stat]Number">
+        <EQType>[EQLabelType.[Stat]]</EQType>
         <Font>3</Font>
         <NoWrap>true</NoWrap>
         <AlignRight>true</AlignRight>
@@ -197,7 +197,7 @@
         </TextColor>
     </Label>
     <!-- 
-    <Screen item="SW_[Enum]Label_Layout">
+    <Screen item="SW_[Stat]Label_Layout">
         <Style_Transparent>true</Style_Transparent>
         <Location>
             <X>103</X>
@@ -207,16 +207,16 @@
             <CX>60</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_[Enum]Label_OutlineTL</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineT</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineTR</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineBL</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineB</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineBR</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineL</Pieces>
-        <Pieces>SW_[Enum]Label_OutlineR</Pieces>
-        <Pieces>SW_[Enum]Label</Pieces>
-        <Pieces>SW_[Enum]Number</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineTL</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineT</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineTR</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineBL</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineB</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineBR</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineL</Pieces>
+        <Pieces>SW_[Stat]Label_OutlineR</Pieces>
+        <Pieces>SW_[Stat]Label</Pieces>
+        <Pieces>SW_[Stat]Number</Pieces>
     </Screen>
     -->  
 </XML>

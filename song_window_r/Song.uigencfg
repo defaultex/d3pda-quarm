@@ -1,0 +1,14 @@
+TemplateFilename = song_window_r/Song.xmltemplate
+OutputFormat = song_window_r/Song[i].xml
+StartIndex = 0
+Count = 5
+
+Copy(
+    Regexp = <\s*Screen\s*item\s*=\s*"SDBW_Buff[i]_Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
+    Target = EQUI_SongWindow_r.xml
+)
+
+Copy(
+    Regexp = <\s*Screen\s*item\s*=\s*"SDBW_Buff[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
+    Target = EQUI_SongWindow_r.xml
+)

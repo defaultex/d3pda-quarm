@@ -1,35 +1,27 @@
 /* '.uigencfg' File Formats
  *
  *  TemplateFilename = somefile.xmltemplate
- *  OutputFormat = outfile[i].xml
+ *  OutputFormat = [Name].xml
  *  ForceGeneration = false     # forces the generator to run even if not needed
-
- * Iterative:
  *  StartIndex = 0
  *  Count = 4
  *
- * Enumerative:
- *  TemplateFilename = somefile.xmltemplate
- *  OutputFormat = [Enum].xml
- *  ForceGeneration = false
- *  Enum = A, B, C
- *
- *  + Define custom parameters to provide to each generated file.
+ *  # Define custom parameters to provide to each generated file.
  *  Param(
  *      Key = Name
  *      Value = HP, Mana, Fatigue
  *  )
  *
- *  + Replace text using regex in the specified file
+ *  # Replace text using regex in the specified file
  *  Replace(
  *      Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
  *      Target = player_window/MP.xml
  *      Value = <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
  *  )
  *
- *  + Copy from the generated file using regex into the specified target file.
+ *  # Copy from the generated file using regex into the specified target file.
  *  CopyOp(
- *      Regexp = <Screen item="SW_[Enum]Label_Layout">(?:.|\n)*?</Screen>
+ *      Regexp = <Screen item="SW_[Name]Label_Layout">(?:.|\n)*?</Screen>
  *      Target = EQUI_PlayerWindow.xml
  *  )
  *
@@ -51,11 +43,8 @@ partial struct UIGenCfg {
     [GeneratedRegex(@"\s*OutputFormat\s*=\s*(?<OutputFormat>.*)\s*$", REGEXOPTS)]
     private static partial Regex OutputFormatRegex();
 
-    [GeneratedRegex(@"\s*ForceGeneration\s*=\s*(?<ForceGeneration>.*)\s*$", REGEXOPTS)]
+    [GeneratedRegex(@"\s*ForceGen(?:eration)?\s*=\s*(?<ForceGeneration>.*)\s*$", REGEXOPTS)]
     private static partial Regex ForceGenerationRegex();
-
-    [GeneratedRegex(@"\s*Enum\s*=\s*(?<Enum>.*)\s*$", REGEXOPTS)]
-    private static partial Regex EnumRegex();
 
     [GeneratedRegex(@"\s*StartIndex\s*=\s*(?<StartIndex>.*)\s*$", REGEXOPTS)]
     private static partial Regex StartIndexRegex();
@@ -91,44 +80,24 @@ partial struct UIGenCfg {
     public string TemplateFilename;
     public string OutputFormat;
     public bool ForceGeneration;
-    public string[] Enum;
     public int StartIndex;
     public int Count;
     public CopyOperation[] CopyOps;
     public ReplaceOperation[] ReplaceOps;
     public Dictionary<string, string[]> Parameters;
 
-    public bool IsEnumerative { get => (Enum?.Length ?? 0) > 0; }
-    public bool IsIterative { get => (Enum?.Length ?? 0) < 1; }
-
     public UIGenCfg(string gencfgPath) {
         GenCfgPath = gencfgPath;
-        string dir = Path.GetDirectoryName(GenCfgPath);
-        string src = File.ReadAllText(GenCfgPath);
-        Group g;
+        string source = File.ReadAllText(GenCfgPath);
 
-        if (TemplateRegex().Match(src).Groups.TryGetValue("TemplateFilename", out g)) {
-            TemplateFilename = Path.Combine(dir, g.Value).Replace("./", string.Empty);
-        }
-        if (OutputFormatRegex().Match(src).Groups.TryGetValue("OutputFormat", out g)) {
-            OutputFormat = Path.Combine(dir, g.Value).Replace("./", string.Empty);
-        }
-        _ = ForceGenerationRegex().Match(src).Groups.TryGetValue("ForceGeneration", out g) &&
-            bool.TryParse(g.Value.Trim(), out ForceGeneration);
-
-        if (EnumRegex().Match(src).Groups.TryGetValue("Enum", out g)) {
-            Enum = !string.IsNullOrWhiteSpace(g.Value) ? g.Value.Split(',', StringSplitOptions.TrimEntries) : [];
-            StartIndex = 0;
-            Count = Enum.Length;
-        } else {
-            _ = StartIndexRegex().Match(src).Groups.TryGetValue("StartIndex", out g) &&
-                int.TryParse(g.Value, out StartIndex);
-            _ = CountRegex().Match(src).Groups.TryGetValue("Count", out g) &&
-                int.TryParse(g.Value, out Count);
-        }
+        TemplateFilename = TemplateRegex().Match(source).Groups.GetValueOrDefault("TemplateFilename")?.Value;
+        OutputFormat = OutputFormatRegex().Match(source).Groups.GetValueOrDefault("OutputFormat")?.Value;
+        bool.TryParse(ForceGenerationRegex().Match(source).Groups.GetValueOrDefault("ForceGeneration")?.Value ?? bool.FalseString, out ForceGeneration);
+        int.TryParse(StartIndexRegex().Match(source).Groups.GetValueOrDefault("StartIndex")?.Value ?? "0", out StartIndex);
+        int.TryParse(CountRegex().Match(source).Groups.GetValueOrDefault("Count")?.Value ?? "0", out Count);
 
         Parameters = [];
-        foreach (Match m in ParamRegex().Matches(src)) {
+        foreach (Match m in ParamRegex().Matches(source)) {
             CaptureCollection keys = m.Groups.GetValueOrDefault("Key")?.Captures;
             CaptureCollection values = m.Groups.GetValueOrDefault("Value")?.Captures;
             for (int i = 0; i < (keys?.Count ?? 0); i++) {
@@ -139,7 +108,7 @@ partial struct UIGenCfg {
         }
 
         List<CopyOperation> copyOps = [];
-        foreach (Match m in CopyRegex().Matches(src)) {
+        foreach (Match m in CopyRegex().Matches(source)) {
             CaptureCollection regexps = m.Groups.GetValueOrDefault("Regexp")?.Captures;
             CaptureCollection targets = m.Groups.GetValueOrDefault("Target")?.Captures;
             int count = regexps?.Count ?? 0;
@@ -153,7 +122,7 @@ partial struct UIGenCfg {
         CopyOps = copyOps.ToArray();
 
         List<ReplaceOperation> replaceOps = [];
-        foreach (Match mrepl in ReplaceRegex().Matches(src)) {
+        foreach (Match mrepl in ReplaceRegex().Matches(source)) {
             CaptureCollection regexps = mrepl.Groups.GetValueOrDefault("Regexp")?.Captures;
             CaptureCollection values = mrepl.Groups.GetValueOrDefault("Value")?.Captures;
             CaptureCollection targets = mrepl.Groups.GetValueOrDefault("Target")?.Captures;
@@ -175,13 +144,8 @@ partial struct UIGenCfg {
         Console.WriteLine($"   Template: {TemplateFilename}");
         Console.WriteLine($"   OutputFormat: {OutputFormat}");
         Console.WriteLine($"   ForceGen: {ForceGeneration}");
-        if (IsEnumerative) {
-            Console.WriteLine($"   Enum: {string.Join(", ", Enum)}");
-        }
-        if (IsIterative) {
-            Console.WriteLine($"   StartIndex: {StartIndex}");
-            Console.WriteLine($"   Count: {Count}");
-        }
+        Console.WriteLine($"   StartIndex: {StartIndex}");
+        Console.WriteLine($"   Count: {Count}");
         if (Parameters.Count > 0) {
             Console.WriteLine("   Params");
             Parameters.All(p => {

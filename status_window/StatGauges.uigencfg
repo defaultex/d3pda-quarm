@@ -1,23 +1,29 @@
-TemplateFilename = StatGauge.xmltemplate
-OutputFormat = [Enum].xml
-Enum = XP, AA
+TemplateFilename = status_window/StatGauge.xmltemplate
+OutputFormat = status_window/[Stat].xml
+StartIndex = 0
+Count = 2
+
+Param(
+    Key = Stat
+    Value = XP, AA
+)
 
 Copy(
-    Regexp = <Screen item="SW_[Enum]Label_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="SW_[Enum]Value_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]Value_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="SW_[Enum]PerHourValue_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]PerHourValue_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )
 
 Copy(
-    Regexp = <Screen item="SW_[Enum]_Layout">(?:.|\n)*?</Screen>
+    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]_Layout"\s*>(?:.|\n)*?</Screen\s*>
     Target = EQUI_PlayerWindow.xml
 )

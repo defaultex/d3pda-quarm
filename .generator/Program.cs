@@ -67,12 +67,7 @@ partial class Program {
         }
 
         for (int i = gencfg.StartIndex; i < gencfg.Count; i++) {
-            string enumValue = gencfg.IsEnumerative ? gencfg.Enum[i - gencfg.StartIndex] : null;
             ms_parameters["i"] = $"{i}";
-            if (gencfg.IsEnumerative) {
-                ms_parameters["enum"] = enumValue;
-                ms_parameters["Enum"] = enumValue;
-            }
             gencfg.Parameters.All(kvp => {
                 ms_parameters[kvp.Key] = kvp.Value[i - gencfg.StartIndex];
                 return true;
@@ -86,7 +81,7 @@ partial class Program {
                 foreach (ReplaceOperation replaceOp in gencfg.ReplaceOps) {
                     if (replaceOp.Target.Contains(filename)) {
                         output = Regex.Replace(output, replaceOp.Regexp, replaceOp.Value);
-                        // Console.WriteLine($"   replace ({filename}): {replaceOp.Regexp} => {replaceOp.Value}");
+                        Console.WriteLine($"   replace ({filename}): {replaceOp.Regexp} => {replaceOp.Value}");
                     }
                 }
                 File.WriteAllText(filename, output);
@@ -100,8 +95,6 @@ partial class Program {
             }
         }
         ms_parameters.Remove("i");
-        ms_parameters.Remove("enum");
-        ms_parameters.Remove("Enum");
         gencfg.Parameters.Keys.All(key => ms_parameters.Remove(key));
 
         // perform the batched copy operations
@@ -111,7 +104,7 @@ partial class Program {
             for (int i = 0; i < copyOp.Regexps.Length; i++) {
                 if (copyOp.Outputs[i] != null) {
                     targetXml = Regex.Replace(targetXml, copyOp.Regexps[i], copyOp.Outputs[i]);
-                    // Console.WriteLine($"   copy ({copyOp.Target}): {copyOp.Regexps[i]} => {copyOp.Outputs[i]}");
+                    Console.WriteLine($"   copy ({copyOp.Target}): {copyOp.Regexps[i]} => {copyOp.Outputs[i]?.Split('\n')[0]}");
                     doWrite = true;
                 }
             }
@@ -137,7 +130,5 @@ partial class Program {
             }
         }
         Console.WriteLine("Done!");
-        //const string uiroot = @"..";
-        //GenerateMerchant($"{uiroot}/D3PDA_MerchantWnd.xml");
     }
 }

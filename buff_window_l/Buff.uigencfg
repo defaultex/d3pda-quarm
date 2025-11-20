@@ -1,0 +1,14 @@
+TemplateFilename = buff_window_l/Buff.xmltemplate
+OutputFormat = buff_window_l/Buff[i].xml
+StartIndex = 0
+Count = 15
+
+Copy(
+    Regexp = <\s*Screen\s*item\s*=\s*"BW_Buff[i]_Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
+    Target = EQUI_BuffWindow_l.xml
+)
+
+Copy(
+    Regexp = <\s*Screen\s*item\s*=\s*"BW_Buff[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
+    Target = EQUI_BuffWindow_l.xml
+)
