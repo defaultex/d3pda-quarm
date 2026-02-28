@@ -3,12 +3,11 @@ OutputFormat = buff_window_r/Buff[i].xml
 StartIndex = 0
 Count = 15
 
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"BW_Buff[i]_Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_BuffWindow_r.xml
+CopyElement(
+    Element = Screen:BW_Buff[i]_Label_Layout
+    Destination = EQUI_BuffWindow_r.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"BW_Buff[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_BuffWindow_r.xml
+CopyElement(
+    Element = Screen:BW_Buff[i]_Layout
+    Destination = EQUI_BuffWindow_r.xml
 )

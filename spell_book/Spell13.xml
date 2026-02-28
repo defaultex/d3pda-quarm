@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Button item="SBW_Spell13">
+        <ScreenID>SBW_Spell13</ScreenID>
+        <Location>
+            <X>338</X>
+            <Y>154</Y>
+        </Location>
+        <Size>
+            <CX>44</CX>
+            <CY>44</CY>
+        </Size>
+        <DecalOffset>
+            <X>2</X>
+            <Y>2</Y>
+        </DecalOffset>
+        <DecalSize>
+            <CX>40</CX>
+            <CY>40</CY>
+        </DecalSize>
+        <ButtonDrawTemplate>
+            <Normal>BlueIconBackground</Normal>
+            <NormalDecal>BuffIcons</NormalDecal>
+        </ButtonDrawTemplate>
+    </Button>
+    <StaticText item="SBW_SpellName13">
+        <ScreenID>SBW_SpellName13</ScreenID>
+        <Font>1</Font>
+        <NoWrap>false</NoWrap>
+        <AlignCenter>true</AlignCenter>
+        <AlignRight>false</AlignRight>
+        <Location>
+            <X>318</X>
+            <Y>198</Y>
+        </Location>
+        <Size>
+            <CX>84</CX>
+            <CY>16</CY>
+        </Size>
+    </StaticText>
+    <!-- -->
+</XML>

@@ -1,0 +1,21 @@
+TemplateFilename = Label.xmltemplate
+OutputFormat = [Name].xml
+StartIndex = 0
+Count = 0
+
+Global(
+    Name = Soandso
+    FontSize = 3
+    EQType = 60
+    Text = Some Text
+    X = 0
+    Y = 0
+    Width = 20
+    Height = 20
+    ColorR = 156
+    ColorG = 182
+    ColorB = 182
+    OutlineR = 75
+    OutlineG = 100
+    OutlineB = 100
+)

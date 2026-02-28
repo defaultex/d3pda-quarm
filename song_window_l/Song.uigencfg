@@ -3,12 +3,11 @@ OutputFormat = song_window_l/Song[i].xml
 StartIndex = 0
 Count = 5
 
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"SDBW_Buff[i]_Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_SongWindow_l.xml
+CopyElement(
+    Element = Screen:SDBW_Buff[i]_Label_Layout
+    Destination = EQUI_SongWindow_l.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"SDBW_Buff[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_SongWindow_l.xml
+CopyElement(
+    Element = Screen:SDBW_Buff[i]_Layout
+    Destination = EQUI_SongWindow_l.xml
 )

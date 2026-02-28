@@ -4,18 +4,9 @@ StartIndex = 0
 Count = 3
 
 Param(
-    Key = Stat
-    Value = HP, MP, EN
-)
-
-Param(
-    Key = Name
-    Value = HP, Mana, Fatigue
-)
-
-Param(
-    Key = Tick
-    Value = HPTick, ManaTick, MeleeTick
+    Stat = HP, MP, EN
+    Name = HP, Mana, Fatigue
+    Tick = HPTick, ManaTick, MeleeTick
 )
 
 # replace the mana bar tint with blue
@@ -53,17 +44,15 @@ Replace(
     Value = 
 )
 
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"Player_[Name]Key_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:Player_[Name]Key_Layout
+    Destination = EQUI_PlayerWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"Player_[Name]Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:Player_[Name]Label_Layout
+    Destination = EQUI_PlayerWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"Player_[Name]_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:Player_[Name]_Layout
+    Destination = EQUI_PlayerWindow.xml
 )

@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/.generator/bin/Debug/net8.0/generator.dll",
+            "program": "${workspaceFolder}/.generator/bin/Debug/net10.0/generator.dll",
             "args": [],
             "cwd": "${workspaceFolder}/.generator",
             "console": "internalConsole",

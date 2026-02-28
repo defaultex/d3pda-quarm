@@ -6,10 +6,16 @@
  *  StartIndex = 0
  *  Count = 4
  *
- *  # Define custom parameters to provide to each generated file.
+ *  # Define global parameters to provide to all files.
+ *  Global(
+ *      [Key] = [Value]
+ *      ...
+ *  )
+ *
+ *  # Define enumerated parameters to provide to each generated file.
  *  Param(
- *      Key = Name
- *      Value = HP, Mana, Fatigue
+ *      [Key] = [Value0, Value1, ...]
+ *      ...
  *  )
  *
  *  # Replace text using regex in the specified file
@@ -19,10 +25,10 @@
  *      Value = <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
  *  )
  *
- *  # Copy from the generated file using regex into the specified target file.
- *  CopyOp(
- *      Regexp = <Screen item="SW_[Name]Label_Layout">(?:.|\n)*?</Screen>
- *      Target = EQUI_PlayerWindow.xml
+ *  # Copy an element from the generated file into the specified target file.
+ *  CopyElement(
+ *      Element = [Type]:[Name] (ex. Screen:HPLabel_Layout)
+ *      Destination = Filename (ex. EQUI_PlayerWindow.xml)
  *  )
  *
  * + [EQLabelType.Mana] notation can be used to fetch parameters built-in and custom.
@@ -32,139 +38,211 @@
  *
  */
 
+using System.Diagnostics;
+using MathEvaluation.Context;
+using MathEvaluation.Extensions;
+
 partial struct UIGenCfg {
-    #region Regex
+    static readonly Dictionary<string, string> ms_systemParams = new(Enumerable.Concat(
+        Enum.GetNames<EQLabelType>().Select(name => new KeyValuePair<string, string>($"EQLabelType.{name}",  $"{(int)Enum.Parse<EQLabelType>(name)}")),
+        Enum.GetNames<EQGaugeType>().Select(name => new KeyValuePair<string, string>($"EQGaugeType.{name}",  $"{(int)Enum.Parse<EQGaugeType>(name)}"))
+    ));
 
-    const RegexOptions REGEXOPTS = RegexOptions.IgnorePatternWhitespace | RegexOptions.Multiline;
-
-    [GeneratedRegex(@"\s*TemplateFilename\s*=\s*(?<TemplateFilename>.*)\s*$", REGEXOPTS)]
-    private static partial Regex TemplateRegex();
-
-    [GeneratedRegex(@"\s*OutputFormat\s*=\s*(?<OutputFormat>.*)\s*$", REGEXOPTS)]
-    private static partial Regex OutputFormatRegex();
-
-    [GeneratedRegex(@"\s*ForceGen(?:eration)?\s*=\s*(?<ForceGeneration>.*)\s*$", REGEXOPTS)]
-    private static partial Regex ForceGenerationRegex();
-
-    [GeneratedRegex(@"\s*StartIndex\s*=\s*(?<StartIndex>.*)\s*$", REGEXOPTS)]
-    private static partial Regex StartIndexRegex();
-
-    [GeneratedRegex(@"\s*Count\s*=\s*(?<Count>.*)\s*$", REGEXOPTS)]
-    private static partial Regex CountRegex();
-
-    [GeneratedRegex(@"^\s*Copy\s*\(
-    (?:\s*\n
-    | ^\s*Regexp\s*=\s*(?<Regexp>.*)\s*$
-    | ^\s*Target\s*=\s*(?<Target>.*)\s*$
-    )*\)", REGEXOPTS)]
-    private static partial Regex CopyRegex();
-
-    [GeneratedRegex(@"^\s*Param\s*\(
-    (?:\s*\n
-    | ^\s*Key\s*=\s*(?<Key>.*)\s*$
-    | ^\s*Value\s*=\s*(?<Value>.*)\s*$
-    )*\)", REGEXOPTS)]
-    private static partial Regex ParamRegex();
-
-    [GeneratedRegex(@"^\s*Replace\s*\(
-    (?:\s*\n
-    | ^\s*Regexp\s*=\s*(?<Regexp>.*)\s*$
-    | ^\s*Target\s*=\s*(?<Target>.*)\s*$
-    | ^\s*Value\s*=\s*(?<Value>.*)\s*$
-    )*\)", REGEXOPTS)]
-    private static partial Regex ReplaceRegex();
-
-    #endregion
+    readonly Dictionary<string, string> m_parameters;
 
     public readonly string GenCfgPath;
-    public string TemplateFilename;
-    public string OutputFormat;
-    public bool ForceGeneration;
-    public int StartIndex;
-    public int Count;
-    public CopyOperation[] CopyOps;
-    public ReplaceOperation[] ReplaceOps;
-    public Dictionary<string, string[]> Parameters;
+    public readonly string TemplateFilename;
+    public readonly string OutputFormat;
+    public readonly bool ForceGeneration;
+    public readonly int StartIndex;
+    public readonly int Count;
+    public readonly ReplaceOp[] ReplaceOps;
+    public readonly CopyElementOp[] CopyElementOps;
+    public readonly Dictionary<string, string[]> Params;
+    public readonly Dictionary<string, string> Globals;
 
     public UIGenCfg(string gencfgPath) {
         GenCfgPath = gencfgPath;
         string source = File.ReadAllText(GenCfgPath);
 
-        TemplateFilename = TemplateRegex().Match(source).Groups.GetValueOrDefault("TemplateFilename")?.Value;
-        OutputFormat = OutputFormatRegex().Match(source).Groups.GetValueOrDefault("OutputFormat")?.Value;
-        bool.TryParse(ForceGenerationRegex().Match(source).Groups.GetValueOrDefault("ForceGeneration")?.Value ?? bool.FalseString, out ForceGeneration);
-        int.TryParse(StartIndexRegex().Match(source).Groups.GetValueOrDefault("StartIndex")?.Value ?? "0", out StartIndex);
-        int.TryParse(CountRegex().Match(source).Groups.GetValueOrDefault("Count")?.Value ?? "0", out Count);
+        TemplateFilename = TemplateRegex().Match(source).Groups.GetValueOrDefault("TemplateFilename")?.Value ?? string.Empty;
+        OutputFormat = OutputFormatRegex().Match(source).Groups.GetValueOrDefault("OutputFormat")?.Value ?? string.Empty;
+        _ = bool.TryParse(ForceGenerationRegex().Match(source).Groups.GetValueOrDefault("ForceGeneration")?.Value ?? bool.FalseString, out ForceGeneration);
+        _ = int.TryParse(StartIndexRegex().Match(source).Groups.GetValueOrDefault("StartIndex")?.Value ?? "0", out StartIndex);
+        _ = int.TryParse(CountRegex().Match(source).Groups.GetValueOrDefault("Count")?.Value ?? "0", out Count);
 
-        Parameters = [];
-        foreach (Match m in ParamRegex().Matches(source)) {
-            CaptureCollection keys = m.Groups.GetValueOrDefault("Key")?.Captures;
-            CaptureCollection values = m.Groups.GetValueOrDefault("Value")?.Captures;
+        m_parameters = new(ms_systemParams);
+
+        Globals = [];
+        foreach (Match m in GlobalRegex().Matches(source)) {
+            CaptureCollection? keys = m.Groups.GetValueOrDefault("Key")?.Captures,
+                               values = m.Groups.GetValueOrDefault("Value")?.Captures;
             for (int i = 0; i < (keys?.Count ?? 0); i++) {
                 if (!string.IsNullOrWhiteSpace(keys[i].Value)) {
-                    Parameters[keys[i].Value] = values[i].Value?.Split(',', StringSplitOptions.TrimEntries) ?? [];
+                    string key = keys[i].Value.Trim();
+                    string value = values[i].Value.Trim();
+                    Globals[key] = value;
+                    m_parameters[key] = value;
                 }
             }
         }
 
-        List<CopyOperation> copyOps = [];
-        foreach (Match m in CopyRegex().Matches(source)) {
-            CaptureCollection regexps = m.Groups.GetValueOrDefault("Regexp")?.Captures;
-            CaptureCollection targets = m.Groups.GetValueOrDefault("Target")?.Captures;
-            int count = regexps?.Count ?? 0;
-            for (int i = 0; i < count; i++) {
-                copyOps.Add(new() {
-                    Regexp = regexps[i].Value ?? string.Empty,
-                    Target = targets[i].Value ?? string.Empty
-                });
+        Params = [];
+        foreach (Match m in ParamRegex().Matches(source)) {
+            CaptureCollection? keys = m.Groups.GetValueOrDefault("Key")?.Captures,
+                               values = m.Groups.GetValueOrDefault("Value")?.Captures;
+            for (int i = 0; i < (keys?.Count ?? 0); i++) {
+                if (!string.IsNullOrWhiteSpace(keys[i].Value)) {
+                    string key = keys[i].Value.Trim();
+                    string value = values[i].Value.Trim();
+                    Params[key] = value.Split(',', StringSplitOptions.TrimEntries) ?? [];
+                }
             }
         }
-        CopyOps = copyOps.ToArray();
 
-        List<ReplaceOperation> replaceOps = [];
-        foreach (Match mrepl in ReplaceRegex().Matches(source)) {
-            CaptureCollection regexps = mrepl.Groups.GetValueOrDefault("Regexp")?.Captures;
-            CaptureCollection values = mrepl.Groups.GetValueOrDefault("Value")?.Captures;
-            CaptureCollection targets = mrepl.Groups.GetValueOrDefault("Target")?.Captures;
-            int count = regexps?.Count ?? 0;
-            for (int i = 0; i < count; i++) {
-                replaceOps.Add(new() {
-                    Regexp = regexps[i].Value ?? string.Empty,
-                    Value = values[i].Value ?? string.Empty,
-                    Target = i < targets.Count ?
-                        targets[i].Value.Split(',', StringSplitOptions.TrimEntries) ?? [] : []
-                });
-            }
-        }
-        ReplaceOps = replaceOps.ToArray();
+        ReplaceOps = ReplaceOp.Parse(source);
+        CopyElementOps = CopyElementOp.Parse(source);
     }
 
-    public void WriteConsole() {
+    public string ReplaceParameters(string source, bool verbose = false) {
+        string result = source;
+
+        MatchCollection matches = BracketRegex().Matches(source);
+        foreach (Match bracketMatch in matches) {
+            if (!bracketMatch.Success) { continue; }
+
+            string key = bracketMatch.Value.TrimStart('[').TrimEnd(']');
+            if (key != null && m_parameters.TryGetValue(key, out string value)) {
+                result = result.Replace(bracketMatch.Value, value);
+                Debug.WriteLineIf(verbose, $"   parameter: [{key}] => {value}");
+            }
+        }
+
+        foreach (string key in m_parameters.Keys) {
+            string value = m_parameters[key];
+            foreach (Match m in Regex.Matches(result, @$"\[\s*(?<Param>{key})\s*\]")) {
+                result = result.Replace(m.Value, value);
+                Debug.WriteLineIf(verbose, $"   parameter: [{key}] => {value}");
+            }
+        }
+
+        return result;
+    }
+
+    public string ProcessString(string source, bool verbose = false) {
+        string result = source;
+        result = ReplaceParameters(result, verbose);
+        foreach (Match m in CalcRegex().Matches(result)) {
+            if (m.Groups.TryGetValue("Calc", out Group g)) {
+                string value = $"{g.Value.Evaluate(m_parameters, new DotNetStandardMathContext())}";
+                result = result.Replace(m.Captures[0].Value, value);
+                Debug.WriteLineIf(verbose, $"   calc: [{g.Value}] => {value}");
+            }
+        }
+        result = ReplaceParameters(result, verbose);
+        return result;
+    }
+
+    public bool ShouldGen(string outputFile) =>
+        !File.Exists(outputFile) ||
+        File.GetLastWriteTime(TemplateFilename) > File.GetLastWriteTime(outputFile) ||
+        File.GetLastWriteTime(GenCfgPath) > File.GetLastWriteTime(outputFile) || true;
+
+    public bool GenerateFiles() {
+        bool result = false;
+
+        // batch changes to give any previous writes time to finish
+        BufferedCopyOp[] bco = new BufferedCopyOp[CopyElementOps?.Length ?? 0];
+        for (int i = 0; i < CopyElementOps.Length; i++) {
+            bco[i] = new BufferedCopyOp() {
+                Destination = CopyElementOps[i].Destintion,
+                Regexps = new string[Count],
+                Outputs = new string[Count]
+            };
+            for (int j = StartIndex; j < Count; j++) {
+                bco[i].Regexps[j] = CopyElementOps[i].ElementRegexp;
+            }
+        }
+
+        List<string> tempParams = [];
+        for (int i = StartIndex; i < Count; i++) {
+            // add local parameters
+            tempParams.Add("i");
+            m_parameters["i"] = $"{i}";
+            foreach (KeyValuePair<string, string[]> kvp in Params) {
+                m_parameters[kvp.Key] = kvp.Value[i - StartIndex];
+                tempParams.Add(kvp.Key);
+            }
+
+            // perform replacement operations
+            string output = null, filename = ProcessString(OutputFormat);
+            if (ForceGeneration || ShouldGen(filename)) {
+                Console.WriteLine($"   Generating {filename}");
+                output = File.ReadAllText(TemplateFilename);
+                output = ProcessString(output, true);
+                foreach (ReplaceOp replaceOp in ReplaceOps) {
+                    if (replaceOp.Target.Contains(filename)) {
+                        output = Regex.Replace(output, replaceOp.Regexp, replaceOp.Value);
+                        Console.WriteLine($"   replace ({filename}): {replaceOp.Regexp} => {replaceOp.Value}");
+                    }
+                }
+                File.WriteAllText(filename, output);
+            }
+            // else { Console.WriteLine($"   Skipping {filename}, file is newer than the template."); }
+            result |= output != null;
+
+            // batch copy operations
+            for (int j = 0; j < bco.Length; j++) {
+                bco[j].Regexps[i] = ProcessString(bco[j].Regexps[i]);
+                bco[j].Outputs[i] = (output != null) ? Regex.Match(output, bco[j].Regexps[i])?.Value : null;
+            }
+        }
+        foreach (string key in tempParams) {
+            m_parameters.Remove(key);
+        }
+
+        // perform the batched copy operations
+        foreach (BufferedCopyOp copyOp in bco) {
+            string targetXml = File.ReadAllText(copyOp.Destination);
+            bool doWrite = false;
+            for (int i = 0; i < copyOp.Regexps.Length; i++) {
+                if (copyOp.Outputs[i] != null) {
+                    targetXml = Regex.Replace(targetXml, copyOp.Regexps[i], copyOp.Outputs[i]);
+                    Console.WriteLine($"   copy ({copyOp.Destination}): {copyOp.Regexps[i]} => {copyOp.Outputs[i]?.Split('\n')[0]}");
+                    doWrite = true;
+                }
+            }
+            if (doWrite) { File.WriteAllText(copyOp.Destination, targetXml); }
+        }
+        return result;
+    }
+
+    public readonly void WriteConsole() {
         Console.WriteLine(GenCfgPath);
         Console.WriteLine($"   Template: {TemplateFilename}");
         Console.WriteLine($"   OutputFormat: {OutputFormat}");
         Console.WriteLine($"   ForceGen: {ForceGeneration}");
         Console.WriteLine($"   StartIndex: {StartIndex}");
         Console.WriteLine($"   Count: {Count}");
-        if (Parameters.Count > 0) {
+        if (Params.Count > 0) {
             Console.WriteLine("   Params");
-            Parameters.All(p => {
+            _ = Params.All(p => {
                 Console.WriteLine($"      {p.Key}: {string.Join(", ", p.Value)}");
                 return true;
             });
         }
-        ReplaceOps.All(r => {
+        _ = ReplaceOps.All(r => {
             Console.WriteLine("   Replace");
             Console.WriteLine($"      Regexp: {r.Regexp}");
             Console.WriteLine($"      Value: {r.Value}");
             Console.WriteLine($"      Targets: {string.Join(", ", r.Target)}");
             return true;
         });
-        CopyOps.All(c => {
-            Console.WriteLine("   Copy");
-            Console.WriteLine($"      Regexp: {c.Regexp}");
-            Console.WriteLine($"      Target: {c.Target}");
-            return true;
-        });
+        // _ = CopyOps.All(c => {
+        //     Console.WriteLine("   Copy");
+        //     Console.WriteLine($"      Regexp: {c.Regexp}");
+        //     Console.WriteLine($"      Target: {c.Target}");
+        //     return true;
+        // });
     }
 }

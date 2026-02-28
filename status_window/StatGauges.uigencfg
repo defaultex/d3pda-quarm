@@ -4,26 +4,22 @@ StartIndex = 0
 Count = 2
 
 Param(
-    Key = Stat
-    Value = XP, AA
+    Stat = XP, AA
 )
 
-Copy(
-    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:SW_[Stat]Label_Layout
+    Destination = EQUI_PlayerWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]Value_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:SW_[Stat]Value_Layout
+    Destination = EQUI_PlayerWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]PerHourValue_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:SW_[Stat]PerHourValue_Layout
+    Destination = EQUI_PlayerWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:SW_[Stat]_Layout
+    Destination = EQUI_PlayerWindow.xml
 )

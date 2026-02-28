@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<!-- 
+		Layout of the spell slots in the book are as follows:
+		spell0		spell1		spell8		spell9
+		spell2		spell3		spell10		spell11
+		spell4		spell5		spell12		spell13
+		spell6		spell7		spell14		spell15
+	-->
+	<Composite>
+		<Include>spell_book/Spell0.xml</Include>
+		<Include>spell_book/Spell1.xml</Include>
+		<Include>spell_book/Spell2.xml</Include>
+		<Include>spell_book/Spell3.xml</Include>
+		<Include>spell_book/Spell4.xml</Include>
+		<Include>spell_book/Spell5.xml</Include>
+		<Include>spell_book/Spell6.xml</Include>
+		<Include>spell_book/Spell7.xml</Include>
+		<Include>spell_book/Spell8.xml</Include>
+		<Include>spell_book/Spell9.xml</Include>
+		<Include>spell_book/Spell10.xml</Include>
+		<Include>spell_book/Spell11.xml</Include>
+		<Include>spell_book/Spell12.xml</Include>
+		<Include>spell_book/Spell13.xml</Include>
+		<Include>spell_book/Spell14.xml</Include>
+		<Include>spell_book/Spell15.xml</Include>
+	</Composite>
+	<!--  -->
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<!--  -->
+	<StaticAnimation item="SBW_SpellBook1">
+		<ScreenID>SBW_SpellBook1</ScreenID>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>256</CX>
+			<CY>256</CY>
+		</Size>
+		<Animation>A_SpellBook01</Animation>
+	</StaticAnimation>
+	<StaticAnimation item="SBW_SpellBook2">
+		<ScreenID>SBW_SpellBook2</ScreenID>
+		<Location>
+			<X>256</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>256</CX>
+			<CY>256</CY>
+		</Size>
+		<Animation>A_SpellBook02</Animation>
+	</StaticAnimation>
+	<StaticAnimation item="SBW_SpellBook3">
+		<ScreenID>SBW_SpellBook3</ScreenID>
+		<Location>
+			<X>0</X>
+			<Y>256</Y>
+		</Location>
+		<Size>
+			<CX>256</CX>
+			<CY>75</CY>
+		</Size>
+		<Animation>A_SpellBook03</Animation>
+	</StaticAnimation>
+	<StaticAnimation item="SBW_SpellBook4">
+		<ScreenID>SBW_SpellBook4</ScreenID>
+		<Location>
+			<X>256</X>
+			<Y>256</Y>
+		</Location>
+		<Size>
+			<CX>256</CX>
+			<CY>75</CY>
+		</Size>
+		<Animation>A_SpellBook04</Animation>
+	</StaticAnimation>
+	<!--  -->
+	<StaticText item="SBW_LeftPageNum">
+		<ScreenID>SBW_LeftPageNum</ScreenID>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<Location>
+			<X>46</X>
+			<Y>34</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>16</CY>
+		</Size>
+	</StaticText>
+	<StaticText item="SBW_RightPageNum">
+		<ScreenID>SBW_RightPageNum</ScreenID>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+		<Location>
+			<X>386</X>
+			<Y>34</Y>
+		</Location>
+		<Size>
+			<CX>20</CX>
+			<CY>16</CY>
+		</Size>
+	</StaticText>
+	<!--  -->
+	<Button item="SBW_MemPage0_Button">
+		<ScreenID>SBW_MemPage0_Button</ScreenID>
+		<Location>
+			<X>76</X>
+			<Y>305</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+			<!-- <CX>96</CX> -->
+			<!-- <CY>20</CY> -->
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<Style_Checkbox>false</Style_Checkbox>
+		<!--<RadioGroup/>-->
+		<Text>Mem. This Page</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+			<Normal>A_BtnNormal</Normal>
+			<Pressed>A_BtnPressed</Pressed>
+			<Flyby>A_BtnFlyby</Flyby>
+			<Disabled>A_BtnDisabled</Disabled>
+			<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="SBW_MemPage1_Button">
+		<ScreenID>SBW_MemPage1_Button</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>306</X>
+			<Y>305</Y>
+		</Location>
+		<Size>
+			<CX>0</CX>
+			<CY>0</CY>
+			<!-- <CX>96</CX> -->
+			<!-- <CY>20</CY> -->
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<Style_Checkbox>false</Style_Checkbox>
+		<!--<RadioGroup/>-->
+		<Text>Mem. This Page</Text>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+			<Normal>A_BtnNormal</Normal>
+			<Pressed>A_BtnPressed</Pressed>
+			<Flyby>A_BtnFlyby</Flyby>
+			<Disabled>A_BtnDisabled</Disabled>
+			<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="SBW_PageDown_Button">
+		<ScreenID>SBW_PageDown_Button</ScreenID>
+		<Location>
+			<X>32</X>
+			<Y>132</Y>
+		</Location>
+		<Size>
+			<CX>30</CX>
+			<CY>32</CY>
+		</Size>
+		<ButtonDrawTemplate>
+			<Normal>A_LeftArrowBtnNormal</Normal>
+			<Pressed>A_LeftArrowBtnPressed</Pressed>
+			<Flyby>A_LeftArrowBtnFlyby</Flyby>
+			<Disabled>A_LeftArrowBtnDisabled</Disabled>
+			<PressedFlyby>A_LeftArrowBtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+	</Button>
+	<Button item="SBW_PageUp_Button">
+		<ScreenID>SBW_PageUp_Button</ScreenID>
+		<Location>
+			<X>392</X>
+			<Y>132</Y>
+		</Location>
+		<Size>
+			<CX>30</CX>
+			<CY>32</CY>
+		</Size>
+		<ButtonDrawTemplate>
+			<Normal>A_RightArrowBtnNormal</Normal>
+			<Pressed>A_RightArrowBtnPressed</Pressed>
+			<Flyby>A_RightArrowBtnFlyby</Flyby>
+			<Disabled>A_RightArrowBtnDisabled</Disabled>
+			<PressedFlyby>A_RightArrowBtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+	</Button>
+	<Button item="SBW_DoneButton">
+		<ScreenID>DoneButton</ScreenID>
+		<Text>Done</Text>
+		<Location>
+			<X>194</X>
+			<Y>270</Y>
+		</Location>
+		<Size>
+			<CX>64</CX>
+			<CY>20</CY>
+		</Size>
+		<TextColor>
+			<R>255</R>
+			<G>255</G>
+			<B>255</B>
+		</TextColor>
+		<ButtonDrawTemplate>
+			<Normal>A_BtnNormal</Normal>
+			<Pressed>A_BtnPressed</Pressed>
+			<Flyby>A_BtnFlyby</Flyby>
+			<Disabled>A_BtnDisabled</Disabled>
+			<PressedFlyby>A_BtnPressedFlyby</PressedFlyby>
+		</ButtonDrawTemplate>
+	</Button>
+	<!--  -->
+	<Gauge item="SBW_Memorize_Gauge">
+		<ScreenID>SBW_Memorize_Gauge</ScreenID>
+		<EQType>9</EQType>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<Location>
+			<X>34</X>
+			<Y>276</Y>
+		</Location>
+		<Size>
+            <CX>158</CX>
+            <CY>8</CY>
+        </Size>
+		<FillTint>
+			<R>200</R>
+			<G>0</G>
+			<B>200</B>
+		</FillTint>
+        <GaugeDrawTemplate>
+            <Background>D3PDA_SmallGauge_Background</Background>
+            <Fill>D3PDA_SmallGauge_Fill</Fill>
+        </GaugeDrawTemplate>
+		<DrawLinesFill>false</DrawLinesFill>
+	</Gauge>
+	<Gauge item="SBW_Scribe_Gauge">
+		<ScreenID>SBW_Memorize_Gauge</ScreenID>
+		<EQType>10</EQType>
+		<GaugeOffsetY>0</GaugeOffsetY>
+		<Location>
+			<X>260</X>
+			<Y>276</Y>
+		</Location>
+		<Size>
+            <CX>158</CX>
+            <CY>8</CY>
+        </Size>
+		<FillTint>
+			<R>200</R>
+			<G>0</G>
+			<B>200</B>
+		</FillTint>
+        <GaugeDrawTemplate>
+            <Background>D3PDA_SmallGauge_Background</Background>
+            <Fill>D3PDA_SmallGauge_Fill</Fill>
+        </GaugeDrawTemplate>
+		<DrawLinesFill>false</DrawLinesFill>
+	</Gauge>
+	<!--  -->
+	<Screen item="SpellBookWnd">
+		<TooltipReference>Your Spell Book</TooltipReference>
+		<Style_Transparent>true</Style_Transparent>
+		<Style_Sizable>false</Style_Sizable>
+		<Size>
+			<CX>456</CX>
+			<CY>333</CY>
+		</Size>
+		<Pieces>SBW_SpellBook1</Pieces>
+		<Pieces>SBW_SpellBook2</Pieces>
+		<Pieces>SBW_SpellBook3</Pieces>
+		<Pieces>SBW_SpellBook4</Pieces>
+		<Pieces>SBW_Spell0</Pieces>
+		<Pieces>SBW_SpellName0</Pieces>
+		<Pieces>SBW_Spell1</Pieces>
+		<Pieces>SBW_SpellName1</Pieces>
+		<Pieces>SBW_Spell2</Pieces>
+		<Pieces>SBW_SpellName2</Pieces>
+		<Pieces>SBW_Spell3</Pieces>
+		<Pieces>SBW_SpellName3</Pieces>
+		<Pieces>SBW_Spell4</Pieces>
+		<Pieces>SBW_SpellName4</Pieces>
+		<Pieces>SBW_Spell5</Pieces>
+		<Pieces>SBW_SpellName5</Pieces>
+		<Pieces>SBW_Spell6</Pieces>
+		<Pieces>SBW_SpellName6</Pieces>
+		<Pieces>SBW_Spell7</Pieces>
+		<Pieces>SBW_SpellName7</Pieces>
+		<Pieces>SBW_Spell8</Pieces>
+		<Pieces>SBW_SpellName8</Pieces>
+		<Pieces>SBW_Spell9</Pieces>
+		<Pieces>SBW_SpellName9</Pieces>
+		<Pieces>SBW_Spell10</Pieces>
+		<Pieces>SBW_SpellName10</Pieces>
+		<Pieces>SBW_Spell11</Pieces>
+		<Pieces>SBW_SpellName11</Pieces>
+		<Pieces>SBW_Spell12</Pieces>
+		<Pieces>SBW_SpellName12</Pieces>
+		<Pieces>SBW_Spell13</Pieces>
+		<Pieces>SBW_SpellName13</Pieces>
+		<Pieces>SBW_Spell14</Pieces>
+		<Pieces>SBW_SpellName14</Pieces>
+		<Pieces>SBW_Spell15</Pieces>
+		<Pieces>SBW_SpellName15</Pieces>
+		<Pieces>SBW_Memorize_Gauge</Pieces>
+		<Pieces>SBW_Scribe_Gauge</Pieces>
+		<Pieces>SBW_MemPage0_Button</Pieces>
+		<Pieces>SBW_MemPage1_Button</Pieces>
+		<Pieces>SBW_PageDown_Button</Pieces>
+		<Pieces>SBW_PageUp_Button</Pieces>
+		<Pieces>SBW_LeftPageNum</Pieces>
+		<Pieces>SBW_RightPageNum</Pieces>
+		<Pieces>SBW_DoneButton</Pieces>
+	</Screen>
+	<!--  -->
+</XML>

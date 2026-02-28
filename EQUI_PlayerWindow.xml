@@ -604,15 +604,6 @@
             <CX>54</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_XPPerHourValue_OutlineTL</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineT</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineTR</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineBL</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineB</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineBR</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineL</Pieces>
-        <Pieces>SW_XPPerHourValue_OutlineR</Pieces>
-        <Pieces>SW_XPPerHourValue</Pieces>
         <Pieces>SW_XPPerHourPercent_OutlineTL</Pieces>
         <Pieces>SW_XPPerHourPercent_OutlineT</Pieces>
         <Pieces>SW_XPPerHourPercent_OutlineTR</Pieces>
@@ -622,6 +613,15 @@
         <Pieces>SW_XPPerHourPercent_OutlineL</Pieces>
         <Pieces>SW_XPPerHourPercent_OutlineR</Pieces>
         <Pieces>SW_XPPerHourPercent</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineTL</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineT</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineTR</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineBL</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineB</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineBR</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineL</Pieces>
+        <Pieces>SW_XPPerHourValue_OutlineR</Pieces>
+        <Pieces>SW_XPPerHourValue</Pieces>
     </Screen>
     <Screen item="SW_XP_Layout">
         <Style_Transparent>true</Style_Transparent>
@@ -694,15 +694,6 @@
             <CX>54</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_AAPerHourValue_OutlineTL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineT</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineTR</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineBL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineB</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineBR</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineR</Pieces>
-        <Pieces>SW_AAPerHourValue</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineTL</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineT</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineTR</Pieces>
@@ -712,6 +703,15 @@
         <Pieces>SW_AAPerHourPercent_OutlineL</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineR</Pieces>
         <Pieces>SW_AAPerHourPercent</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineTL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineT</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineTR</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineBL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineB</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineBR</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineR</Pieces>
+        <Pieces>SW_AAPerHourValue</Pieces>
     </Screen>
     <Screen item="SW_AA_Layout">
         <Style_Transparent>true</Style_Transparent>

@@ -3,22 +3,19 @@ OutputFormat = group_window/Group[i].xml
 StartIndex = 1
 Count = 6
 
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"GW_Key[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_GroupWindow.xml
+CopyElement(
+    Element = Screen:GW_Key[i]_Layout
+    Destination = EQUI_GroupWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"GW_Group[i]_Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_GroupWindow.xml
+CopyElement(
+    Element = Screen:GW_Group[i]_Label_Layout
+    Destination = EQUI_GroupWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"GW_Group[i]_Name_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_GroupWindow.xml
+CopyElement(
+    Element = Screen:GW_Group[i]_Name_Layout
+    Destination = EQUI_GroupWindow.xml
 )
-
-Copy(
-    Regexp = <\s*Screen\s*item\s*=\s*"GW_Group[i]_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_GroupWindow.xml
+CopyElement(
+    Element = Screen:GW_Group[i]_Layout
+    Destination = EQUI_GroupWindow.xml
 )

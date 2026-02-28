@@ -2,6 +2,7 @@
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData"
             xmlns:dt="EverQuestDataTypes" />
+    <!--  -->
     <Ui2DAnimation item="D3PDA_Gauge_Background">
         <Frames>
             <Texture>assets/WindowPieces.tga</Texture>
@@ -38,6 +39,46 @@
             <Size>
                 <CX>162</CX>
                 <CY>12</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <!--  -->
+    <Ui2DAnimation item="D3PDA_SmallGauge_Background">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>109</X>
+                <Y>49</Y>
+            </Location>
+            <Size>
+                <CX>158</CX>
+                <CY>8</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGauge_Fill">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>109</X>
+                <Y>58</Y>
+            </Location>
+            <Size>
+                <CX>158</CX>
+                <CY>8</CY>
+            </Size>
+        </Frames>
+    </Ui2DAnimation>
+    <Ui2DAnimation item="D3PDA_SmallGauge_LinesFill">
+        <Frames>
+            <Texture>assets/WindowPieces.tga</Texture>
+            <Location>
+                <X>109</X>
+                <Y>67</Y>
+            </Location>
+            <Size>
+                <CX>158</CX>
+                <CY>8</CY>
             </Size>
         </Frames>
     </Ui2DAnimation>

@@ -4,11 +4,10 @@ StartIndex = 0
 Count = 7
 
 Param(
-    Key = Stat
-    Value = STR, STA, AGI, DEX, WIS, INT, CHA
+    Stat = STR, STA, AGI, DEX, WIS, INT, CHA
 )
 
-Copy(
-    Regexp = <\s*Screen\s*item=\s*"SW_[Stat]Label_Layout"\s*>(?:.|\n)*?</Screen\s*>
-    Target = EQUI_PlayerWindow.xml
+CopyElement(
+    Element = Screen:SW_[Stat]Label_Layout
+    Destination = EQUI_PlayerWindow.xml
 )

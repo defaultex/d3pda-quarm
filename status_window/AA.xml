@@ -642,7 +642,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>24</LeftAnchorOffset>
+        <LeftAnchorOffset>22</LeftAnchorOffset>
         <TextColor>
             <R>255</R>
             <G>255</G>
@@ -657,7 +657,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>25</LeftAnchorOffset>
+        <LeftAnchorOffset>23</LeftAnchorOffset>
         <TopAnchorOffset>-1</TopAnchorOffset>
         <TextColor>
             <R>0</R>
@@ -673,7 +673,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>24</LeftAnchorOffset>
+        <LeftAnchorOffset>22</LeftAnchorOffset>
         <TopAnchorOffset>-2</TopAnchorOffset>
         <TextColor>
             <R>0</R>
@@ -689,7 +689,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>23</LeftAnchorOffset>
+        <LeftAnchorOffset>21</LeftAnchorOffset>
         <TopAnchorOffset>-1</TopAnchorOffset>
         <TextColor>
             <R>0</R>
@@ -705,7 +705,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>25</LeftAnchorOffset>
+        <LeftAnchorOffset>23</LeftAnchorOffset>
         <TopAnchorOffset>1</TopAnchorOffset>
         <TextColor>
             <R>0</R>
@@ -721,7 +721,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>24</LeftAnchorOffset>
+        <LeftAnchorOffset>22</LeftAnchorOffset>
         <TopAnchorOffset>2</TopAnchorOffset>
         <TextColor>
             <R>0</R>
@@ -737,7 +737,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>23</LeftAnchorOffset>
+        <LeftAnchorOffset>21</LeftAnchorOffset>
         <TopAnchorOffset>1</TopAnchorOffset>
         <TextColor>
             <R>0</R>
@@ -753,7 +753,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>26</LeftAnchorOffset>
+        <LeftAnchorOffset>24</LeftAnchorOffset>
         <TextColor>
             <R>0</R>
             <G>0</G>
@@ -768,7 +768,7 @@
         <LeftAnchorToLeft>false</LeftAnchorToLeft>
         <RightAnchorToLeft>false</RightAnchorToLeft>
         <BottomAnchorToTop>false</BottomAnchorToTop>
-        <LeftAnchorOffset>22</LeftAnchorOffset>
+        <LeftAnchorOffset>20</LeftAnchorOffset>
         <TextColor>
             <R>0</R>
             <G>0</G>
@@ -867,15 +867,6 @@
             <CX>54</CX>
             <CY>30</CY>
         </Size>
-        <Pieces>SW_AAPerHourValue_OutlineTL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineT</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineTR</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineBL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineB</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineBR</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineL</Pieces>
-        <Pieces>SW_AAPerHourValue_OutlineR</Pieces>
-        <Pieces>SW_AAPerHourValue</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineTL</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineT</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineTR</Pieces>
@@ -885,6 +876,15 @@
         <Pieces>SW_AAPerHourPercent_OutlineL</Pieces>
         <Pieces>SW_AAPerHourPercent_OutlineR</Pieces>
         <Pieces>SW_AAPerHourPercent</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineTL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineT</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineTR</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineBL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineB</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineBR</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineL</Pieces>
+        <Pieces>SW_AAPerHourValue_OutlineR</Pieces>
+        <Pieces>SW_AAPerHourValue</Pieces>
     </Screen>
     -->
     <!-- SW_AA_Layout

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Label item="[Name]">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[calc X + 1]</X>
+            <Y>[calc Y + 1]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[ColorR]</R>
+            <G>[ColorG]</G>
+            <B>[ColorB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineTL">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[X]</X>
+            <Y>[Y]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineT">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[calc X + 1]</X>
+            <Y>[Y]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineTR">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[calc X + 2]</X>
+            <Y>[Y]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineBL">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[X]</X>
+            <Y>[calc Y + 2]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineB">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[calc X + 1]</X>
+            <Y>[calc Y + 2]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineBR">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[calc X + 2]</X>
+            <Y>[calc Y + 2]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineL">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[X]</X>
+            <Y>[calc Y + 1]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <Label item="[Name_OutlineR">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[calc X + 2]</X>
+            <Y>[calc Y + 1]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <TextColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </TextColor>
+    </Label>
+    <!--
+    <Screen item="[Name]_Layout">
+        <Location>
+            <X>[X]</X>
+            <Y>[Y]</Y>
+        </Location>
+        <Size>
+            <CX>[Width + 2]</CX>
+            <CY>[Height + 2]</CY>
+        </Size>
+        <Pieces>[Name]_OutlineTL</Pieces>
+        <Pieces>[Name]_OutlineT</Pieces>
+        <Pieces>[Name]_OutlineTR</Pieces>
+        <Pieces>[Name]_OutlineBL</Pieces>
+        <Pieces>[Name]_OutlineB</Pieces>
+        <Pieces>[Name]_OutlineBR</Pieces>
+        <Pieces>[Name]_OutlineL</Pieces>
+        <Pieces>[Name]_OutlineR</Pieces>
+        <Pieces>[Name]</Pieces>
+    </Screen>
+    -->
+</XML>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+    <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <!-- -->
+    <Button item="SBW_Spell[i]">
+        <ScreenID>SBW_Spell[i]</ScreenID>
+        <Location>
+            <X>[calc 67 + (i % 2) * 85 + Math.Floor(i / 8) * 186]</X>
+            <Y>[calc 20 + Math.Floor((i % 8) / 2) * 67]</Y>
+        </Location>
+        <Size>
+            <CX>44</CX>
+            <CY>44</CY>
+        </Size>
+        <DecalOffset>
+            <X>2</X>
+            <Y>2</Y>
+        </DecalOffset>
+        <DecalSize>
+            <CX>40</CX>
+            <CY>40</CY>
+        </DecalSize>
+        <ButtonDrawTemplate>
+            <Normal>BlueIconBackground</Normal>
+            <NormalDecal>BuffIcons</NormalDecal>
+        </ButtonDrawTemplate>
+    </Button>
+    <StaticText item="SBW_SpellName[i]">
+        <ScreenID>SBW_SpellName[i]</ScreenID>
+        <Font>1</Font>
+        <NoWrap>false</NoWrap>
+        <AlignCenter>true</AlignCenter>
+        <AlignRight>false</AlignRight>
+        <Location>
+            <X>[calc 47 + (i % 2) * 85 + Math.Floor(i / 8) * 186]</X>
+            <Y>[calc 64 + Math.Floor((i % 8) / 2) * 67]</Y>
+        </Location>
+        <Size>
+            <CX>84</CX>
+            <CY>16</CY>
+        </Size>
+    </StaticText>
+    <!-- -->
+</XML>

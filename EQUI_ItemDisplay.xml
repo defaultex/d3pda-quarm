@@ -1,0 +1,53 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+	<STMLbox item = "IDW_ItemDescription">
+		<ScreenID>ItemDescription</ScreenID>
+		<DrawTemplate>WDT_SmallGreenBorder</DrawTemplate>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<AutoStretch>true</AutoStretch>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+	</STMLbox>
+	<Button item = "IDW_IconButton">
+		<ScreenID>IconButton</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorOffset>70</LeftAnchorOffset>
+		<TopAnchorOffset>12</TopAnchorOffset>
+		<RightAnchorOffset>26</RightAnchorOffset>
+		<BottomAnchorOffset>56</BottomAnchorOffset>
+		<DecalOffset>
+			<X>2</X>
+			<Y>2</Y>
+		</DecalOffset>
+		<DecalSize>
+			<CX>40</CX>
+			<CY>40</CY>
+		</DecalSize>
+		<ButtonDrawTemplate>
+			<Normal>RedIconBackground</Normal>
+			<NormalDecal>BuffIcons</NormalDecal>
+		</ButtonDrawTemplate>
+	</Button>
+	<Screen item = "ItemDisplayWindow">
+		<TooltipReference>This is an Item Display window</TooltipReference>
+		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Border>true</Style_Border>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Sizable>true</Style_Sizable>
+		<Size>
+			<CX>400</CX>
+			<CY>190</CY>
+		</Size>
+		<Pieces>IDW_ItemDescription</Pieces>
+		<Pieces>IDW_IconButton</Pieces>
+	</Screen>
+</XML>
