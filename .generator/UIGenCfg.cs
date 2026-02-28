@@ -146,7 +146,7 @@ partial struct UIGenCfg {
     public bool ShouldGen(string outputFile) =>
         !File.Exists(outputFile) ||
         File.GetLastWriteTime(TemplateFilename) > File.GetLastWriteTime(outputFile) ||
-        File.GetLastWriteTime(GenCfgPath) > File.GetLastWriteTime(outputFile) || true;
+        File.GetLastWriteTime(GenCfgPath) > File.GetLastWriteTime(outputFile);
 
     public bool GenerateFiles() {
         bool result = false;
