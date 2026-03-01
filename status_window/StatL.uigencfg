@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = status_window/StatL.xmltemplate
 OutputFormat = status_window/[Stat].xml
 StartIndex = 0

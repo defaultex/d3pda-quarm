@@ -1,6 +1,8 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = buff_window_l/Buff.xmltemplate
 OutputFormat = buff_window_l/Buff[i].xml
-StartIndex = 0
+StartIndex = 0 # index to start at
 Count = 15
 
 CopyElement(

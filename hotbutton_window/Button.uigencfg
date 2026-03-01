@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = hotbutton_window/Button.xmltemplate
 OutputFormat = hotbutton_window/Button[i].xml
 StartIndex = 0

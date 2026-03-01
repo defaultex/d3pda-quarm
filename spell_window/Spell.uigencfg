@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = spell_window/Spell.xmltemplate
 OutputFormat = spell_window/Spell[i].xml
 StartIndex = 0

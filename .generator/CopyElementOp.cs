@@ -7,7 +7,7 @@ struct BufferedCopyOp {
 partial struct CopyElementOp {
     public string Type;
     public string Name;
-    public string Destintion;
+    public string Destination;
     public readonly string ElementRegexp { get => @$"<\s*{Type}\s*item\s*=\s*""{Name}""\s*>(?:.|\n)*?</{Type}\s*>"; }
 
     [GeneratedRegex(@"^\s*CopyElement\s*\(
@@ -20,6 +20,6 @@ partial struct CopyElementOp {
     public static CopyElementOp[] Parse(string source) => [.. Regex().Matches(source).Select(m => new CopyElementOp() {
         Type = m.Groups.GetValueOrDefault("Type")?.Value ?? string.Empty,
         Name = m.Groups.GetValueOrDefault("Name")?.Value ?? string.Empty,
-        Destintion = m.Groups.GetValueOrDefault("Destination")?.Value ?? string.Empty
+        Destination = m.Groups.GetValueOrDefault("Destination")?.Value ?? string.Empty
     })];
 }

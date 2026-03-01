@@ -7,9 +7,10 @@
         //Console.WriteLine("Done!");
 
         // scan through directories to find generator config files and process them accordingly
-        string[] dirs = Directory.GetDirectories("./");
+        string[] dirs = Directory.GetDirectories("./"); dirs.Sort();
         foreach (string dir in dirs) {
-            foreach (string file in Directory.GetFiles(dir, "*.uigencfg")) {
+            string[] files = Directory.GetFiles(dir, "*.uigencfg"); files.Sort();
+            foreach (string file in files) {
                 UIGenCfg gencfg = new(file);
                 gencfg.WriteConsole();
                 gencfg.GenerateFiles();

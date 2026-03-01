@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = song_window_l/Song.xmltemplate
 OutputFormat = song_window_l/Song[i].xml
 StartIndex = 0

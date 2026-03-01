@@ -1,6 +1,12 @@
 partial struct UIGenCfg {
     public const RegexOptions REGEXOPTS = RegexOptions.IgnorePatternWhitespace | RegexOptions.Multiline;
 
+    [GeneratedRegex(@"\#(?<Comment>.*)$")]
+    private static partial Regex CommentRegex();
+
+    [GeneratedRegex(@"<!--\#(?<Comment>.*)\#-->\s*", REGEXOPTS | RegexOptions.Singleline)]
+    private static partial Regex XmlCommentRegex();
+
     [GeneratedRegex(@"\[[^\[\]]*(((?<Open>\[)[^\[\]]*)+((?<Close-Open>\])[^\[\]]*)+)*(?(Open)(?!))\]", REGEXOPTS)]
     private static partial Regex BracketRegex();
 

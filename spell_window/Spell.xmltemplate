@@ -1,3 +1,4 @@
+<!--# Template file for the code gen in '.generator' #-->
 <?xml version="1.0"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />

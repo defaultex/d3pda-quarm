@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = group_window/Group.xmltemplate
 OutputFormat = group_window/Group[i].xml
 StartIndex = 1

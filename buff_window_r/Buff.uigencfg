@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = buff_window_r/Buff.xmltemplate
 OutputFormat = buff_window_r/Buff[i].xml
 StartIndex = 0

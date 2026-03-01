@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = player_window/Gauges.xmltemplate
 OutputFormat = player_window/[Stat].xml
 StartIndex = 0
@@ -12,35 +14,35 @@ Param(
 # replace the mana bar tint with blue
 Replace(
     Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
-    Target = player_window/MP.xml
+    Destination = player_window/MP.xml
     Value = <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
 )
 
 # replace the endurance bar tint with yellow-orange
 Replace(
     Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
-    Target = player_window/EN.xml
+    Destination = player_window/EN.xml
     Value = <FillTint><R>255</R><G>180</G><B>0</B></FillTint>
 )
 
 # remove the pet hp gauge from Mana and Endurance gauges
 Replace(
     Regexp = \s*(?:<Gauge\s+item=\s*\"Pet_HP\"\s*>(?:.|\n)*?(</Gauge\s*>)|\s*<\s*Pieces\s*>\s*Pet_HP\s*</Pieces\s*>)
-    Target = player_window/MP.xml, player_window/EN.xml
+    Destination = player_window/MP.xml, player_window/EN.xml
     Value = 
 )
 
 # remove the hp tick gauge since it's the same as the mana tick gauge
 Replace(
     Regexp = \s*(?:<Gauge\s+item=\s*\"Player_HPTick\"\s*>(?:.|\n)*?(</Gauge\s*>)|\s*<\s*Pieces\s*>\s*Player_HPTick\s*</Pieces\s*>)
-    Target = player_window/HP.xml
+    Destination = player_window/HP.xml
     Value = 
 )
 
 # remove the cur and max endurance since that isn't in this version
 Replace(
     Regexp = \s*(?:<Label\s+item=\s*\"Player_FatigueNumber\"\s*>(?:.|\n)*?(</Label\s*>)|\s*<\s*Pieces\s*>\s*Player_FatigueNumber\s*</Pieces\s*>)
-    Target = player_window/EN.xml
+    Destination = player_window/EN.xml
     Value = 
 )
 

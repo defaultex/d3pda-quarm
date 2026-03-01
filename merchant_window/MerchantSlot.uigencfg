@@ -1,3 +1,5 @@
+# Configuration file for the code gen in '.generator'
+
 TemplateFilename = merchant_window/MerchantSlot.xmltemplate
 OutputFormat = merchant_window/MerchantSlot[i].xml
 StartIndex = 0

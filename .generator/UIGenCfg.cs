@@ -1,10 +1,10 @@
-/* '.uigencfg' File Formats
+/* '.uigencfg' File Format
  *
- *  TemplateFilename = somefile.xmltemplate
- *  OutputFormat = [Name].xml
+ *  TemplateFilename = sometemplate.xmltemplate
+ *  OutputFormat = Group[i].xml
  *  ForceGeneration = false     # forces the generator to run even if not needed
- *  StartIndex = 0
- *  Count = 4
+ *  StartIndex = 0              # starting index for file generation
+ *  Count = 4                   # number of files to generate
  *
  *  # Define global parameters to provide to all files.
  *  Global(
@@ -18,23 +18,23 @@
  *      ...
  *  )
  *
- *  # Replace text using regex in the specified file
+ *  # Replace text using a regex pattern in the specified file
  *  Replace(
  *      Regexp = <FillTint>\s*<R>240</R>\s*<G>0</G>\s*<B>0</B>\s*</FillTint>
- *      Target = player_window/MP.xml
+ *      Destination = player_window/MP.xml
  *      Value = <FillTint><R>0</R><G>0</G><B>240</B></FillTint>
  *  )
  *
- *  # Copy an element from the generated file into the specified target file.
+ *  # Copy an element from the generated file into the specified file.
  *  CopyElement(
  *      Element = [Type]:[Name] (ex. Screen:HPLabel_Layout)
- *      Destination = Filename (ex. EQUI_PlayerWindow.xml)
+ *      Destination = [Filename] (ex. EQUI_PlayerWindow.xml)
  *  )
  *
- * + [EQLabelType.Mana] notation can be used to fetch parameters built-in and custom.
- * + [calc i * 6 + Math.Floor(4.5)] notation can be used to evaluate math in the parser.
- * |- Parameters can be accessed in calculation without bracket notation.
- * |- The parses used a DotNetContext meaning it has access to .Net's math functions.
+ * [EQLabelType.Mana] notation can be used to fetch parameters built-in and custom.
+ * [calc i * 6 + Math.Floor(4.5)] notation can be used to evaluate math in the parser.
+ *  * Parameters can be accessed in calculation without bracket notation.
+ *  * The parser uses a DotNetContext meaning it has access to .Net's math functions.
  *
  */
 
@@ -44,8 +44,8 @@ using MathEvaluation.Extensions;
 
 partial struct UIGenCfg {
     static readonly Dictionary<string, string> ms_systemParams = new(Enumerable.Concat(
-        Enum.GetNames<EQLabelType>().Select(name => new KeyValuePair<string, string>($"EQLabelType.{name}",  $"{(int)Enum.Parse<EQLabelType>(name)}")),
-        Enum.GetNames<EQGaugeType>().Select(name => new KeyValuePair<string, string>($"EQGaugeType.{name}",  $"{(int)Enum.Parse<EQGaugeType>(name)}"))
+        Enum.GetNames<EQLabelType>().Select(name => new KeyValuePair<string, string>($"EQLabelType.{name}", $"{(int)Enum.Parse<EQLabelType>(name)}")),
+        Enum.GetNames<EQGaugeType>().Select(name => new KeyValuePair<string, string>($"EQGaugeType.{name}", $"{(int)Enum.Parse<EQGaugeType>(name)}"))
     ));
 
     readonly Dictionary<string, string> m_parameters;
@@ -64,6 +64,7 @@ partial struct UIGenCfg {
     public UIGenCfg(string gencfgPath) {
         GenCfgPath = gencfgPath;
         string source = File.ReadAllText(GenCfgPath);
+        source = CommentRegex().Replace(source, string.Empty);
 
         TemplateFilename = TemplateRegex().Match(source).Groups.GetValueOrDefault("TemplateFilename")?.Value ?? string.Empty;
         OutputFormat = OutputFormatRegex().Match(source).Groups.GetValueOrDefault("OutputFormat")?.Value ?? string.Empty;
@@ -144,6 +145,7 @@ partial struct UIGenCfg {
     }
 
     public bool ShouldGen(string outputFile) =>
+        ForceGeneration ||
         !File.Exists(outputFile) ||
         File.GetLastWriteTime(TemplateFilename) > File.GetLastWriteTime(outputFile) ||
         File.GetLastWriteTime(GenCfgPath) > File.GetLastWriteTime(outputFile);
@@ -155,7 +157,7 @@ partial struct UIGenCfg {
         BufferedCopyOp[] bco = new BufferedCopyOp[CopyElementOps?.Length ?? 0];
         for (int i = 0; i < CopyElementOps.Length; i++) {
             bco[i] = new BufferedCopyOp() {
-                Destination = CopyElementOps[i].Destintion,
+                Destination = CopyElementOps[i].Destination,
                 Regexps = new string[Count],
                 Outputs = new string[Count]
             };
@@ -164,6 +166,7 @@ partial struct UIGenCfg {
             }
         }
 
+        List<string> skippedFiles = [];
         List<string> tempParams = [];
         for (int i = StartIndex; i < Count; i++) {
             // add local parameters
@@ -176,19 +179,19 @@ partial struct UIGenCfg {
 
             // perform replacement operations
             string output = null, filename = ProcessString(OutputFormat);
-            if (ForceGeneration || ShouldGen(filename)) {
+            if (ShouldGen(filename)) {
                 Console.WriteLine($"   Generating {filename}");
                 output = File.ReadAllText(TemplateFilename);
+                output = XmlCommentRegex().Replace(output, string.Empty);
                 output = ProcessString(output, true);
                 foreach (ReplaceOp replaceOp in ReplaceOps) {
-                    if (replaceOp.Target.Contains(filename)) {
+                    if (replaceOp.Destination.Contains(filename)) {
                         output = Regex.Replace(output, replaceOp.Regexp, replaceOp.Value);
                         Console.WriteLine($"   replace ({filename}): {replaceOp.Regexp} => {replaceOp.Value}");
                     }
                 }
                 File.WriteAllText(filename, output);
-            }
-            // else { Console.WriteLine($"   Skipping {filename}, file is newer than the template."); }
+            } else { skippedFiles.Add(filename); }
             result |= output != null;
 
             // batch copy operations
@@ -199,6 +202,9 @@ partial struct UIGenCfg {
         }
         foreach (string key in tempParams) {
             m_parameters.Remove(key);
+        }
+        if (skippedFiles.Count > 0) {
+            Console.WriteLine($"   Skipped files: {string.Join(", ", skippedFiles)}");
         }
 
         // perform the batched copy operations
@@ -224,6 +230,13 @@ partial struct UIGenCfg {
         Console.WriteLine($"   ForceGen: {ForceGeneration}");
         Console.WriteLine($"   StartIndex: {StartIndex}");
         Console.WriteLine($"   Count: {Count}");
+        if (Globals.Count > 0) {
+            Console.WriteLine("   Globals");
+            _ = Globals.All(p => {
+                Console.WriteLine($"      {p.Key}: {string.Join(", ", p.Value)}");
+                return true;
+            });
+        }
         if (Params.Count > 0) {
             Console.WriteLine("   Params");
             _ = Params.All(p => {
@@ -231,18 +244,20 @@ partial struct UIGenCfg {
                 return true;
             });
         }
-        _ = ReplaceOps.All(r => {
-            Console.WriteLine("   Replace");
-            Console.WriteLine($"      Regexp: {r.Regexp}");
-            Console.WriteLine($"      Value: {r.Value}");
-            Console.WriteLine($"      Targets: {string.Join(", ", r.Target)}");
-            return true;
-        });
-        // _ = CopyOps.All(c => {
-        //     Console.WriteLine("   Copy");
-        //     Console.WriteLine($"      Regexp: {c.Regexp}");
-        //     Console.WriteLine($"      Target: {c.Target}");
-        //     return true;
-        // });
+        if (ReplaceOps.Length > 0) {
+            _ = ReplaceOps.All(r => {
+                Console.WriteLine("   Replace");
+                Console.WriteLine($"      Regexp: {r.Regexp}");
+                Console.WriteLine($"      Value: {r.Value}");
+                Console.WriteLine($"      Targets: {string.Join(", ", r.Destination)}");
+                return true;
+            });
+        }
+        if (CopyElementOps.Length > 0) {
+            _ = CopyElementOps.All(c => {
+                Console.WriteLine($"   Copy Element: {c.Type}:{c.Name} => {c.Destination}");
+                return true;
+            });
+        }
     }
 }

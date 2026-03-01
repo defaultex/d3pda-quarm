@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <XML ID="EQInterfaceDefinitionLanguage">
     <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+    <OutlinedLabel item="[Name]">
+        <Font>[FontSize]</Font>
+        <EQType>[EQType]</EQType>
+        <!-- -->
+        <Location>
+            <X>[X]</X>
+            <Y>[Y]</Y>
+        </Location>
+        <Size>
+            <CX>[Width]</CX>
+            <CY>[Height]</CY>
+        </Size>
+        <!-- -->
+        <AutoStretch>[AutoStretch]</AutoStretch>
+        <LeftAnchorToLeft>[LeftAnchorToLeft]</LeftAnchorToLeft>
+        <RightAnchorToLeft>[RightAnchorToLeft]</RightAnchorToLeft>
+        <TopAnchorToTop>[TopAnchorToTop]</TopAnchorToTop>
+        <BottomAnchorToTop>[BottomAnchorToTop]</BottomAnchorToTop>
+        <!-- -->
+        <LeftAnchorOffset>[LeftAnchorOffset]</LeftAnchorOffset>
+        <RightAnchorOffset>[RightAnchorOffset]</RightAnchorOffset>
+        <TopAnchorOffset>[TopAnchorOffset]</TopAnchorOffset>
+        <BottomAnchorOffset>[BottomAnchorOffset]</BottomAnchorOffset>
+        <!-- -->
+        <TextColor>
+            <R>[ColorR]</R>
+            <G>[ColorG]</G>
+            <B>[ColorB]</B>
+        </TextColor>
+        <OutlineColor>
+            <R>[OutlineR]</R>
+            <G>[OutlineG]</G>
+            <B>[OutlineB]</B>
+        </OutlineColor>
+        <!-- -->
+    </OutlinedLabel>
     <!-- -->
     <Label item="[Name]">
         <Font>[FontSize]</Font>
